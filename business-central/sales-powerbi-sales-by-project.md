@@ -43,10 +43,9 @@ The report includes the following key performance indicators (KPIs) and measures
 The report uses data from the following tables in [!INCLUDE[prod_short](includes/prod_short.md)]:
 
 - Customer
-- Salesperson/Purchaser
 - Item
-- Value Entry
 - Sales Line
+- Project
 
 ## Try the report
 
