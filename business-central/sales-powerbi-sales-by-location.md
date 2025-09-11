@@ -31,12 +31,13 @@ Regional managers who oversee several warehouse locations can track revenue and 
 
 The report includes the following key performance indicators (KPIs) and measures:
 
-- **[Sales Amount](sales-powerbi-sales-kpis.md#sales-amount)**  
-- **[Sales Quantity](sales-powerbi-sales-kpis.md#sales-quantity)**  
-- **[Cost Amount](sales-powerbi-sales-kpis.md#cost-amount)**  
-- **[Cost Amount Non-Inv](sales-powerbi-sales-kpis.md#cost-amount-non-inv)**  
-- **[Gross Profit](sales-powerbi-sales-kpis.md#gross-profit)**  
-- **[Gross Profit Margin](sales-powerbi-sales-kpis.md#gross-profit-margin)**
+- [**Sales (LCY)**](sales-powerbi-sales-kpis.md#sales-lcy)  
+- [**Sales Quantity**](sales-powerbi-sales-kpis.md#sales-quantity)  
+- [**Adjusted Cost (LCY)**](sales-powerbi-sales-kpis.md#adjusted-cost-lcy)  
+- [**Cost Amount Non-Inv**](sales-powerbi-sales-kpis.md#cost-amount-non-inv)  
+- [**Adjusted Profit (LCY)**](sales-powerbi-sales-kpis.md#adjusted-profit-lcy)  
+- [**Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#adjusted-profit-margin)
+- [**%GT Sales (LCY)**](sales-powerbi-sales-kpis.md#gt-sales-lcy)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -48,8 +49,10 @@ The report uses data from the following tables in [!INCLUDE[prod_short](includes
 
 - Location
 - Item
-- Value Entry
-- Sales Line
+- Sales Value Entries
+- Sales Invoice Lines
+- Sales Credit Lines
+- Project Ledger Entries
 
 ## Try the report
 

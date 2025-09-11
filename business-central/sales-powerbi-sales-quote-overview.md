@@ -32,10 +32,10 @@ As a salesperson, you can use the report to review your upcoming sales performan
 
 The report includes the following key performance indicators (KPIs) and measures:
 
-- [No. of Sales Quotes](sales-powerbi-sales-kpis.md#no-of-sales-quotes)
-- [Sales Amount](sales-powerbi-sales-kpis.md#sales-amount)
-- [Gross Profit](sales-powerbi-sales-kpis.md#gross-profit)
-- [Gross Profit Margin](sales-powerbi-sales-kpis.md#gross-profit-margin)
+- [**No. of Sales Quotes**](sales-powerbi-sales-kpis.md#no-of-sales-quotes)
+- [**Sales Quote Sales (LCY)**](sales-powerbi-sales-kpis.md#sales-quote-sales-lcy)
+- [**Sales Quote Quantity**](sales-powerbi-sales-kpis.md#sales-quote-quantity)
+- [**Sales Quote Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#sales-quote-adjusted-profit-margin)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -45,10 +45,10 @@ The report includes the following key performance indicators (KPIs) and measures
 
 The report uses data from the following tables in [!INCLUDE[prod_short](includes/prod_short.md)]:
 
-- Sales Line
+- Sales Lines
 - Customer
 - Item
-- Salesperson/Purchaser
+- Salesperson
 
 ## Try the report
 

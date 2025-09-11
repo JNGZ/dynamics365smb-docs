@@ -29,9 +29,9 @@ This report helps management and sales teams track the sales amounts that each p
 
 The report includes the following key performance indicators (KPIs) and measures:
 
-- [**Sales Amount**](sales-powerbi-sales-kpis.md#sales-amount)
+- [**Sales (LCY)**](sales-powerbi-sales-kpis.md#sales-lcy)
 - [**Sales Quantity**](sales-powerbi-sales-kpis.md#sales-quantity)
-- [**Adjusted Profit Amount**](sales-powerbi-sales-kpis.md#adjusted-profit-amount)
+- [**Adjusted Profit (LCY)**](sales-powerbi-sales-kpis.md#adjusted-profit-lcy)
 - [**Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#adjusted-profit-margin)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
@@ -44,8 +44,10 @@ The report uses data from the following tables in [!INCLUDE[prod_short](includes
 
 - Customer
 - Item
-- Sales Line
-- Project
+- Sales Value Entries
+- Sales Invoice Lines
+- Sales Credit Lines
+- Project Ledger Entries
 
 ## Try the report
 

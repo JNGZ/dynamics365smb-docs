@@ -42,7 +42,10 @@ The report uses data from the following tables in [!INCLUDE[prod_short](includes
 - Sales Value Entries
 - Sales Invoice Lines
 - Sales Credit Lines
-- Project Ledger Entrie
+- Project Ledger Entries
+- Salesperson
+- Customer
+- Item Category
 
 ## Try the report
 

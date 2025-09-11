@@ -48,8 +48,10 @@ The report includes the following key performance indicators (KPIs) and measures
 
 The report uses data from the following tables in [!INCLUDE[prod_short](includes/prod_short.md)]:
 
-- Value Entry
-- Sales Line
+- Sales Value Entries
+- Sales Invoice Line
+- Sales Credit Lines
+- Project Ledger Entries
 
 ## Try the report
 
