@@ -1,35 +1,43 @@
 ---
 title: Inventory Forecasting (Power BI report)
-description: The Inventory Forecasting report provides insights into your organization's inventory trends and future needs.
+description: The Inventory Forecasting report provides insights into your organization's inventory trends and future stock requirements.
 author: kennienp
 ms.author: kepontop
 ms.reviewer: bholtorf
 ms.topic: article
 ms.search.keywords: reporting
 ms.search.form: 37110_Primary
-ms.date: 10/28/2024
+ms.date: 10/31/2025
 ms.service: dynamics-365-business-central
 ---
 
 # Inventory Forecasting (Power BI Report)
 
-[!INCLUDE[applies-to-2024w2](includes/applies-to-2024w2.md)]
+[!INCLUDE[2025_releasewave2](includes/2025_releasewave2.md)]
 
-The **Inventory Forecasting** report predicts future inventory trends based on historical data. It uses advanced techniques to project quantity values, helping users optimise stock levels.
+The **Inventory Forecasting** report predicts future inventory trends based on historical data. It uses advanced techniques to project quantity values across location, item and entry type dimensions, helping users optimize inventory levels.
+
+The inventory forecasting visualization predicts the next three months of quantity based on the previous six months, assuming a monthly seasonality.
+
+> [!NOTE]
+> The default forecasting options can be customized through the Forecast section in the Analytics Pane in Power BI Desktop. This includes modifying the forecast length, seasonality, period and confidence interval.
 
 :::image type="content" source="media/inventory/inventory-forecasting.png" alt-text="Screenshot of the Inventory Forecasting Power BI Report" lightbox="media/inventory/inventory-forecasting.png":::
 
 ## Use the report
 
-The *Inventory Forecasting* report is designed for inventory managers and supply chain professionals. It provides insights into future inventory needs, helping users make informed decisions about stock levels and procurement.
+The *Inventory Forecasting* report is designed for inventory managers and procurement officers to track projected stock levels.
+
+As an inventory manager, you can use this report to monitor projected inventory and anticipate significant stock movements. For example, using the quantity by location forecasting, you identify a future period with increased incoming stock. In response, you proactively schedule warehouse employees to ensure adequate staffing to optimize shipping and receiving processes.
+
+As a procurement officer, this report provides key insights into inventory supply and demand, helping users make informed decisions about stock levels and procurement. For example, you recognize a trend of decreased quantity in the same period each month. Using this information, you coordinate replenishment accordingly to ensure stock availability and optimal inventory levels.
 
 ## Key Performance Indicators (KPIs)
 
 The *Inventory Forecasting* report includes the following KPIs:  
 
-- [**Inventory (Quantity)**](inventory-powerbi-kpis.md#inventory-quantity)
-- [**Quantity (Forecasting)**](inventory-powerbi-kpis.md#quantity-forecasting)
 - [**Quantity**](inventory-powerbi-kpis.md#quantity)
+- [**Quantity (Forecasting)**](inventory-powerbi-kpis.md#quantity-forecasting)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -42,7 +50,7 @@ The report uses data from the following tables in [!INCLUDE [prod_short](include
 
 - Item Ledger Entries
 - Location
-- Item Category
+- Item
 
 ## Try the report
 
