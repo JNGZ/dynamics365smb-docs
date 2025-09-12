@@ -1,44 +1,44 @@
 ---
-title: Late Payment Analysis (Receivables)
-description: The Late Payment Analysis report provides insights into the behaviours of late paying customers.
+title: Late Payments (Receivables)
+description: The Late Payments (Receivables) report provides insights into the behaviors of late paying customers.
 author: kennienp
 ms.author: kepontop
 ms.reviewer: bholtorf
 ms.topic: concept-article
 ms.search.keywords: reporting
 ms.search.form: 37113_Primary
-ms.date: 10/31/2024
+ms.date: 10/31/2025
 ms.service: dynamics-365-business-central
 ---
 
-# Late Payment Analysis (Receivables) (Power BI report)
+# Late Payments (Receivables) (Power BI report)
 
 [!INCLUDE[applies-to-2024w2](includes/applies-to-2024w2.md)]
 
-The **Late Payment Analysis (Receivables)** report analyzes the behaviours of late paying customers, providing insights into amounts, payment times and the financial impacts on the business.
+The **Late Payments (Receivables)** report analyzes the behaviors of late paying customers, providing insights into amounts, payment times and the financial impacts on the business. It showcases key metrics, including late payments over time and contrasts customer value against payment delays, to highlight cash flow risks.
 
-The late payment analysis is typically used in the following scenarios:
-
-- {Placeholder for who this report is for}
-
-
-:::image type="content" source="media/finance/late-payment-analysis-receivables.png" alt-text="Screenshot of the Late Payment Analysis (Receivables) report" lightbox="media/finance/late-payment-analysis-receivables.png":::
+:::image type="content" source="media/finance/late-payment-analysis-receivables.png" alt-text="Screenshot of the Late Payment Analysis (Receivables) report" lightbox="media/finance/late-payments-receivables-report.png":::
 
 ## Use the report
 
 The audiences for the report are:
 
 - Executives
-- Directors
-- {CONFIRM THIS IS CORRECT}
+- Finance Managers
 
+Executives can use this report to track cash flow risks and customer reliability on a high level. The late payments metrics over time and customer dimensions can inform strategic business decisions to mitigate financial risk.
+
+Finance managers can use this report to identify customers who pose a cash flow risk and monitor late payment behaviors. By using insights from the late payment analysis by customer and late payments over time, you can prioritize future collection efforts.
 
 ## Key Performance Indicators (KPIs)
 
-The *Late Payment Analysis (Receivables)* report includes the following KPIs and measures: 
+The *Late Payments (Receivables)* report includes the following KPIs and measures: 
 
+- [**Late Payment Amount**](finance-powerbi-kpis.md#late-payment-amount)
 - [**Late Payment %**](finance-powerbi-kpis.md#late-payment-percentage)
 - [**Average Days Late**](finance-powerbi-kpis.md#average-days-late)
+- [**No. of Payments**](finance-powerbi-kpis.md#no-of-payments)
+- [**No. of Late Payments**](finance-powerbi-kpis.md#no-of-late-payments)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -48,9 +48,8 @@ The *Late Payment Analysis (Receivables)* report includes the following KPIs and
 
 The report uses data from the following tables in [!INCLUDE[prod_short](includes/prod_short.md)]:
 
-- G/L Entry
+- Customer Ledger Entries
 - Customer
-- Vendor
 
 ## Try the report
 
