@@ -29,8 +29,13 @@ Add description of who the report is designed for and its use
 The *Key Purchases Influences* report includes the following KPIs and measures:   
 {Need to confirm}
 
+- [**Purchase (LCY)**](purchases-powerbi-kpis.md#purchase-lcy)
+- [**Purchase Quantity**](purchases-powerbi-kpis.md#purchase-quantity)
 - [**Return Rate Amount**](purchases-powerbi-kpis.md#return-rate-amount)
-- [**Total Credit Amount**](purchases-powerbi-kpis.md#total-credit-amount)
+- [**Spend Reliance %**](purchases-powerbi-kpis.md#spend-reliance)
+- [**Item Reliance %**](purchases-powerbi-kpis.md#item-reliance)
+- [**Purchase Value Entries Discount %**](purchases-powerbi-kpis.md#purchase-value-entries-discount)
+- [**Purchase Value Entries Discount Amount**](purchases-powerbi-kpis.md#purchase-value-entries-discount-amount)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -40,9 +45,11 @@ The *Key Purchases Influences* report includes the following KPIs and measures:
 
 The report uses data from the following tables in [!INCLUDE[prod_short](includes/prod_short.md)]:
 
-- Value Entry
-- Purchase Line
+- Purchase Value Entry
+- Purchase Invoice Lines
+- Purchase Credit Lines
 - Item
+- Vendor
 
 ## Try the report
 

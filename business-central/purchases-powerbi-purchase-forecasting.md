@@ -29,8 +29,8 @@ Add description of who the report is designed for and its use
 The *Purchases Forecasting* report includes the following KPIs and measures:   
 {Need to Confirm}
 
-- [**Return Rate Amount**](purchases-powerbi-kpis.md#return-rate-amount)
-- [**Total Credit Amount**](purchases-powerbi-kpis.md#total-credit-amount)
+- [**Purchase (LCY) Forecasting**](purchases-powerbi-kpis.md#purchase-lcy-forecasting)
+- [**Purchase (LCY)**](purchases-powerbi-kpis.md#purchase-lcy)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -40,9 +40,11 @@ The *Purchases Forecasting* report includes the following KPIs and measures:
 
 The report uses data from the following tables in [!INCLUDE[prod_short](includes/prod_short.md)]:
 
-- Value Entry
-- Purchase Line
-- Item
+- Purchase Value Entry
+- Purchase Invoice Lines
+- Purchase Credit Lines
+- Item Category
+- Vendor
 
 ## Try the report
 
