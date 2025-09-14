@@ -13,7 +13,7 @@ ms.service: dynamics-365-business-central
 
 # Late Payments (Receivables) (Power BI report)
 
-[!INCLUDE[applies-to-2024w2](includes/applies-to-2024w2.md)]
+[!INCLUDE[2025_releasewave2](includes/2025_releasewave2.md)]
 
 The **Late Payments (Receivables)** report analyzes the behaviors of late paying customers, providing insights into amounts, payment times and the financial impacts on the business. It showcases key metrics, including late payments over time and contrasts customer value against payment delays, to highlight cash flow risks.
 
