@@ -6,7 +6,7 @@ ms.author: kepontop
 ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.search.keywords: reporting
-ms.search.form: 37064_Primary, 37022, 37024, 37023, 37025, 37026, 37027, 37028, 37029, 37030, 37031, 37032
+ms.search.form: 37064_Primary, 37022, 37024, 37023, 37025, 37026, 37027, 37028, 37029, 37030, 37031, 37032, 37110
 ms.date: 10/28/2024
 ms.service: dynamics-365-business-central
 ---
