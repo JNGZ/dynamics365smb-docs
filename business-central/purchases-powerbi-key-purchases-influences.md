@@ -1,36 +1,51 @@
 ---
 title: Key Purchases Influences (Power BI Report)
-description: The Key Purchases Influences report provides insights into the factors affecting your organization's purchasing decisions.
+description: Identify and analyze factors that influence purchasing performance. Explore the most impactful variables and trends based on purchase data.
 author: kennieNP
 ms.author: kepontop
 ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.search.keywords: reporting
 ms.search.form: 37117_Primary
-ms.date: 10/31/2024
+ms.date: 10/31/2025
 ms.service: dynamics-365-business-central
 ---
 
 # Key Purchases Influences (Power BI Report)
 
-[!INCLUDE[applies-to-2024w2](includes/applies-to-2024w2.md)]
+[!INCLUDE[2025_releasewave2](includes/2025_releasewave2.md)]
 
-The **Key Purchases Influences** report identifies the key factors driving purchase performance, highlighting the most impactful variables and trends based on purchase data like items, vendors, purchasers, dimensions and other dimensional data.
+<!-- **To do** Update content based on analyse by -->
 
-**To do** Add correct link to image
-:::image type="content" source="media/purchases/{key-purchases-influences.png}" alt-text="Screenshot of the Key Purchases Influences Power BI report" lightbox="media/purchases/{key-purchases-influences.png}":::
+The **Key Purchases Influences** report identifies the key factors driving purchase performance in your organization. This report highlights the most impactful variables and trends based on purchase data, providing insights into how they influence purchasing metrics to empower strategic business decisions and inform procurement planning.
+
+The **Key Influencers** visual uses AI to identify factors that affect purchases across types of purchase documents. It highlights the key metrics that influence specific datasets and breaks down the most impactful segments within your purchase data.
+
+Additionally, the **Top Segments** tab summarizes the segments analyzed in the **Key Influencers** visual. The summary gives you an overview of the areas that contribute most to your purchase outcomes. Together, these tools provide a comprehensive view of purchase drivers and help uncover opportunities for optimization.
+
+<!-- **To do** Updated image -->
+
+:::image type="content" source="media/purchases/{key-purchases-influences.png}" alt-text="Screenshot of the Key Purchases Influences Power BI report" lightbox="media/purchases/{purchases-key-influencers.png}":::
 
 ## Use the report
 
-Add description of who the report is designed for and its use
+This report can be used by leadership and management teams to identify the primary drivers of purchase performance and highlight actionable insights.
+
+<!-- **To do** Update content based on analyse by -->
+
+As a CEO,
+
+As a purchasing manager, 
+
+optimise purchasing strategies
 
 ## Key Performance Indicators (KPIs)
 
 The *Key Purchases Influences* report includes the following KPIs and measures:   
 {Need to confirm}
 
-- [**Return Rate Amount**](purchases-powerbi-kpis.md#return-rate-amount)
-- [**Total Credit Amount**](purchases-powerbi-kpis.md#total-credit-amount)
+- [**Purchase (LCY)**](purchases-powerbi-kpis.md#purchase-lcy)
+- [**Purchase Quantity**](purchases-powerbi-kpis.md#purchase-quantity)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -41,8 +56,11 @@ The *Key Purchases Influences* report includes the following KPIs and measures:
 The report uses data from the following tables in [!INCLUDE[prod_short](includes/prod_short.md)]:
 
 - Value Entry
-- Purchase Line
+- Purchase Invoice Line
+- Purchase Credit Line
 - Item
+- Salesperson/Purchaser
+- Vendor
 
 ## Try the report
 
