@@ -17,7 +17,7 @@ ms.service: dynamics-365-business-central
 
 The **Late Payments (Receivables)** report analyzes the behaviors of late paying customers, providing insights into amounts, payment times and the financial impacts on the business. It showcases key metrics, including late payments over time and contrasts customer value against payment delays, to highlight cash flow risks.
 
-:::image type="content" source="media/finance/late-payment-analysis-receivables.png" alt-text="Screenshot of the Late Payment Analysis (Receivables) report" lightbox="media/finance/late-payments-receivables-report.png":::
+:::image type="content" source="media/finance/late-payments-receivables-report.png" alt-text="Screenshot of the Late Payment Analysis (Receivables) report" lightbox="media/finance/late-payments-receivables-report.png":::
 
 ## Use the report
 
