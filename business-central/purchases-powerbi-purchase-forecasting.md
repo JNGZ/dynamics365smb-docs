@@ -22,7 +22,7 @@ The purchase forecast visualization predicts the next three months of purchases 
 > [!NOTE]
 > The default forecasting options can be customized through the Forecast section in the Analytics Pane in Power BI Desktop. This includes modifying the forecast length, seasonality, period and confidence interval.
 
-:::image type="content" source="media/purchases/{purchases-forecasting.png}" alt-text="Screenshot of the Purchases Forecasting Power BI report" lightbox="media/purchases/{purchase-forecasting.png}":::
+:::image type="content" source="media/purchases/purchases-forecasting.png" alt-text="Screenshot of the Purchases Forecasting Power BI report" lightbox="media/purchases/purchase-forecasting.png":::
 
 ## Use the report
 
