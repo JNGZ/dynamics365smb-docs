@@ -23,8 +23,11 @@ The **Sales by Project** report provides a high-level overview of sales performa
 
 This report helps sales and project management teams to track the sales amounts that each project generates and their contribution to the overall revenue.
 
-Project managers can track the sales impact of projects across key factors, including status, type and customer. By reviewing the project sales by type or by customer, this report provides a high-level overview of project sales performance. These metrics can be used to optimize planning and sales expectations for future project proposals. For more detailed analysis of the underlying project ledger entries, the cross-report drill through can be used to navigate to the dedicated 
+Project managers can track the sales impact of projects across key factors, including status, type and customer. By reviewing the project sales by type or by customer, this report provides a high-level overview of project sales performance. These metrics can be used to optimize planning and sales expectations for future project proposals. For more detailed analysis of the underlying project ledger entries, the cross-report drillthrough can be used to navigate to the dedicated 
 [Power BI Projects app](projects-powerbi-app.md).
+
+> [!NOTE]
+> To enable cross-report drillthrough, ensure the source and target reports are published to the same workspace. Also note, the back button will only work for navigation between pages within the same report.
 
 Sales managers can use this report to analyze ongoing and completed projects and identify key projects. Using the report, you may notice an emerging trend in recent projects contributing to increased sales. In response, you conduct dedicated training to implement new sales strategies to include project offerings, enhancing sales pitches to customers.
 
