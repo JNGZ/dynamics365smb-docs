@@ -73,6 +73,7 @@ The following table provides descriptions on how you can use each report in the 
 |View inventory quantities based on serial numbers. | [Inventory by Serial No.](https://businesscentral.dynamics.com?page=37030) | [About Inventory by Serial No.](inventory-powerbi-inventory-by-serial-no.md)|
 |Analyze inventory levels across different bins and identify bins that have active picks. | [Bin Contents](https://businesscentral.dynamics.com?page=37031) | [About Bin Contents](inventory-powerbi-bin-contents.md)|
 |Analyze inventory levels across bins and tracking information for the items. | [Bin Contents by Item Tracking](https://businesscentral.dynamics.com?page=37032) | [About Bin Contents by Item Tracking](inventory-powerbi-bin-contents-by-item-tracking.md)|
+|Analyze forecasted inventory quantities across location, item and entry type. | [Inventory Forecasting](https://businesscentral.dynamics.com?page=37110) | [About Inventory Forecasting](inventory-powerbi-inventory-forecasting.md)|
 
 [!INCLUDE[powerbi-tip-track-kpis](includes/powerbi-tip-track-kpis.md)]
 
