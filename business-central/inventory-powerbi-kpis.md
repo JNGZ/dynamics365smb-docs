@@ -197,6 +197,7 @@ Each KPI is described, including how it is calculated and what data was used in 
 - [Net Qty. Purchased](#net-qty-purchased)  
 - [Net Qty. Sold](#net-qty-sold)
 - [Quantity](#quantity)
+- [Quantity (Forecasting)](#quantity-forecasting)
 - [Remaining Quantity](#remaining-quantity)
 
 ### Expired Inventory
@@ -240,6 +241,13 @@ Each KPI is described, including how it is calculated and what data was used in 
 ### Quantity
 **Formula**  
 - This measure shows the total quantity of items that have been processed through the item ledger by summing up the quantity of items on all item ledger entries including sales, purchases, adjustments, and other types of transactions.
+
+**Data Sources**
+- Item Ledger Entry
+
+### Quantity (Forecasting)
+**Formula**  
+- This measure calculates the **Quantity** within the period of dates with item transactions and inserts zero values for dates without item ledger entries, for compatibility with forecasting.
 
 **Data Sources**
 - Item Ledger Entry
