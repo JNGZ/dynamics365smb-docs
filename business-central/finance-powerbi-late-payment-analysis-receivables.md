@@ -35,7 +35,7 @@ Finance managers can use this report to identify customers who pose a cash flow 
 The *Late Payments (Receivables)* report includes the following KPIs and measures: 
 
 - [**Late Payment Amount**](finance-powerbi-kpis.md#late-payment-amount)
-- [**Late Payment %**](finance-powerbi-kpis.md#late-payment-percentage)
+- [**Late Payment %**](finance-powerbi-kpis.md#late-payment-percent)
 - [**Average Days Late**](finance-powerbi-kpis.md#average-days-late)
 - [**No. of Payments**](finance-powerbi-kpis.md#no-of-payments)
 - [**No. of Late Payments**](finance-powerbi-kpis.md#no-of-late-payments)
