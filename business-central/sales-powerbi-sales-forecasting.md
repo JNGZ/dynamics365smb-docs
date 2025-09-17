@@ -22,7 +22,7 @@ The sales forecasting visualization predicts the next three months of purchases 
 > [!NOTE]
 > The default forecasting options can be customized through the Forecast section of the Analytics Pane in Power BI Desktop. This includes modifying the forecast length, seasonality, period and confidence interval.
 
-:::image type="content" source="media/sales/sales-forecasting.png" alt-text="Screenshot of the Sales Forecasting Power BI report" lightbox="media/powerbi/sales/sales-forecasting.png":::
+:::image type="content" source="media/powerbi/sales/sales-forecasting.png" alt-text="Screenshot of the Sales Forecasting Power BI report" lightbox="media/powerbi/sales/sales-forecasting.png":::
 
 ## Use the report
 
