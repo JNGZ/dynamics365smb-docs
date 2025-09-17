@@ -17,7 +17,7 @@ ms.service: dynamics-365-business-central
 
 The **Purchase Quote Overview** report provides detailed information on your organization's purchase quote activities for vendors. The report visualizes the number of quotes, purchase quantities and purchase amount over time. Additionally, this report provides insights into purchase quotes by vendor, and purchase amount by purchaser and item category, to help you anticipate upcoming purchases.
 
-:::image type="content" source="media/purchases/{purchase-quote-overview.png}" alt-text="Screenshot of the Purchase Quote Overview Power BI report" lightbox="media/purchases/{purchase-quote-overview.png}":::
+:::image type="content" source="media/purchases/purchase-quote-overview.png" alt-text="Screenshot of the Purchase Quote Overview Power BI report" lightbox="media/purchases/purchase-quote-overview.png":::
 
 ## Use the report
 
