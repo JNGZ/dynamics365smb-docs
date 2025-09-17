@@ -18,7 +18,7 @@ ms.service: dynamics-365-business-central
 The **Purchase Return Overview** report tracks and analyzes purchase returns, showing 
 reasons for return, return rate, purchase value and the financial impact on the organization. This report summarizes key return trends by vendor, reason and type, and visualizes return metrics over time.
 
-:::image type="content" source="media/purchases/{purchases-return-overview.png}" alt-text="Screenshot of the Purchase Return Overview Power BI report" lightbox="media/purchases/{purchase-return-overview.png}":::
+:::image type="content" source="media/purchases/purchases-return-overview.png" alt-text="Screenshot of the Purchase Return Overview Power BI report" lightbox="media/purchases/purchase-return-overview.png":::
 
 ## Use the report
 
