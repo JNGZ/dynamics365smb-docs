@@ -41,6 +41,7 @@ The report includes the following key performance indicators (KPIs) and measures
 - [**No. of Opportunities**](sales-powerbi-sales-kpis.md#no-of-opportunities)
 - [**Opportunity Sales Quote Amount**](sales-powerbi-sales-kpis.md#opportunity-sales-quote-amount)
 - [**Win/Loss %**](sales-powerbi-sales-kpis.md#win-loss-percent)
+- [**Active Estimated Value**](sales-powerbi-sales-kpis.md#active-estimated-value)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)]
 

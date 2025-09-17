@@ -40,6 +40,7 @@ The report includes the following key performance indicators (KPIs) and measures
 - [**Total Credit (Qty.)**](sales-powerbi-sales-kpis.md#total-credit-qty)
 - [**No. of Return Orders**](sales-powerbi-sales-kpis.md#no-of-return-orders)
 - [**Credit Adjusted Profit (LCY)**](sales-powerbi-sales-kpis.md#credit-adjusted-profit-lcy)
+- [**Total Sales (Amount)**](sales-powerbi-sales-kpis.md#total-sales-amount)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)]
 

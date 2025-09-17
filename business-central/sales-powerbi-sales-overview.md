@@ -55,9 +55,11 @@ The report includes the following KPIs and measures:
 - [**Adjusted Profit (LCY)**](sales-powerbi-sales-kpis.md#adjusted-profit-lcy)
 - [**Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#adjusted-profit-margin)
 - [**Outstanding Invoices (LCY)**](sales-powerbi-sales-kpis.md#outstanding-invoices-lcy)
-- [**No. of New Customers**](sales-powerbi-sales-kpis.md#no-of-new-customers)
 - [**No. of Outstanding Sales Orders**](sales-powerbi-sales-kpis.md#no-of-outstanding-sales-orders)
 - [**No. of Shipped Not Invoiced Orders**](sales-powerbi-sales-kpis.md#no-of-shipped-not-invoiced-sales)
+- [**Outstanding Orders (LCY)**](sales-powerbi-sales-kpis.md#outstanding-orders-lcy)
+- [**Shipped Not Invoiced (LCY)**](sales-powerbi-sales-kpis.md#shipped-not-invoiced-lcy)
+- [**No. of Outstanding Invoices**](sales-powerbi-sales-kpis.md#no-of-outstanding-invoices)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 

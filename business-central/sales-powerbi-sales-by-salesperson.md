@@ -39,7 +39,6 @@ The report includes the following key performance indicators (KPIs) and measures
 - [**Sales Quantity**](sales-powerbi-sales-kpis.md#sales-quantity)
 - [**Adjusted Profit (LCY)**](sales-powerbi-sales-kpis.md#adjusted-profit-lcy)
 - [**Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#adjusted-profit-margin)
-- [**%GT Sales (LCY)**](sales-powerbi-sales-kpis.md#gt-sales-lcy)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 

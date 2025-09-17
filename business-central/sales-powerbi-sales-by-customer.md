@@ -38,7 +38,7 @@ The report includes the following key performance indicators (KPIs) and measures
 - [**Cost Amount Non-Inv**](sales-powerbi-sales-kpis.md#cost-amount-non-inv)
 - [**Adjusted Profit (LCY)**](sales-powerbi-sales-kpis.md#adjusted-profit-lcy)
 - [**Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#adjusted-profit-margin)
-- [**%GT Sales (LCY)**](sales-powerbi-sales-kpis.md#gt-sales-lcy)
+- [**Pareto Cumulative Adjusted Profit %**](sales-powerbi-sales-kpis.md#pareto-cumulative-adjusted-profit)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 

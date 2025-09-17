@@ -17,8 +17,7 @@ ms.service: dynamics-365-business-central
 
 The **Sales Forecasting** report predicts future sales trends based on historical data. It uses advanced techniques to project sales values, helping users anticipate demand.
 
-**To do** Add correct link to image
-:::image type="content" source="media/sales/sales-forecasting.png" alt-text="Screenshot of the Sales Forecasting Power BI report" lightbox="media/sales/sales-forecasting.png":::
+:::image type="content" source="media/powerbi/sales/sales-forecasting.png" alt-text="Screenshot of the Sales Forecasting Power BI report" lightbox="media/powerbi/sales/sales-forecasting.png":::
 
 ## Use the report
 
