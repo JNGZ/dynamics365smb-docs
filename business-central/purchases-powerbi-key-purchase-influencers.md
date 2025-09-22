@@ -35,7 +35,7 @@ Using these insights, you can optimize purchasing strategies to improve profit m
 
 ## Key Performance Indicators (KPIs)
 
-The *Key Purchases Influences* report includes the following KPIs and measures:
+The *Key Purchase Influencers* report includes the following KPIs and measures:
 
 - [**Purchase (LCY)**](purchases-powerbi-kpis.md#purchase-lcy)
 - [**Purchase Quantity**](purchases-powerbi-kpis.md#purchase-quantity)
@@ -57,7 +57,7 @@ The report uses data from the following tables in [!INCLUDE[prod_short](includes
 
 ## Try the report
 
-Try the report here: [Key Purchases Influences](https://businesscentral.dynamics.com?page=37117)
+Try the report here: [Key Purchase Influencers](https://businesscentral.dynamics.com?page=37117)
 
 [!INCLUDE[ctrl-right-click-to-open-in-new-tab](includes/ctrl-right-click-to-open-in-new-tab.md)]
 
