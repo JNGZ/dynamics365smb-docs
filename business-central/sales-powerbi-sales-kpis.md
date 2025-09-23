@@ -611,6 +611,56 @@ The **Total Gross Profit** from the **Sales** table for all sales.
 - [Sales Credit Line Gross Profit Margin](#sales-credit-line-gross-profit-margin)
 - [Sales Credit Line Quantity](#sales-credit-line-quantity)
 
+### Sales Credit Line Amount
+
+**Formula**  
+
+The Sales Credit Line Amount measure calculates the total negative sum of the **Amount** column from the Sales Credit Line table.
+
+**Data Source**  
+
+- Sales Credit Line
+
+### Sales Credit Line Cost Amount
+
+**Formula**  
+
+The Sales Credit Line Cost Amount measure calculates the total sum of the **Unit Cost LCY** multiplied by the **Quantity Base** from the Sales Credit Line table.
+
+**Data Source**  
+
+- Sales Credit Line
+
+### Sales Credit Line Gross Profit
+
+**Formula**  
+
+*Sales Credit Line Gross Profit = - [Sales Credit Line Amount](#sales-credit-line-amount) + [Sales Credit Line Cost Amount](#sales-credit-line-cost-amount)*
+
+**Data Source**  
+
+- Sales Credit Line
+
+### Sales Credit Line Gross Profit Margin
+
+**Formula**  
+
+*Sales Credit Line Gross Profit Margin = - [Sales Credit Line Gross Profit](#sales-credit-line-gross-profit) / [Sales Credit Line Amount](#sales-credit-line-amount)*
+
+**Data Source**  
+
+- Sales Credit Line
+
+### Sales Credit Line Quantity
+
+**Formula**  
+
+The Sales Credit Line Quantity measure calculates the total negative sum of the **Quantity (Base)** column from the Sales Credit Line table.
+
+**Data Source**  
+
+- Sales Credit Line
+
 ## Sales Invoice Line Table
 
 - [Sales Invoice Line Amount](#sales-invoice-line-amount)
@@ -618,6 +668,56 @@ The **Total Gross Profit** from the **Sales** table for all sales.
 - [Sales Invoice Line Gross Profit](#sales-invoice-line-gross-profit)
 - [Sales Invoice Line Gross Profit Margin](#sales-invoice-line-gross-profit-margin)
 - [Sales Invoice Line Quantity](#sales-invoice-line-quantity)
+
+### Sales Invoice Line Amount
+
+**Formula**  
+
+The Sales Invoice Line Amount measure calculates the total sum of the **Amount** column from the Sales Invoice Line table.
+
+**Data Source**  
+
+- Sales Invoice Line
+
+### Sales Invoice Line Cost Amount
+
+**Formula**  
+
+The Sales Invoice Line Cost Amount measure calculates the total sum of the **Unit Cost LCY** multiplied by the **Quantity Base** from the Sales Invoice Line table, where Type = Resource.
+
+**Data Source**  
+
+- Sales Invoice Line
+
+### Sales Invoice Line Gross Profit
+
+**Formula**  
+
+*Sales Invoice Line Gross Profit = [Sales Invoice Line Amount](#sales-invoice-line-amount) + [Sales Invoice Line Cost Amount](#sales-invoice-line-cost-amount)*
+
+**Data Source**  
+
+- Sales Invoice Line
+
+### Sales Invoice Line Gross Profit Margin
+
+**Formula**  
+
+*Sales Invoice Line Gross Profit Margin = [Sales Invoice Line Gross Profit](#sales-invoice-line-gross-profit) / [Sales Invoice Line Amount](#sales-invoice-line-amount)*
+
+**Data Source**  
+
+- Sales Invoice Line
+
+### Sales Invoice Line Quantity
+
+**Formula**  
+
+The Sales Invoice Line Quantity measure calculates the total sum of the **Quantity (Base)** column from the Sales Invoice Line table.
+
+**Data Source**  
+
+- Sales Invoice Line
 
 ## Sales Line Table
 
