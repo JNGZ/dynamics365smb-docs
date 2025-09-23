@@ -950,6 +950,7 @@ The sum of the **Sales Qty. (Base)** column from the **Sales** table where the *
 - [Cost Amount Non-Inv](#cost-amount-non-inv)
 - [Cost Posted to G/L](#cost-posted-to-gl)
 - [Invoiced Quantity](#invoiced-quantity)
+- [Sales Amount Actual](#sales-amount-actual)
 - [Invoiced Amount](#invoiced-amount)
 
 ### No. of Distinct Items
