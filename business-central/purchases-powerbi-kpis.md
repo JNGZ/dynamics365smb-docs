@@ -90,6 +90,7 @@ The Budget Quantity measure sums the Quantity column from the Purchase Budget ta
 - Value Entry
 
 ## Purchase Measures
+
 - [Purchase Amount](#purchase-amount)
 - [Purchase Quantity](#purchase-quantity)
 - [Purchase (LCY)](#purchase-lcy)
@@ -98,7 +99,8 @@ The Budget Quantity measure sums the Quantity column from the Purchase Budget ta
 - [Return Rate (Qty.)](#return-rate-qty)
 - [Total Credit (Amount)](#total-credit-amount)
 - [Total Credit (Qty.)](#total-credit-qty)
-- [Total Purchase (Amount)](#total-credit-amount)
+- [Total Purchase (Amount)](#total-purchase-amount)
+- [Total Purchase (Qty)](#total-purchase-qty)
 - [Invoiced Prepayment Amount (LCY)](#invoiced-prepayment-amount-lcy)
 
 ### Purchase Amount
@@ -118,6 +120,90 @@ The Purchase Quantity measure sums the the Purchase Quantity column of the Purch
 
 **Data Sources**
 - Value Entry
+
+### Purchase (LCY)
+
+**Formula**  
+The Purchase (LCY) measure calculates the purchase amount across all invoiced purchase transactions by calculating the sum of [Purchase Value Entries Amount](#purchase-value-entries-amount), [Purchase Credit Line Amount](#purchase-credit-line-amount) and [Purchase Invoice Line Amount](#purchase-invoice-line-amount)
+
+**Data Sources**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Purchase (LCY) Forecasting
+
+**Formula**  
+The Purchase (LCY) Forecasting measure calculates the [Purchase (LCY)](#purchase-lcy) within the period of dates with purchase transactions and inserts zero values for dates without purchase entries, for compatibility with forecasting.
+
+**Data Sources**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Return Rate (Amount)
+
+**Formula**  
+*Return Rate (Amount) = - [Total Credit (Amount)](#total-credit-amount) / [Total Purchase (Amount)](#total-purchase-amount)*
+
+**Data Sources**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Return Rate (Qty.)
+
+**Formula**  
+*Return Rate (Qty.) = - [Total Credit (Qty.)](#total-credit-qty) / [Total Purchase (Qty.)](#total-purchase-qty)*
+
+**Data Sources**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Total Credit (Amount)
+
+**Formula**  
+*Total Credit (Amount) = [Posted Purchase CR/Adj Note Amount](#posted-purchase-cradj-note-amount) + [Purchase Credit Line Amount](#purchase-credit-line-amount)*
+
+**Data Sources**  
+- Value Entry
+- Purchase Credit Memo Line
+
+### Total Credit (Qty.)
+
+**Formula**  
+*Total Credit (Qty.)= [Posted Purchase CR/Adj Note Quantity](#posted-purchase-cradj-note-quantity) + [Purchase Credit Line Quantity Base](#purchase-credit-line-quantity-base)*
+
+**Data Sources**  
+- Value Entry
+- Purchase Credit Memo Line
+
+### Total Purchase (Amount)
+
+**Formula**  
+*Total Purchase (Amount) = [Posted Purchase Invoice Amount](#posted-purchase-invoice-amount) + [Purchase Invoice Line Amount](#purchase-invoice-line-amount)*
+
+**Data Sources**  
+- Value Entry
+- Purchase Invoice Line
+
+### Total Purchase (Qty.)
+
+**Formula**  
+*Total Purchase (Qty.)= [Posted Purchase Invoice Quantity](#posted-purchase-invoice-quantity) + [Purchase Invoice Quantity Base](#purchase-invoice-line-quantity-base)*
+
+**Data Sources**  
+- Value Entry
+- Purchase Invoice Line
+
+### Invoiced Prepayment Amount (LCY)
+
+**Formula**  
+The Invoiced Prepayment Amount (LCY) measure calculates the sum of the Prepayment Amount Invoiced (LCY) from the Purchase Lines table.
+
+**Data Sources**  
+- Purchase Line
 
 ## Purchase Value Entries
 
