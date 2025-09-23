@@ -597,9 +597,9 @@ The **Total Gross Profit** from the **Sales** table for all sales.
 - **Sales Invoices**
   - [Sales Invoice Item Quantity](#sales-invoice-item-quantity)
   - [Sales Invoice Total Price](#sales-invoice-total-price)
-- [Project Ledger Entry Gross Profit Margin](#project-ledger-entry-gross-profit-margin)
-- [Project Ledger Entry Item Gross Profit](#project-ledger-entry-item-gross-profit)
-- [Project Ledger Entry Item Quantity](#project-ledger-entry-item-quantity)
+- [Project Ledger Gross Profit Margin](#project-ledger-gross-profit-margin)
+- [Project Ledger Item Gross Profit](#project-ledger-item-gross-profit)
+- [Project Ledger Item Quantity](#project-ledger-item-quantity)
 - [Total Cost](#total-cost)
 - [Total Price](#total-price)
 
@@ -607,7 +607,7 @@ The **Total Gross Profit** from the **Sales** table for all sales.
 
 **Formula**  
 
-The Sales CR/Adj Item Quantity measure calculates the [Project Ledger Entry Item Quantity](#project-ledger-entry-item-quantity) from the **Project Ledger Entries** table, where Document Tye = Posted Sales CR/Adj Note.
+The Sales CR/Adj Item Quantity measure calculates the [Project Ledger Item Quantity](#project-ledger-item-quantity) from the **Project Ledger Entries** table, where Document Type = Posted Sales CR/Adj Note.
 
 **Data Source**  
 
@@ -627,7 +627,7 @@ The Sales CR/Adj Total Price measure calculates the [Total Price](#total-price) 
 
 **Formula**  
 
-The Sales CR/Adj Item Quantity measure calculates the [Project Ledger Entry Item Quantity](#project-ledger-entry-item-quantity) from the **Project Ledger Entries** table, where Document Tye = Posted Sales Invoice.
+The Sales CR/Adj Item Quantity measure calculates the [Project Ledger Item Quantity](#project-ledger-item-quantity) from the **Project Ledger Entries** table, where Document Tye = Posted Sales Invoice.
 
 **Data Source**  
 
@@ -643,31 +643,31 @@ The Sales Invoice Total Price measure calculates the [Total Price](#total-price)
 
 - Project Ledger Entry
 
-### Project Ledger Entry Gross Profit Margin
+### Project Ledger Gross Profit Margin
 
 **Formula**  
 
-*Project Ledger Entry Gross Profit Margin = [Project Ledger Entry Item Gross Profit](#project-ledger-entry-item-gross-profit) / [Total Price](#total-price)*
+*Project Ledger Gross Profit Margin = [Project Ledger Item Gross Profit](#project-ledger-item-gross-profit) / [Total Price](#total-price)*
 
 **Data Source**  
 
 - Project Ledger Entry
 
-### Project Ledger Entry Item Gross Profit
+### Project Ledger Item Gross Profit
 
 **Formula**  
 
-*Project Ledger Entry Item Gross Profit = [Total Price](#total-price) + [Total Cost](#total-cost)*
+*Project Ledger Item Gross Profit = [Total Price](#total-price) + [Total Cost](#total-cost)*
 
 **Data Source**  
 
 - Project Ledger Entry
 
-### Project Ledger Entry Item Quantity
+### Project Ledger Item Quantity
 
 **Formula**  
 
-The Project Ledger Entry Item Quantity measure calculates the total negative sum of the **Quantity (Base)** column from the **Project Ledger Entries** table.
+The Project Ledger Item Quantity measure calculates the total negative sum of the **Quantity (Base)** column from the **Project Ledger Entries** table.
 
 **Data Source**  
 
