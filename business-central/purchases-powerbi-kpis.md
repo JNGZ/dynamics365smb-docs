@@ -89,53 +89,21 @@ The Budget Quantity measure sums the Quantity column from the Purchase Budget ta
 - Purchase Line
 - Value Entry
 
-## Counters
-- [No. of Distinct Items](#no-of-distinct-items)
-- [No. of Outstanding Purchase Orders](#no-of-outstanding-purchase-orders)
-- [No. of Purchase Invoices](#no-of-purchase-invoices)
-- [No. of Received Not Invd. Purchase Orders](#no-of-received-not-invd-purchase-orders)
-
-### No. of Distinct Items
-
-**Formula**  
-The No. of Distinct Items calculates the number of unique items that have been purchased by counting the distinct values of the Item No. column of the Purchases table.
-
-**Data Sources**
-- Purchase Line
-- Value Entry 
-
-### No. of Outstanding Purchase Orders
-
-**Formula**  
-The No. of Outstanding Purchase Orders calculates the number of unique purchase orders that are currently outstanding, by counting the distinct values of the Document No. column of the Purchases table, where Document Type = Order and Source Type = Purchase Order Outstanding.
-
-**Data Sources**
-- Purchase Line
-- Value Entry
-
-### No. of Purchase Invoices
-
-**Formula**
-The No. of Purchase Invoices measure calculates the number of unique posted purchase invoices by countint the distinct count of the Document No. column from the Purchases table where Document Type = Purchase Invoice and Source Type = Value Entries Invoiced.
-
-**Data Sources**
-- Purchase Line
-- Value Entry
-
-### No. of Received Not Invd. Purchase Orders
-
-**Formula**
-The No. of Received Not Invd. Purchase Orders measure calculates the number of unique purchase orders that are received but not invoiced, by counting the distinct count of Document No. column from the Purchases table where Document Type = Order and Source Type = Purchase Orders Received Not Invoiced.
-
-**Data Sources**
-- Purchase Line
-- Value Entry
-
 ## Purchase Measures
 - [Purchase Amount](#purchase-amount)
 - [Purchase Quantity](#purchase-quantity)
+- [Purchase (LCY)](#purchase-lcy)
+- [Purchase (LCY) Forecasting](#purchase-lcy-forecasting)
+- [Return Rate (Amount)](#return-rate-amount)
+- [Return Rate (Qty.)](#return-rate-qty)
+- [Total Credit (Amount)](#total-credit-amount)
+- [Total Credit (Qty.)](#total-credit-qty)
+- [Total Purchase (Amount)](#total-credit-amount)
+- [Invoiced Prepayment Amount (LCY)](#invoiced-prepayment-amount-lcy)
 
 ### Purchase Amount
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
 
 **Formula**
 The Purchase Amount measure sums the the Purchase Amount column of the Purchases table.
@@ -151,11 +119,49 @@ The Purchase Quantity measure sums the the Purchase Quantity column of the Purch
 **Data Sources**
 - Value Entry
 
-## Invoiced
-- [Invoiced Amount](#invoiced-amount)
-- [Invoiced Quantity](#invoiced-quantity)
+## Purchase Value Entries
+
+- **Counters**
+    - [No. of Distinct Items](#no-of-distinct-items)
+    - [No. of Single Supplier Items](#no-of-single-supplier-items)
+    - [No. of Posted Purchase Invoices](#no-of-posted-purchase-invoices)
+    - [No. of Purchase Invoices](#no-of-purchase-invoices)
+    - [No. of Vendors](#no-of-vendors)
+
+- **Purchase Invoice**
+    - [Posted Purchase Invoice Amount](#posted-purchase-invoice-amount)
+    - [Posted Purchase Invoice Quantity](#posted-purchase-invoice-quantity)
+    - [Invoiced Amount](#invoiced-amount)
+    - [Invoiced Quantity](#invoiced-quantity)
+
+- **Purchase CR/Adj Note**
+    - [Posted Purchase CR/Adj Note Amount](#posted-purchase-cr-adj-note-amount)
+    - [Posted Purchase CR/Adj Note Quantity](#posted-purchase-cr-adj-note-quantity)
+
+- [Purchase Value Entries Amount](#purchase-value-entries-amount)
+- [Purchase Value Entries Quantity](#purchase-value-entries-quantity)
+- [Purchase Value Entries Discount %](#purchase-value-entries-discount-percent)
+- [Purchase Value Entries Discount Amount](#purchase-value-entries-discount-amount)
+
+### No. of Distinct Items
+**Formula**  
+The No. of Distinct Items calculates the number of unique items that have been purchased by counting the distinct values of the Item No. column of the Purchase Value Entry table.
+**Data Sources**
+- Value Entry 
+
+### No. of Purchase Invoices
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**
+The No. of Purchase Invoices measure calculates the number of unique posted purchase invoices by counting the distinct count of the Document No. column from the Purchases table where Document Type = Purchase Invoice and Source Type = Value Entries Invoiced.
+**Data Sources**
+- Purchase Line
+- Value Entry
 
 ### Invoiced Amount
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
 
 **Formula**
 The Invoiced Amount calculates the total amount of items that have been purchased and invoiced, by summing the Purchase Amount column of the Purchases table, where Source Type = Purchase Value Entries Invoiced.
@@ -165,17 +171,63 @@ The Invoiced Amount calculates the total amount of items that have been purchase
 
 ### Invoiced Quantity
 
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
 **Formula**
 The Invoiced Quantity measure calculates the total quantity of items that have been purchased and invoiced, by summing the Purchase Quantity column of the Purchases table, where Source Type = Purchase Value Entries Invoiced.
 
 **Data Sources**
 - Value Entry
 
-## Outstanding
-- [Outstanding Amount (Excl. VAT)](#outstanding-amount-excl-vat)
-- [Outstanding Quantity](#outstanding-quantity)
+## Purchase Lines
+
+- **Counters**
+    - [No. of Outstanding Invoices](#no-of-outstanding-purchase-invoices)
+    - [No. of Outstanding Purchase Orders](#no-of-outstanding-purchase-orders)
+    - [No. of Outstanding Return Orders](#no-of-outstanding-return-orders)
+    - [No. of Purchase Quotes](#no-of-purchase-quotes)
+    - [No. of Received Not Invd. Purchase Orders](#no-of-received-not-invd-purchase-orders)
+    
+- **Outstanding**
+    - [Outstanding Invoices (LCY)](#outstanding-invoices-lcy)
+    - [Outstanding Orders (LCY)](#outstanding-orders-lcy)
+    - [Outstanding Amount (Excl. VAT)](#outstanding-amount-excl-vat)
+    - [Outstanding Quantity](#outstanding-quantity)
+
+- **Quote**
+    - [Purchase Quote Purchase (LCY)](#purchase-quote-purchase-lcy)
+    - [Purchase Quote Quantity](#purchase-quote-quantity)
+
+- **Received Not Invoiced**
+    - [Amt. Rcd. Not Invoiced (LCY)](#amt-rcd-not-invoiced-lcy)
+    - [Amt. Rcd. Not Invd. (Excl. VAT)](#amt-rcd-not-invd-excl-vat)
+    - [Quantity Rcd. Not Invd.](#amt-rcd-not-invd-excl-vat)
+
+- **Return Order**
+    - [Outstanding Return Order (LCY)](#outstanding-return-order-lcy)
+    - [Return Order Amount](#return-order-amount)
+    - [Return Order Quantity](#return-order-quantity)
+    - [Return Qty. Invoiced](#return-qty-invoiced)
+    - [Return Qty. Shipped](#return-qty-shipped)
+    - [Return Qty. to Invoice](#return-qty-to-invoice)
+    - [Return Qty. to Ship](#return-qty-to-ship)
+    - [Returned Quantity](#returned-quantity)
+
+### No. of Outstanding Purchase Orders
+**Formula**  
+The No. of Outstanding Purchase Orders calculates the number of unique purchase orders that are currently outstanding, by counting the distinct values of the Document No. column of the Purchase Lines table, where Document Type = Order.
+**Data Sources**
+- Purchase Line
+
+### No. of Received Not Invd. Purchase Orders
+**Formula**
+The No. of Received Not Invd. Purchase Orders measure calculates the number of unique purchase orders that are received but not invoiced, by counting the distinct count of Document No. column from the Purchases table where Document Type = Order.
+**Data Sources**
+- Purchase Line
 
 ### Outstanding Amount (Excl. VAT)
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
 
 **Formula**  
 The Outstanding Amount (Excl. VAT) measure calculates the sum of Purchase Amount column from the Purchases table where Source Type = Purchase Order Outstanding, excluding VAT.
@@ -185,17 +237,17 @@ The Outstanding Amount (Excl. VAT) measure calculates the sum of Purchase Amount
 
 ### Outstanding Quantity
 
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
 **Formula**  
 The Outstanding Quantity measure calculates the sum of Purchase Qty. (Base) column from the Purchases table where Source Type = Purchase Order Outstanding.
 
 **Data Sources**
 - Purchase Line
 
-## Received Not Invoiced
-- [Amt. Rcd. Not Invd. (Excl. VAT)](#amt-rcd-not-invd-excl-vat)
-- [Quantity Rcd. Not Invd.](#amt-rcd-not-invd-excl-vat)
-
 ### Amt. Rcd. Not Invd. (Excl. VAT)
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
 
 **Formula**  
 The Amt. Rcd. Not Invd. (Excl. VAT) measure calculates the sum of Purchase Amount column from the Purchases table where Source Type = Purchase Order Received Not Invoiced, excluding VAT.
@@ -205,11 +257,37 @@ The Amt. Rcd. Not Invd. (Excl. VAT) measure calculates the sum of Purchase Amoun
 
 ### Quantity Rcd. Not Invd.
 
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
 **Formula**  
 The Quantity Rcd. Not Invd. measure calculates the sum of Purchase Qty. (Base) column from the Purchases table. where Source Type = Purchase Order Received Not Invoiced.
 
 **Data Sources**
 - Purchase Line
+
+## Purchase Credit Lines
+- [Purchase Credit Line Amount](#purchase-credit-line-amount)
+- [Purchase Credit Line Quantity Base](#purchase-credit-line-quantity-base)
+
+## Purchase Invoice Lines
+- [Purchase Invoice Line Amount](#purchase-invoice-line-amount)
+- [Purchase Invoice Line Quantity Base](#purchase-invoice-line-quantity-base)
+
+## Pareto Measures
+- [Pareto Color Cutoff](#pareto-color-cutoff)
+- [Pareto Cumulative Purchase (LCY)](#pareto-cumulative-purchase-lcy)
+- [Pareto Cumulative Purchase (LCY) %](#pareto-cumulative-purchase-lcy-percent)
+- [Pareto Cutoff Cumulative Purchase (LCY)](#pareto-cutoff-cumulative-purchase-lcy)
+- [Pareto Cutoff Purchase (LCY) %](#pareto-cutoff-purchase-lcy-percent)
+- [Pareto Cutoff Vendor](#pareto-cutoff-vendor)
+- [Pareto Cutoff Vendor Rank](#pareto-cutoff-vendor-rank)
+- [Pareto Vendor Cutoff Rank](#pareto-vendor-cutoff-rank)
+- [Pareto Vendor Rank by Purchase (LCY)](#pareto-vendor-rank-by-purchase-lcy)
+- [Pareto Total Purchase (LCY)](#pareto-total-purchase-lcy)
+
+## Vendor Measures
+- [Spend Reliance %](#spend-reliance-percent)
+- [Item Reliance %](#item-reliance-percent)
 
 ## Purchase Amount Moving Annual Total
 - [Purchase Amount MAT (Fiscal)](#purchase-amount-mat-fiscal)  
