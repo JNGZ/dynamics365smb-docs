@@ -603,6 +603,96 @@ The **Total Gross Profit** from the **Sales** table for all sales.
 - [Total Cost](#total-cost)
 - [Total Price](#total-price)
 
+### Sales CR/Adj Item Quantity
+
+**Formula**  
+
+The Sales CR/Adj Item Quantity measure calculates the [Project Ledger Entry Item Quantity](#project-ledger-entry-item-quantity) from the **Project Ledger Entries** table, where Document Tye = Posted Sales CR/Adj Note.
+
+**Data Source**  
+
+- Project Ledger Entry
+
+### Sales CR/Adj Total Price
+
+**Formula**  
+
+The Sales CR/Adj Total Price measure calculates the [Total Price](#total-price) from the **Project Ledger Entries** table, where Document Tye = Posted Sales CR/Adj Note.
+
+**Data Source**  
+
+- Project Ledger Entry
+
+### Sales Invoice Item Quantity
+
+**Formula**  
+
+The Sales CR/Adj Item Quantity measure calculates the [Project Ledger Entry Item Quantity](#project-ledger-entry-item-quantity) from the **Project Ledger Entries** table, where Document Tye = Posted Sales Invoice.
+
+**Data Source**  
+
+- Project Ledger Entry
+
+### Sales Invoice Total Price
+
+**Formula**  
+
+The Sales Invoice Total Price measure calculates the [Total Price](#total-price) from the **Project Ledger Entries** table, where Document Tye = Posted Sales Invoice.
+
+**Data Source**  
+
+- Project Ledger Entry
+
+### Project Ledger Entry Gross Profit Margin
+
+**Formula**  
+
+*Project Ledger Entry Gross Profit Margin = [Project Ledger Entry Item Gross Profit](#project-ledger-entry-item-gross-profit) / [Total Price](#total-price)*
+
+**Data Source**  
+
+- Project Ledger Entry
+
+### Project Ledger Entry Item Gross Profit
+
+**Formula**  
+
+*Project Ledger Entry Item Gross Profit = [Total Price](#total-price) + [Total Cost](#total-cost)*
+
+**Data Source**  
+
+- Project Ledger Entry
+
+### Project Ledger Entry Item Quantity
+
+**Formula**  
+
+The Project Ledger Entry Item Quantity measure calculates the total negative sum of the **Quantity (Base)** column from the **Project Ledger Entries** table.
+
+**Data Source**  
+
+- Project Ledger Entry
+
+### Total Cost
+
+**Formula**  
+
+The Total Cost measure calculates the total sum of the **Total Cost (LCY)** column from the **Project Ledger Entries** table.
+
+**Data Source**  
+
+- Project Ledger Entry
+
+### Total Price
+
+**Formula**  
+
+The Total Price measure calculates the total negative sum of the **Total Price (LCY)** column from the **Project Ledger Entries** table.
+
+**Data Source**  
+
+- Project Ledger Entry
+
 ## Sales Credit Line Table
 
 - [Sales Credit Line Amount](#sales-credit-line-amount)
