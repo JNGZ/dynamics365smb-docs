@@ -153,7 +153,7 @@ The No. of Distinct Items calculates the number of unique items that have been p
 
 ### No. of Posted Purchase Invoices
 
-**Formula**
+**Formula**  
 The No. of Purchase Invoices measure calculates the number of unique posted purchase invoices by counting the distinct count of the Document No. column from the Purchases Value Entries table where Document Type = Posted Purchase Invoice.
 
 **Data Sources**  
@@ -163,7 +163,7 @@ The No. of Purchase Invoices measure calculates the number of unique posted purc
 
 [!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
 
-**Formula**
+**Formula**  
 The No. of Purchase Invoices measure calculates the number of unique posted purchase invoices by counting the distinct count of the Document No. column from the Purchases table where Document Type = Purchase Invoice and Source Type = Value Entries Invoiced.
 
 **Data Sources**  
@@ -531,18 +531,129 @@ The Purchase Invoice Line Quantity Base measure calculates the sum of the Quanti
 - Purchase Invoice Line
 
 ## Pareto Measures
+
 - [Pareto Color Cutoff](#pareto-color-cutoff)
 - [Pareto Cumulative Purchase (LCY)](#pareto-cumulative-purchase-lcy)
-- [Pareto Cumulative Purchase (LCY) %](#pareto-cumulative-purchase-lcy-percent)
+- [Pareto Cumulative Purchase (LCY) %](#pareto-cumulative-purchase-lcy-)
 - [Pareto Cutoff Cumulative Purchase (LCY)](#pareto-cutoff-cumulative-purchase-lcy)
-- [Pareto Cutoff Purchase (LCY) %](#pareto-cutoff-purchase-lcy-percent)
+- [Pareto Cutoff Purchase (LCY) %](#pareto-cutoff-purchase-lcy-)
 - [Pareto Cutoff Vendor](#pareto-cutoff-vendor)
 - [Pareto Cutoff Vendor Rank](#pareto-cutoff-vendor-rank)
 - [Pareto Vendor Cutoff Rank](#pareto-vendor-cutoff-rank)
 - [Pareto Vendor Rank by Purchase (LCY)](#pareto-vendor-rank-by-purchase-lcy)
 - [Pareto Total Purchase (LCY)](#pareto-total-purchase-lcy)
 
+### Pareto Color Cutoff
+
+**Formula**  
+The color cutoff where **Pareto Vendor Rank by Purchase (LCY)** exceeds the **Pareto Vendor Rank by Purchase (LCY)**.
+
+**Data Sources**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Pareto Cumulative Purchase (LCY)
+
+**Formula**  
+
+The **Cumulative Purchase (LCY)** based on the **Pareto Vendor Rank by Purchase (LCY)**.
+
+**Data Source**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Pareto Cumulative Purchase (LCY) %
+
+**Formula**  
+
+The **Cumulative Purchase (LCY)** divided by the **Pareto Total Purchase (LCY)**.
+
+**Data Source**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Pareto Cutoff Cumulative Purchase (LCY)
+
+**Formula**  
+
+The **Cumulative Purchase (LCY)** for the **Pareto Cutoff Vendor**.
+
+**Data Source**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Pareto Cutoff Purchase (LCY) %
+
+**Formula**  
+
+The **Pareto Cumulative Purchase (LCY)** for the **Pareto Cutoff Vendor**.
+
+**Data Source**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Pareto Cutoff Vendor
+
+**Formula**  
+
+The Vendor with the maximum difference of the **Pareto Cumulative Purchase (LCY)** minus the **Pareto Value**.
+
+**Data Source**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Pareto Cutoff Vendor Rank
+
+**Formula**  
+
+The **Pareto Vendor Rank by Purchase (LCY)** for the **Pareto Cutoff Vendor**.
+
+**Data Source**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Pareto Vendor Cutoff Rank
+
+**Formula**  
+
+The maximum **Pareto Vendor Rank** based on the **Pareto Cutoff Vendor Rank**.
+
+**Data Source**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Pareto Vendor Rank by Purchase (LCY)
+
+**Formula**  
+
+The **Pareto Vendor Rank** ordered by the **Purchase (LCY)** for all purchases from the **Purchase Value Entries**, **Purchase Credit Lines** and **Purchase Invoice Lines** tables.
+
+**Data Source**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
+### Pareto Total Purchase (LCY)
+
+**Formula**  
+
+The total **Purchase (LCY)** for all purchases from the **Purchase Value Entries**, **Purchase Credit Lines** and **Purchase Invoice Lines** tables.
+
+**Data Source**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Memo Line
+
 ## Vendor Measures
+
 - [Spend Reliance %](#spend-reliance-percent)
 - [Item Reliance %](#item-reliance-percent)
 
