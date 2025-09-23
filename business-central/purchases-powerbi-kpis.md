@@ -122,32 +122,42 @@ The Purchase Quantity measure sums the the Purchase Quantity column of the Purch
 ## Purchase Value Entries
 
 - **Counters**
-    - [No. of Distinct Items](#no-of-distinct-items)
-    - [No. of Single Supplier Items](#no-of-single-supplier-items)
-    - [No. of Posted Purchase Invoices](#no-of-posted-purchase-invoices)
-    - [No. of Purchase Invoices](#no-of-purchase-invoices)
-    - [No. of Vendors](#no-of-vendors)
+  - [No. of Distinct Items](#no-of-distinct-items)
+  - [No. of Posted Purchase Invoices](#no-of-posted-purchase-invoices)
+  - [No. of Purchase Invoices](#no-of-purchase-invoices)
+  - [No. of Vendors](#no-of-vendors)
+  - [No. of Single Supplier Items](#no-of-single-supplier-items)
 
 - **Purchase Invoice**
-    - [Posted Purchase Invoice Amount](#posted-purchase-invoice-amount)
-    - [Posted Purchase Invoice Quantity](#posted-purchase-invoice-quantity)
-    - [Invoiced Amount](#invoiced-amount)
-    - [Invoiced Quantity](#invoiced-quantity)
+  - [Posted Purchase Invoice Amount](#posted-purchase-invoice-amount)
+  - [Posted Purchase Invoice Quantity](#posted-purchase-invoice-quantity)
+  - [Invoiced Amount](#invoiced-amount)
+  - [Invoiced Quantity](#invoiced-quantity)
 
 - **Purchase CR/Adj Note**
-    - [Posted Purchase CR/Adj Note Amount](#posted-purchase-cr-adj-note-amount)
-    - [Posted Purchase CR/Adj Note Quantity](#posted-purchase-cr-adj-note-quantity)
+  - [Posted Purchase CR/Adj Note Amount](#posted-purchase-cradj-note-amount)
+  - [Posted Purchase CR/Adj Note Quantity](#posted-purchase-cradj-note-quantity)
 
 - [Purchase Value Entries Amount](#purchase-value-entries-amount)
 - [Purchase Value Entries Quantity](#purchase-value-entries-quantity)
-- [Purchase Value Entries Discount %](#purchase-value-entries-discount-percent)
 - [Purchase Value Entries Discount Amount](#purchase-value-entries-discount-amount)
+- [Purchase Value Entries Discount %](#purchase-value-entries-discount-)
 
 ### No. of Distinct Items
+
 **Formula**  
 The No. of Distinct Items calculates the number of unique items that have been purchased by counting the distinct values of the Item No. column of the Purchase Value Entry table.
-**Data Sources**
+
+**Data Sources**  
 - Value Entry 
+
+### No. of Posted Purchase Invoices
+
+**Formula**
+The No. of Purchase Invoices measure calculates the number of unique posted purchase invoices by counting the distinct count of the Document No. column from the Purchases Value Entries table where Document Type = Posted Purchase Invoice.
+
+**Data Sources**  
+- Value Entry
 
 ### No. of Purchase Invoices
 
@@ -155,8 +165,41 @@ The No. of Distinct Items calculates the number of unique items that have been p
 
 **Formula**
 The No. of Purchase Invoices measure calculates the number of unique posted purchase invoices by counting the distinct count of the Document No. column from the Purchases table where Document Type = Purchase Invoice and Source Type = Value Entries Invoiced.
-**Data Sources**
+
+**Data Sources**  
 - Purchase Line
+- Value Entry
+
+### No. of Vendors
+
+**Formula**  
+The No. of Vendors calculates the number of unique items that have been purchased by counting the distinct values of the Vendor No. column of the Purchase Value Entry table.
+
+**Data Sources**  
+- Value Entry 
+
+### No. of Single Supplier Items
+
+**Formula**  
+The No. of Single Supplier Items calculates the number of items that have been purchased from a single vendor, by filtering to items where [No. of Vendors](#no-of-vendors) equals one.
+
+**Data Sources**  
+- Value Entry 
+
+### Posted Purchase Invoice Amount
+
+**Formula**  
+The Posted Purchase Invoice Amount calculates the total cost amount that has been purchased and invoiced, by summing the Purchase Value Entries Amount column of the Purchase Value Entries table, where Document Type = Posted Purchase Invoice.
+
+**Data Sources**  
+- Value Entry
+
+### Posted Purchase Invoice Quantity
+
+**Formula**  
+The Posted Purchase Invoice Quantity calculates the total quantity that has been purchased and invoiced, by summing the Purchase Value Entries Quantity column of the Purchase Value Entries table, where Document Type = Posted Purchase Invoice.
+
+**Data Sources**  
 - Value Entry
 
 ### Invoiced Amount
@@ -166,7 +209,7 @@ The No. of Purchase Invoices measure calculates the number of unique posted purc
 **Formula**
 The Invoiced Amount calculates the total amount of items that have been purchased and invoiced, by summing the Purchase Amount column of the Purchases table, where Source Type = Purchase Value Entries Invoiced.
 
-**Data Sources**
+**Data Sources**  
 - Value Entry
 
 ### Invoiced Quantity
@@ -176,7 +219,55 @@ The Invoiced Amount calculates the total amount of items that have been purchase
 **Formula**
 The Invoiced Quantity measure calculates the total quantity of items that have been purchased and invoiced, by summing the Purchase Quantity column of the Purchases table, where Source Type = Purchase Value Entries Invoiced.
 
-**Data Sources**
+**Data Sources**  
+- Value Entry
+
+### Posted Purchase CR/Adj Note Amount
+
+**Formula**
+The Posted Purchase CR/Adj Note Amount calculates the total cost amount that has been credited and invoiced, by summing the Purchase Value Entries Amount column of the Purchase Value Entries table, where Document Type = Posted Purchase CR/Adj Note.
+
+**Data Sources**  
+- Value Entry
+
+### Posted Purchase CR/Adj Note Quantity
+
+**Formula**  
+The Posted Purchase CR/Adj Note Quantity calculates the total quantity that has been credited and invoiced, by summing the Purchase Value Entries Quantity column of the Purchase Value Entries table, where Document Type = Posted Purchase CR/Adj Note.
+
+**Data Sources**  
+- Value Entry
+
+### Purchase Value Entries Amount
+
+**Formula**  
+The Purchase Value Entries Amount calculates the total amount that has been purchased, by summing the Cost Amount Actual column of the Purchase Value Entries table, where Value Entry Type = Direct Cost and Adjustment is false.
+
+**Data Sources**  
+- Value Entry
+
+### Purchase Value Entries Quantity
+
+**Formula**  
+The Purchase Value Entries Quantity calculates the total quantity that has been purchased and invoiced, by summing the Invoiced Quantity column of the Purchase Value Entries table.
+
+**Data Sources**  
+- Value Entry
+
+### Purchase Value Entries Discount Amount
+
+**Formula**  
+The Purchase Value Entries Quantity calculates the total quantity that has been purchased and invoiced, by summing the Invoiced Quantity column of the Purchase Value Entries table.
+
+**Data Sources**  
+- Value Entry
+
+### Purchase Value Entries Discount %
+
+**Formula**  
+*Purchase Value Entries Discount % = [Purchase Value Entries Discount Amount](#purchase-value-entries-discount-amount) / [Purchase Value Entries Amount](#purchase-value-entries-amount)*
+
+**Data Sources**  
 - Value Entry
 
 ## Purchase Lines
