@@ -632,7 +632,7 @@ The Purchase Invoice Line Quantity Base measure calculates the sum of the Quanti
 ### Pareto Color Cutoff
 
 **Formula**  
-The color cutoff where **Pareto Vendor Rank by Purchase (LCY)** exceeds the **Pareto Vendor Rank by Purchase (LCY)**.
+The color cutoff where [Pareto Vendor Rank by Purchase (LCY)](#pareto-vendor-rank-by-purchase-lcy) exceeds the [Pareto Vendor Cutoff Rank](#pareto-vendor-cutoff-rank).
 
 **Data Sources**  
 - Value Entry
@@ -643,7 +643,7 @@ The color cutoff where **Pareto Vendor Rank by Purchase (LCY)** exceeds the **Pa
 
 **Formula**  
 
-The **Cumulative Purchase (LCY)** based on the **Pareto Vendor Rank by Purchase (LCY)**.
+The [Purchase (LCY)](#purchase-lcy) based on the [Pareto Vendor Rank by Purchase (LCY)](#pareto-vendor-rank-by-purchase-lcy).
 
 **Data Source**  
 - Value Entry
@@ -654,7 +654,7 @@ The **Cumulative Purchase (LCY)** based on the **Pareto Vendor Rank by Purchase 
 
 **Formula**  
 
-The **Cumulative Purchase (LCY)** divided by the **Pareto Total Purchase (LCY)**.
+The [Pareto Cumulative Purchase (LCY)](#pareto-cumulative-purchase-lcy) divided by the [Pareto Total Purchase (LCY)](#pareto-total-purchase-lcy).
 
 **Data Source**  
 - Value Entry
@@ -665,7 +665,7 @@ The **Cumulative Purchase (LCY)** divided by the **Pareto Total Purchase (LCY)**
 
 **Formula**  
 
-The **Cumulative Purchase (LCY)** for the **Pareto Cutoff Vendor**.
+The [Pareto Cumulative Purchase (LCY)](#pareto-cumulative-purchase-lcy) for the [Pareto Cutoff Vendor](#pareto-cutoff-vendor).
 
 **Data Source**  
 - Value Entry
@@ -676,7 +676,7 @@ The **Cumulative Purchase (LCY)** for the **Pareto Cutoff Vendor**.
 
 **Formula**  
 
-The **Pareto Cumulative Purchase (LCY)** for the **Pareto Cutoff Vendor**.
+The [Pareto Cumulative Purchase (LCY) %](#pareto-cumulative-purchase-lcy-) for the [Pareto Cutoff Vendor](#pareto-cutoff-vendor).
 
 **Data Source**  
 - Value Entry
@@ -687,7 +687,7 @@ The **Pareto Cumulative Purchase (LCY)** for the **Pareto Cutoff Vendor**.
 
 **Formula**  
 
-The Vendor with the maximum difference of the **Pareto Cumulative Purchase (LCY)** minus the **Pareto Value**.
+The Vendor with the maximum difference of the [Pareto Cumulative Purchase (LCY) %](#pareto-cumulative-purchase-lcy-) minus the **Pareto Value**.
 
 **Data Source**  
 - Value Entry
@@ -698,7 +698,7 @@ The Vendor with the maximum difference of the **Pareto Cumulative Purchase (LCY)
 
 **Formula**  
 
-The **Pareto Vendor Rank by Purchase (LCY)** for the **Pareto Cutoff Vendor**.
+The [Pareto Vendor Rank by Purchase (LCY)](#pareto-vendor-rank-by-purchase-lcy) for the [Pareto Cutoff Vendor](#pareto-cutoff-vendor).
 
 **Data Source**  
 - Value Entry
@@ -709,7 +709,7 @@ The **Pareto Vendor Rank by Purchase (LCY)** for the **Pareto Cutoff Vendor**.
 
 **Formula**  
 
-The maximum **Pareto Vendor Rank** based on the **Pareto Cutoff Vendor Rank**.
+The maximum [Pareto Cutoff Vendor Rank](#pareto-cutoff-vendor-rank) value across all vendors.
 
 **Data Source**  
 - Value Entry
@@ -720,7 +720,7 @@ The maximum **Pareto Vendor Rank** based on the **Pareto Cutoff Vendor Rank**.
 
 **Formula**  
 
-The **Pareto Vendor Rank** ordered by the **Purchase (LCY)** for all purchases from the **Purchase Value Entries**, **Purchase Credit Lines** and **Purchase Invoice Lines** tables.
+The Pareto Vendor Rank by Purchase (LCY) measure calculates the vendor rank, ordered by the [Purchase (LCY)](#purchase-lcy) for all purchases from the **Purchase Value Entries**, **Purchase Credit Lines** and **Purchase Invoice Lines** tables.
 
 **Data Source**  
 - Value Entry
@@ -731,7 +731,7 @@ The **Pareto Vendor Rank** ordered by the **Purchase (LCY)** for all purchases f
 
 **Formula**  
 
-The total **Purchase (LCY)** for all purchases from the **Purchase Value Entries**, **Purchase Credit Lines** and **Purchase Invoice Lines** tables.
+The total [Purchase (LCY)](#purchase-lcy) for all purchases from the **Purchase Value Entries**, **Purchase Credit Lines** and **Purchase Invoice Lines** tables.
 
 **Data Source**  
 - Value Entry
