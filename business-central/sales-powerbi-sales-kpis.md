@@ -31,6 +31,7 @@ Explore the KPIs to learn more about how they can help you achieve your business
 - [No. of New Customers](#no-of-new-customers)
 - [No. of Recovered Customers](#no-of-recovered-customers)
 - [No. of Returning Customers](#no-of-returning-customers)
+- [No. of Temporarily Lost Customers](#no-of-temporarily-lost-customers)
 - [Sales Lost Customers (12M)](#sales-lost-customers-12m)
 - [Sales New Customers](#sales-new-customers)
 - [Sales Recovered Customers](#sales-recovered-customers)
@@ -290,52 +291,424 @@ The **No. of Won Opportunities** divided by the sum of the  **No. of Won Opportu
 
 - Opportunity Entries
 
-## Sales Table
+## Sales Measures
 
-**Counters**
-
-- [No. of Distinct Items](#no-of-distinct-items)
-- [No. of Outstanding Sales Orders](#no-of-outstanding-sales-orders)
-- [No. of Posted Sales Invoices](#no-of-posted-sales-invoices)
-- [No. of Return Orders](#no-of-return-orders)
-- [No. of Sales Quotes](#no-of-sales-quotes)
-- [No. of Shipped Not Invoiced Sales](#no-of-shipped-not-invoiced-sales)
-
-**Sales Measures**
-
-- **Invoiced**
-
-   - [Invoiced Amount](#invoiced-amount)
-   - [Invoiced Quantity](#invoiced-quantity)
-- **Outstanding**
-
-   - [Outstanding Amount](#outstanding-amount)
-   - [Outstanding Quantity](#outstanding-quantity)
-- **Shipped Not Invoiced**
-
-   - [Shipped Not Invoiced Amount](#shipped-not-invoiced-amount)
-   - [Shipped Not Invoiced Quantity](#shipped-not-invoiced-quantity)
-
-- **Pareto Measures**
-   - [Pareto Color Cutoff](#pareto-color-cutoff)
-   - [Pareto Cumulative Gross Profit](#pareto-cumulative-gross-profit)
-   - [Pareto Cumulative Gross Profit %](#pareto-cumulative-gross-profit-percent)
-   - [Pareto Customer Cutoff Rank](#pareto-customer-cutoff-rank)
-   - [Pareto Customer Rank by Gross Profit](#pareto-customer-rank-by-gross-profit)
-   - [Pareto Cutoff Cumulative Gross Profit](#pareto-cutoff-cumulative-gross-profit)
-   - [Pareto Cutoff Customer](#pareto-cutoff-customer)
-   - [Pareto Cutoff Customer Rank](#pareto-cutoff-customer-rank)
-   - [Pareto Cutoff Gross Profit %](#pareto-cutoff-gross-profit-percent)
-   - [Pareto Total Gross Profit](#pareto-total-gross-profit)
-- [Cost Amount](#cost-amount)
-- [Cost Amount Non-Inv](#cost-amount-non-inv)
+- [Adjusted Cost (LCY)](#adjusted-cost-lcy)
+- [Adjusted Profit (LCY)](#adjusted-profit-lcy)
+- [Adjusted Profit Margin](#adjusted-profit-margin)
+- [Return Rate (Amount)](#return-rate-amount)
+- [Return Rate (Qty.)](#return-rate-qty)
+- [Sales (LCY)](#sales-lcy)
+- [Sales (LCY) (Forecasting)](#sales-lcy-forecasting)
+- [Sales Quantity](#sales-lcy)
+- [Credit Adjusted Profit (LCY)](#credit-adjusted-profit-lcy)
+- [Total Credit (Amount)](#total-credit-amount)
+- [Total Credit (Qty.)](#total-credit-qty)
+- [Total Sales (Amount)](#total-sales-amount)
+- [Sales Quantity](#sales-quantity)
 - [Gross Profit](#gross-profit)
 - [Gross Profit Margin](#gross-profit-margin)
 - [Return Rate](#return-rate)
 - [Sales Amount](#sales-amount)
-- [Sales Quantity](#sales-quantity)
+
+### Sales Quantity
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The sum of the **Sales Qty. (Base)** column from the **Sales** table.
+
+**Data Sources**
+
+- Value Entries
+- Sales Line
+
+### Gross Profit
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The **Sales Amount** minus the **Cost Amount** minus the **Cost Amount Non-Inv.**
+
+**Data Sources**
+
+- Value Entries
+- Sales Line
+
+### Gross Profit Margin
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The **Gross Profit** divided by the **Sales Amount**.
+
+**Data Sources**
+
+- Value Entries
+- Sales Line
+
+### Return Rate
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+This measure calculates the sales amount where the **Document Type** is **Sales Credit Memo**, divided by the sales amount where the **Document Type** is **Sales Invoice**.
+
+**Data Sources**
+
+- Value Entries
+- Sales Line
+
+### Sales Amount
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The sum of the **Sales Amt. (LCY)** column from the **Sales** table.
+
+**Data Sources**
+
+- Value Entries
+- Sales Line
+
+## Pareto Measures
+
+- [Pareto Color Cutoff](#pareto-color-cutoff)
+- [Pareto Customer Cutoff Rank](#pareto-customer-cutoff-rank)
+- [Pareto Cutoff Customer](#pareto-cutoff-customer)
+- [Pareto Cutoff Customer Rank](#pareto-cutoff-customer-rank)
+- [Pareto Cumulative Adjusted Profit (LCY)](#pareto-cumulative-adjusted-profit-lcy)
+- [Pareto Cumulative Adjusted Profit %](#pareto-cumulative-adjusted-profit-)
+- [Pareto Customer Rank by Adjusted Profit (LCY)](#pareto-customer-rank-by-adjusted-profit-lcy)
+- [Pareto Cutoff Cumulative Adjusted Profit (LCY)](#pareto-cutoff-cumulative-adjusted-profit-lcy)
+- [Pareto Cutoff Adjusted Profit %](#pareto-cutoff-adjusted-profit-)
+- [Pareto Total Adjusted Profit (LCY)](#pareto-total-adjusted-profit-lcy)
+- [Pareto Cumulative Gross Profit](#pareto-cumulative-gross-profit)
+- [Pareto Cumulative Gross Profit %](#pareto-cumulative-gross-profit-percent)
+- [Pareto Customer Rank by Gross Profit](#pareto-customer-rank-by-gross-profit)
+- [Pareto Cutoff Cumulative Gross Profit](#pareto-cutoff-cumulative-gross-profit)
+- [Pareto Cutoff Gross Profit %](#pareto-cutoff-gross-profit-percent)
+- [Pareto Total Gross Profit](#pareto-total-gross-profit)
+
+### Pareto Color Cutoff
+
+**Formula**  
+
+The color cutoff where **Pareto Customer Rank by Gross Profit** exceeds the **Pareto Customer Rank by Gross Profit**.
+
+**Data Source**
+
+- Sales Line
+
+### Pareto Customer Cutoff Rank
+
+**Formula**  
+
+The maximum **Pareto Customer Rank** based on the **Pareto Cutoff Customer Rank**.
+
+**Data Source**
+
+- Sales Line
+
+### Pareto Cutoff Customer
+
+**Formula**  
+
+The Customer with the maximum difference of the **Pareto Cumulative Gross Profit** minus the **Pareto Value**.
+
+**Data Source**
+
+- Sales Line
+
+### Pareto Cutoff Customer Rank
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The **Pareto Customer Rank by Gross Profit** for the **Pareto Cutoff Customer**.
+
+**Data Source**
+
+- Sales Line
+
+### Pareto Cumulative Gross Profit
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The **Cumulative Gross Profit** based on the **Pareto Customer Rank by Gross Profit**.
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Data Source**
+
+- Sales Line
+
+### Pareto Cumulative Gross Profit Percent
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The **Cumulative Gross Profit** divided by the **Total Gross Profit**.
+
+**Data Source**
+
+- Sales Line
+
+### Pareto Customer Rank by Gross Profit
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The **Pareto Customer Rank** ordered by the **Gross Profit** on the **Sales** table.
+
+**Data Source**
+
+- Sales Line
+
+### Pareto Cutoff Cumulative Gross Profit
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The **Cumulative Gross Profit** for the **Pareto Cutoff Customer**.
+
+**Data Source**
+
+- Sales Line
+
+### Pareto Cutoff Gross Profit Percent
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The **Pareto Cumulative Gross Profit** for the **Pareto Cutoff Customer**.
+
+**Data Source**
+
+- Sales Line
+
+### Pareto Total Gross Profit
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The **Total Gross Profit** from the **Sales** table for all sales.
+
+**Data Source**
+
+- Sales Line
+
+## Project Ledger Entries Table
+
+- **Sales CR/Adj**
+  - [Sales CR/Adj Item Quantity](#sales-cradj-item-quantity)
+  - [Sales CR/Adj Total Price](#sales-cradj-total-price)
+- **Sales Invoices**
+  - [Sales Invoice Item Quantity](#sales-invoice-item-quantity)
+  - [Sales Invoice Total Price](#sales-invoice-total-price)
+- [Project Ledger Entry Gross Profit Margin](#project-ledger-entry-gross-profit-margin)
+- [Project Ledger Entry Item Gross Profit](#project-ledger-entry-item-gross-profit)
+- [Project Ledger Entry Item Quantity](#project-ledger-entry-item-quantity)
+- [Total Cost](#total-cost)
+- [Total Price](#total-price)
+
+## Sales Credit Line Table
+
+- [Sales Credit Line Amount](#sales-credit-line-amount)
+- [Sales Credit Line Cost Amount](#sales-credit-line-cost-amount)
+- [Sales Credit Line Gross Profit](#sales-credit-line-gross-profit)
+- [Sales Credit Line Gross Profit Margin](#sales-credit-line-gross-profit-margin)
+- [Sales Credit Line Quantity](#sales-credit-line-quantity)
+
+## Sales Invoice Line Table
+
+- [Sales Invoice Line Amount](#sales-invoice-line-amount)
+- [Sales Invoice Line Cost Amount](#sales-invoice-line-cost-amount)
+- [Sales Invoice Line Gross Profit](#sales-invoice-line-gross-profit)
+- [Sales Invoice Line Gross Profit Margin](#sales-invoice-line-gross-profit-margin)
+- [Sales Invoice Line Quantity](#sales-invoice-line-quantity)
+
+## Sales Line Table
+
+- **Counters**
+  - [No. of Outstanding Cr/Adj Notes](#no-of-outstanding-cradj-notes)
+  - [No. of Outstanding Invoices](#no-of-outstanding-invoices)
+  - [No. of Outstanding Return Orders](#no-of-outstanding-return-orders)
+  - [No. of Outstanding Sales Orders](#no-of-outstanding-sales-orders)
+  - [No. of Sales Quotes](#no-of-sales-quotes)
+  - [No. of Shipped Not Invoiced Sales Orders](#no-of-shipped-not-invoiced-sales-orders)
+  - [No. of Return Orders](#no-of-return-orders)
+- **Outstanding**
+  - [Outstanding Invoices (LCY)](#outstanding-invoices-lcy)
+  - [Outstanding Orders (LCY)](#outstanding-orders-lcy)
+  - [Outstanding Quantity](#outstanding-quantity)
+  - [Outstanding Amount](#outstanding-amount)
+- **Quote**
+  - [Sales Quote Adjusted Cost (LCY)](#sales-quote-adjusted-cost-lcy)
+  - [Sales Quote Adjusted Profit (LCY)](#sales-quote-adjusted-profit-lcy)
+  - [Sales Quote Adjusted Profit Margin](#sales-quote-adjusted-profit-margin)
+  - [Sales Quote Quantity](#sales-quote-quantity)
+  - [Sales Quote Sales (LCY)](#sales-quote-sales-lcy)
+- **Received Not Invoiced**
+  - [Received Not Invd. Amount](#received-not-invd-amount)
+  - [Received Not Invd. Amount Excl. Tax](#received-not-invd-amount-excl-tax)
+- **Return Order**
+  - [Outstanding Return Order (LCY)](#outstanding-return-order-lcy)
+  - [Return Amount](#return-amount)
+  - [Return Qty. Invoiced](#return-qty-invoiced)
+  - [Return Qty. Shipped](#return-qty-shipped)
+  - [Return Qty. to Ship](#return-qty-to-ship)
+  - [Return Quantity](#return-quantity)
+- **Shipped Not Invoiced**
+  - [Shipped Not Invoiced (LCY)](#shipped-not-invoiced-lcy)
+  - [Shipped Not Invoiced Amount](#shipped-not-invoiced-amount)
+  - [Shipped Not Invoiced Quantity](#shipped-not-invoiced-quantity)
+- [Sales Line Cost Amount](#sales-line-cost-amount)
+- [Sales Line Gross Profit](#sales-line-gross-profit)
+
+### No. of Outstanding Sales Orders
+
+**Formula**  
+
+The count of the **Document No.** column from the **Sales** table where the **Document Type** is **Order** and the **Source Type** is **Sales Order Outstanding**.
+
+**Data Sources**
+
+- Sales Line
+
+### No. of Sales Quotes
+
+**Formula**  
+
+Distinct count of the **Document No.** column from the **Sales** table, where the **Document Type** is **Sales Quote**.
+
+**Data Sources**
+
+- Value Entries
+- Sales Line
+
+### No. of Shipped Not Invoiced Sales Orders
+
+**Formula**  
+
+The count of the **Document No.** column from the **Sales** table where the **Document Type** is **Order** and the **Source Type** is **Sales Order Shipped Not Invoiced**.
+
+**Data Sources**
+
+- Value Entries
+- Sales Line
+
+### No. of Return Orders
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+Distinct count of the **Document No.** column from the **Sales** table, where the **Document Type** is **Return Order**.
+
+**Data Sources**
+
+- Value Entries
+- Sales Line
+
+### Outstanding Quantity
+
+**Formula**  
+
+The sum of the **Sales Qty. (Base)** column from the **Sales** table where the **Source Type** is **Sales Order Outstanding**.
+
+**Data Source**
+
+- Sales Line
+
+### Outstanding Amount
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The sum of the **Sales Amount** column from the **Sales** table where the **Source Type** is **Sales Order Outstanding**.
+
+**Data Source**
+
+- Sales Line
+
+### Shipped Not Invoiced Amount
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The sum of the **Sales Amount** column from the **Sales** table where the **Source Type** is **Sales Order Shipped Not Invoiced**.
+
+**Data Source**
+
+- Sales Line
+
+### Shipped Not Invoiced Quantity
+
+**Formula**  
+
+The sum of the **Sales Qty. (Base)** column from the **Sales** table where the **Source Type** is **Sales Order Shipped Not Invoiced**.
+
+## Sales Value Entries Table
+
+- **Counters**
+  - [No. of Distinct Items](#no-of-distinct-items)
+  - [No. of Posted Sales Invoices](#no-of-posted-sales-invoices)
+- **Cr/Adj Notes**
+  - [Posted Sales CR/Adj Note Amount](#posted-sales-cradj-note-amount)
+  - [Posted Sales CR/Adj Note Cost Amount](#posted-sales-cradj-note-cost-amount)
+  - [Posted Sales CR/Adj Note Cost Amount Non-Inv](#posted-sales-cradj-note-cost-amount-non-inv)
+  - [Posted Sales CR/Adj Note Quantity](#posted-sales-cradj-note-quantity)
+- **Sales Invoices**
+  - [Posted Sales Invoice Amount](#posted-sales-invoice-amount)
+  - [Posted Sales Invoice Quantity](#posted-sales-invoice-quantity)
+- [Cost Amount Actual](#cost-amount-actual)
+- [Cost Amount](#cost-amount)
+- [Cost Amount Non-Inv](#cost-amount-non-inv)
+- [Cost Posted to G/L](#cost-posted-to-gl)
+- [Invoiced Quantity](#invoiced-quantity)
+- [Invoiced Amount](#invoiced-amount)
+
+### No. of Distinct Items
+
+**Formula**  
+
+The count of the **Item No.** column from the **Sales** table.
+
+**Data Sources**
+
+- Value Entries
+- Sales Line
+
+### No. of Posted Sales Invoices
+
+**Formula**  
+
+The count of the **Document No.** column from the **Sales** table where the **Document Type** is **Sales Invoice** and the **Source Type** is **Value Entries Invoiced**.
+
+**Data Sources**
+
+- Value Entries
+- Sales Line
 
 ### Invoiced Amount
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
 
 **Formula**  
 
@@ -355,145 +728,28 @@ The sum of the **Sales Qty. (Base)** column from the **Sales** table where the *
 
 - Value Entries
 
-### Outstanding Amount
+### Cost Amount
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
 
 **Formula**  
 
-The sum of the **Sales Amount** column from the **Sales** table where the **Source Type** is **Sales Order Outstanding**.
+The sum of the **Cost Amt. (LCY)** column from the **Sales** table.
 
-**Data Source**
+**Data Sources**
 
+- Value Entries
 - Sales Line
 
-### Outstanding Quantity
+### Cost Amount Non-Inv
 
 **Formula**  
 
-The sum of the **Sales Qty. (Base)** column from the **Sales** table where the **Source Type** is **Sales Order Outstanding**.
+The sum of the **Cost Amt. Non-Invtbl. (LCY)** column from the **Sales** table.
 
 **Data Source**
 
-- Sales Line
-
-### Shipped Not Invoiced Amount
-
-**Formula**  
-
-The sum of the **Sales Amount** column from the **Sales** table where the **Source Type** is **Sales Order Shipped Not Invoiced**.
-
-**Data Source**
-
-- Sales Line
-
-### Shipped Not Invoiced Quantity
-
-**Formula**  
-
-The sum of the **Sales Qty. (Base)** column from the **Sales** table where the **Source Type** is **Sales Order Shipped Not Invoiced**.
-
-### Pareto Color Cutoff
-
-**Formula**  
-
-The color cutoff where **Pareto Customer Rank by Gross Profit** exceeds the **Pareto Customer Rank by Gross Profit**.
-
-**Data Source**
-
-- Sales Line
-
-### Pareto Cumulative Gross Profit
-
-**Formula**  
-
-The **Cumulative Gross Profit** based on the **Pareto Customer Rank by Gross Profit**.
-
-**Data Source**
-
-- Sales Line
-
-### Pareto Cumulative Gross Profit Percent
-
-**Formula**  
-
-The **Cumulative Gross Profit** divided by the **Total Gross Profit**.
-
-**Data Source**
-
-- Sales Line
-
-### Pareto Customer Cutoff Rank
-
-**Formula**  
-
-The maximum **Pareto Customer Rank** based on the **Pareto Cutoff Customer Rank**.
-
-**Data Source**
-
-- Sales Line
-
-### Pareto Customer Rank by Gross Profit
-
-**Formula**  
-
-The **Pareto Customer Rank** ordered by the **Gross Profit** on the **Sales** table.
-
-**Data Source**
-
-- Sales Line
-
-### Pareto Cutoff Cumulative Gross Profit
-
-**Formula**  
-
-The **Cumulative Gross Profit** for the **Pareto Cutoff Customer**.
-
-**Data Source**
-
-- Sales Line
-
-### Pareto Cutoff Customer
-
-**Formula**  
-
-The Customer with the maximum difference of the **Pareto Cumulative Gross Profit** minus the **Pareto Value**.
-
-**Data Source**
-
-- Sales Line
-
-### Pareto Cutoff Customer Rank
-
-**Formula**  
-
-The **Pareto Customer Rank by Gross Profit** for the **Pareto Cutoff Customer**.
-
-**Data Source**
-
-- Sales Line
-
-### Pareto Cutoff Gross Profit Percent
-
-**Formula**  
-
-The **Pareto Cumulative Gross Profit** for the **Pareto Cutoff Customer**.
-
-**Data Source**
-
-- Sales Line
-
-### Pareto Total Gross Profit
-
-**Formula**  
-
-The **Total Gross Profit** from the **Sales** table for all sales.
-
-**Data Source**
-
-- Sales Line
-
-**Data Source**
-
-- Sales Line
+- Value Entries
 
 ## Sales Budget Table
 
@@ -574,103 +830,7 @@ The **Budget Quantity Variance** minus the **Budget Quantity**.
 - Sales Lines
 - Value Entries
 
-### No. of Distinct Items
-
-**Formula**  
-
-The count of the **Item No.** column from the **Sales** table.
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
-
-### No. of Outstanding Sales Orders
-
-**Formula**  
-
-The count of the **Document No.** column from the **Sales** table where the **Document Type** is **Order** and the **Source Type** is **Sales Order Outstanding**.
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
-
-### No. of Posted Sales Invoices
-
-**Formula**  
-
-The count of the **Document No.** column from the **Sales** table where the **Document Type** is **Sales Invoice** and the **Source Type** is **Value Entries Invoiced**.
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
-
-### No. of Return Orders
-
-**Formula**  
-
-Distinct count of the **Document No.** column from the **Sales** table, where the **Document Type** is **Return Order**.
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
-
-### No. of Sales Quotes
-
-**Formula**  
-
-Distinct count of the **Document No.** column from the **Sales** table, where the **Document Type** is **Sales Quote**.
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
-
-### No. of Shipped Not Invoiced Sales
-
-**Formula**  
-
-The count of the **Document No.** column from the **Sales** table where the **Document Type** is **Order** and the **Source Type** is **Sales Order Shipped Not Invoiced**.
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
-
-### Cost Amount
-
-**Formula**  
-
-The sum of the **Cost Amt. (LCY)** column from the **Sales** table.
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
-
-### Cost Amount Non-Inv
-
-**Formula**  
-
-The sum of the **Cost Amt. Non-Invtbl. (LCY)** column from the **Sales** table.
-
-**Data Source**
-
-- Value Entries
-
-### Gross Profit
-
-**Formula**  
-
-The **Sales Amount** minus the **Cost Amount** minus the **Cost Amount Non-Inv.**
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
+<!-- Restructure heading for Time Intelligence -->
 
 ### Gross Profit MTD (Fiscal)
 
@@ -683,50 +843,6 @@ This measure calculates month-to-date gross profit using the fiscal calendar, co
 - Value Entries
 - Sales Line
 - Date (Fiscal Calendar)
-
-### Gross Profit Margin
-
-**Formula**  
-
-The **Gross Profit** divided by the **Sales Amount**.
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
-
-### Return Rate
-
-**Formula**  
-
-This measure calculates the sales amount where the **Document Type** is **Sales Credit Memo**, divided by the sales amount where the **Document Type** is **Sales Invoice**.
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
-
-### Sales Amount
-
-**Formula**  
-
-The sum of the **Sales Amt. (LCY)** column from the **Sales** table.
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
-
-### Sales Quantity
-
-**Formula**  
-
-The sum of the **Sales Qty. (Base)** column from the **Sales** table.
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
 
 ### Sales Amount MTD (Fiscal)
 
