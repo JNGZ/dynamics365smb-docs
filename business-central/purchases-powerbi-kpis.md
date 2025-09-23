@@ -489,12 +489,46 @@ The Return Qty. to Ship measure calculates the sum of the Outstanding Quantity (
 - Value Entry
 
 ## Purchase Credit Lines
+
 - [Purchase Credit Line Amount](#purchase-credit-line-amount)
 - [Purchase Credit Line Quantity Base](#purchase-credit-line-quantity-base)
 
+### Purchase Credit Line Amount
+
+**Formula**  
+The Purchase Credit Line Amount measure calculates the negative sum of the Amount column from the Purchase Credit Line table.
+
+**Data Sources**  
+- Purchase Credit Memo Line
+
+### Purchase Credit Line Quantity Base
+
+**Formula**  
+The Purchase Credit Line Quantity Base measure calculates the sum of the Quantity Base column from the Purchase Credit Line table.
+
+**Data Sources**  
+- Purchase Credit Memo Line
+
 ## Purchase Invoice Lines
+
 - [Purchase Invoice Line Amount](#purchase-invoice-line-amount)
 - [Purchase Invoice Line Quantity Base](#purchase-invoice-line-quantity-base)
+
+### Purchase Invoice Line Amount
+
+**Formula**  
+The Purchase Invoice Line Amount measure calculates the sum of the Amount column from the Purchase Invoice Line table.
+
+**Data Sources**  
+- Purchase Invoice Line
+
+### Purchase Invoice Line Quantity Base
+
+**Formula**  
+The Purchase Invoice Line Quantity Base measure calculates the sum of the Quantity Base column from the Purchase Invoice Line table.
+
+**Data Sources**  
+- Purchase Invoice Line
 
 ## Pareto Measures
 - [Pareto Color Cutoff](#pareto-color-cutoff)
