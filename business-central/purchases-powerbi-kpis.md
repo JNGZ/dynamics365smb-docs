@@ -273,47 +273,90 @@ The Purchase Value Entries Quantity calculates the total quantity that has been 
 ## Purchase Lines
 
 - **Counters**
-    - [No. of Outstanding Invoices](#no-of-outstanding-purchase-invoices)
-    - [No. of Outstanding Purchase Orders](#no-of-outstanding-purchase-orders)
-    - [No. of Outstanding Return Orders](#no-of-outstanding-return-orders)
-    - [No. of Purchase Quotes](#no-of-purchase-quotes)
-    - [No. of Received Not Invd. Purchase Orders](#no-of-received-not-invd-purchase-orders)
-    
+  - [No. of Outstanding Invoices](#no-of-outstanding-invoices)
+  - [No. of Outstanding Purchase Orders](#no-of-outstanding-purchase-orders)
+  - [No. of Outstanding Return Orders](#no-of-outstanding-return-orders)
+  - [No. of Purchase Quotes](#no-of-purchase-quotes)
+  - [No. of Received Not Invd. Purchase Orders](#no-of-received-not-invd-purchase-orders)
+
 - **Outstanding**
-    - [Outstanding Invoices (LCY)](#outstanding-invoices-lcy)
-    - [Outstanding Orders (LCY)](#outstanding-orders-lcy)
-    - [Outstanding Amount (Excl. VAT)](#outstanding-amount-excl-vat)
-    - [Outstanding Quantity](#outstanding-quantity)
+  - [Outstanding Invoices (LCY)](#outstanding-invoices-lcy)
+  - [Outstanding Orders (LCY)](#outstanding-orders-lcy)
+  - [Outstanding Amount (Excl. VAT)](#outstanding-amount-excl-vat)
+  - [Outstanding Quantity](#outstanding-quantity)
 
 - **Quote**
-    - [Purchase Quote Purchase (LCY)](#purchase-quote-purchase-lcy)
-    - [Purchase Quote Quantity](#purchase-quote-quantity)
+  - [Purchase Quote Purchase (LCY)](#purchase-quote-purchase-lcy)
+  - [Purchase Quote Quantity](#purchase-quote-quantity)
 
 - **Received Not Invoiced**
-    - [Amt. Rcd. Not Invoiced (LCY)](#amt-rcd-not-invoiced-lcy)
-    - [Amt. Rcd. Not Invd. (Excl. VAT)](#amt-rcd-not-invd-excl-vat)
-    - [Quantity Rcd. Not Invd.](#amt-rcd-not-invd-excl-vat)
+  - [Amt. Rcd. Not Invoiced (LCY)](#amt-rcd-not-invoiced-lcy)
+  - [Amt. Rcd. Not Invd. (Excl. VAT)](#amt-rcd-not-invd-excl-vat)
+  - [Quantity Rcd. Not Invd.](#amt-rcd-not-invd-excl-vat)
 
 - **Return Order**
-    - [Outstanding Return Order (LCY)](#outstanding-return-order-lcy)
-    - [Return Order Amount](#return-order-amount)
-    - [Return Order Quantity](#return-order-quantity)
-    - [Return Qty. Invoiced](#return-qty-invoiced)
-    - [Return Qty. Shipped](#return-qty-shipped)
-    - [Return Qty. to Invoice](#return-qty-to-invoice)
-    - [Return Qty. to Ship](#return-qty-to-ship)
-    - [Returned Quantity](#returned-quantity)
+  - [Outstanding Return Order (LCY)](#outstanding-return-order-lcy)
+  - [Return Order Amount](#return-order-amount)
+  - [Return Order Quantity](#return-order-quantity)
+  - [Return Qty. Invoiced](#return-qty-invoiced)
+  - [Return Qty. Shipped](#return-qty-shipped)
+  - [Return Qty. to Invoice](#return-qty-to-invoice)
+  - [Return Qty. to Ship](#return-qty-to-ship)
+  - [Returned Quantity](#returned-quantity)
+
+### No. of Outstanding Invoices
+
+**Formula**  
+The No. of Outstanding Invoices calculates the number of unique purchase invoices that are currently outstanding, by counting the distinct values of the Document No. column of the Purchase Lines table, where Document Type = Invoice.
+
+**Data Sources**  
+- Purchase Line
 
 ### No. of Outstanding Purchase Orders
+
 **Formula**  
 The No. of Outstanding Purchase Orders calculates the number of unique purchase orders that are currently outstanding, by counting the distinct values of the Document No. column of the Purchase Lines table, where Document Type = Order.
-**Data Sources**
+
+**Data Sources**  
+- Purchase Line
+
+### No. of Outstanding Return Orders
+
+**Formula**  
+The No. of Outstanding Return Orders calculates the number of unique purchase return orders that are currently outstanding, by counting the distinct values of the Document No. column of the Purchase Lines table, where Document Type = Return Order.
+
+**Data Sources**  
+- Purchase Line
+
+### No. of Purchase Quotes
+
+**Formula**  
+The No. of Purchase Quotes calculates the number of unique purchase quotes, by counting the distinct values of the Document No. column of the Purchase Lines table, where Document Type = Quote.
+
+**Data Sources**  
 - Purchase Line
 
 ### No. of Received Not Invd. Purchase Orders
 **Formula**
 The No. of Received Not Invd. Purchase Orders measure calculates the number of unique purchase orders that are received but not invoiced, by counting the distinct count of Document No. column from the Purchases table where Document Type = Order.
-**Data Sources**
+
+**Data Sources**  
+- Purchase Line
+
+### Outstanding Invoices (LCY)
+
+**Formula**  
+The Outstanding Invoices (LCY) measure calculates the sum of the Outstanding Amount (LCY) column from the Purchase Line table where Document Type = Invoice.
+
+**Data Sources**  
+- Purchase Line
+
+### Outstanding Orders (LCY)
+
+**Formula**  
+The Outstanding Orders (LCY) measure calculates the sum of the Outstanding Amount (LCY) column from the Purchase Line table where Document Type = Order.
+
+**Data Sources**  
 - Purchase Line
 
 ### Outstanding Amount (Excl. VAT)
@@ -332,6 +375,30 @@ The Outstanding Amount (Excl. VAT) measure calculates the sum of Purchase Amount
 
 **Formula**  
 The Outstanding Quantity measure calculates the sum of Purchase Qty. (Base) column from the Purchases table where Source Type = Purchase Order Outstanding.
+
+**Data Sources**
+- Purchase Line
+
+### Purchase Quote Purchase (LCY)
+
+**Formula**  
+The Purchase Quote Purchase (LCY) measure calculates the sum of the Outstanding Amount (LCY) column from the Purchase Line table where Document Type = Quote.
+
+**Data Sources**  
+- Purchase Line
+
+### Purchase Quote Quantity
+
+**Formula**  
+The Purchase Quote Quantity measure calculates the sum of the Outstanding Quantity (Base) column from the Purchase Line table where Document Type = Quote.
+
+**Data Sources**  
+- Purchase Line
+
+### Amt. Rcd. Not Invoiced (LCY)
+
+**Formula**  
+The Amt. Rcd. Not Invoiced (LCY) measure calculates the sum of the Amount Received Not Invoiced (LCY) column from the Purchase Line table where Document Type = Order.
 
 **Data Sources**
 - Purchase Line
@@ -355,6 +422,71 @@ The Quantity Rcd. Not Invd. measure calculates the sum of Purchase Qty. (Base) c
 
 **Data Sources**
 - Purchase Line
+
+### Outstanding Return Order (LCY)
+
+**Formula**  
+The Outstanding Return Order (LCY) measure calculates the sum of the Outstanding Amount (LCY) column from the Purchase Line table where Document Type = Return Order or Cr/Adj Note.
+
+**Data Sources**  
+- Purchase Line
+
+### Return Order Amount
+
+**Formula**  
+The Return Order Amount measure calculates the sum of the Amount column from the Purchase Line table where Document Type = Return Order or Cr/Adj Note.
+
+**Data Sources**  
+- Purchase Line
+
+### Return Order Quantity
+
+**Formula**  
+The Return Order Quantity measure calculates the sum of the Quantity (Base) column from the Purchase Line table where Document Type = Return Order or Cr/Adj Note.
+
+**Data Sources**  
+- Purchase Line
+
+### Return Qty. Invoiced
+
+**Formula**  
+The Return Qty. Invoiced measure calculates the sum of the Quantity Invoiced column from the Purchase Line table where Document Type = Return Order or Cr/Adj Note.
+
+**Data Sources**  
+- Purchase Line
+
+### Return Qty. Shipped
+
+**Formula**  
+*Return Qty. Shipped = [Return Order Quantity](#return-order-quantity) - [Return Qty. to Ship](#return-qty-to-ship)*
+
+**Data Sources**  
+- Purchase Line
+
+### Return Qty. to Invoice
+
+**Formula**  
+*Return Qty. to Invoice = [Return Order Quantity](#return-order-quantity) - [Return Qty. Invoiced](#return-qty-invoiced)*
+
+**Data Sources**  
+- Purchase Line
+
+### Return Qty. to Ship
+
+**Formula**  
+The Return Qty. to Ship measure calculates the sum of the Outstanding Quantity (Base) column from the Purchase Line table where Document Type = Return Order or Cr/Adj Note.
+
+**Data Sources**  
+- Purchase Line
+
+### Returned Quantity
+
+**Formula**  
+*Returned Quantity = [Posted Purchase CR/Adj Note Quantity](#posted-purchase-cradj-note-quantity) + [Return Qty. to Invoice](#return-qty-to-invoice)*
+
+**Data Sources**  
+- Purchase Line
+- Value Entry
 
 ## Purchase Credit Lines
 - [Purchase Credit Line Amount](#purchase-credit-line-amount)
