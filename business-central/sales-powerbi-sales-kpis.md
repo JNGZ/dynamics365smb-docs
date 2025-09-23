@@ -399,43 +399,121 @@ The sum of the **Sales Amt. (LCY)** column from the **Sales** table.
 
 **Formula**  
 
-The color cutoff where **Pareto Customer Rank by Gross Profit** exceeds the **Pareto Customer Rank by Gross Profit**.
+The color cutoff where [Pareto Customer Rank by Adjusted Profit (LCY)](#pareto-customer-rank-by-adjusted-profit-lcy) exceeds the [Pareto Customer Cutoff Rank](#pareto-customer-cutoff-rank).
 
-**Data Source**
-
-- Sales Line
+**Data Source**  
+- Value Entry
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
 
 ### Pareto Customer Cutoff Rank
 
 **Formula**  
 
-The maximum **Pareto Customer Rank** based on the **Pareto Cutoff Customer Rank**.
+The maximum [Pareto Cutoff Customer Rank](#pareto-cutoff-customer-rank) for all customers.
 
-**Data Source**
-
-- Sales Line
+**Data Source**  
+- Value Entry
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
 
 ### Pareto Cutoff Customer
 
 **Formula**  
 
-The Customer with the maximum difference of the **Pareto Cumulative Gross Profit** minus the **Pareto Value**.
+The Customer with the maximum difference of the [Pareto Cumulative Adjusted Profit %](#pareto-cumulative-adjusted-profit-) minus the **Pareto Value**.
 
-**Data Source**
-
-- Sales Line
+**Data Source**  
+- Value Entry
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
 
 ### Pareto Cutoff Customer Rank
 
-[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+**Formula**  
+
+The [Pareto Customer Rank by Adjusted Profit (LCY)](#pareto-customer-rank-by-adjusted-profit-lcy) for the [Pareto Cutoff Customer](#pareto-cutoff-customer).
+
+**Data Source**  
+- Value Entry
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Pareto Cumulative Adjusted Profit (LCY)
 
 **Formula**  
 
-The **Pareto Customer Rank by Gross Profit** for the **Pareto Cutoff Customer**.
+The [Adjusted Profit (LCY)](#adjusted-profit-lcy) based on the [Pareto Customer Rank by Adjusted Profit (LCY)](#pareto-customer-rank-by-adjusted-profit-lcy).
 
-**Data Source**
+**Data Source**  
+- Value Entry
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
 
-- Sales Line
+### Pareto Cumulative Adjusted Profit %
+
+**Formula**  
+
+The [Pareto Cumulative Adjusted Profit (LCY)](#pareto-cumulative-adjusted-profit-lcy) divided by the [Pareto Total Adjusted Profit (LCY)](#pareto-total-adjusted-profit-lcy).
+
+**Data Source**  
+- Value Entry
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Pareto Customer Rank by Adjusted Profit (LCY)
+
+**Formula**  
+
+The Pareto Customer Rank by Adjusted Profit (LCY) measure calculates the customer rank, ordered by the [Adjusted Profit (LCY)](#adjusted-profit-lcy) for all sales from the **Sales Value Entries**, **Sales Credit Lines**, **Sales Invoice Lines** and **Project Ledger Entries** tables.
+
+**Data Source**  
+- Value Entry
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Pareto Cutoff Cumulative Adjusted Profit (LCY)
+
+**Formula**  
+
+The [Pareto Cumulative Adjusted Profit (LCY)](#pareto-cumulative-adjusted-profit-lcy)  for the [Pareto Cutoff Customer](#pareto-cutoff-customer).
+
+**Data Source**  
+- Value Entry
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Pareto Cutoff Adjusted Profit %
+
+**Formula**  
+
+The [Pareto Cumulative Adjusted Profit %](#pareto-cumulative-adjusted-profit-) for the [Pareto Cutoff Customer](#pareto-cutoff-customer).
+
+**Data Source**  
+- Value Entry
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Pareto Total Adjusted Profit (LCY)
+
+**Formula**  
+
+The total [Adjusted Profit (LCY)](#adjusted-profit-lcy) for all sales from the **Sales Value Entries**, **Sales Credit Lines**, **Sales Invoice Lines** and **Project Ledger Entries** tables.
+
+**Data Source**  
+- Value Entry
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
 
 ### Pareto Cumulative Gross Profit
 
