@@ -654,8 +654,26 @@ The total **Purchase (LCY)** for all purchases from the **Purchase Value Entries
 
 ## Vendor Measures
 
-- [Spend Reliance %](#spend-reliance-percent)
-- [Item Reliance %](#item-reliance-percent)
+- [Spend Reliance %](#spend-reliance-)
+- [Item Reliance %](#item-reliance-)
+
+### Spend Reliance %
+
+**Formula**  
+The Spend Reliance % measure calculates the [Purchase (LCY)](#purchase-lcy) divided by the total [Purchase (LCY)](#purchase-lcy) across all vendors.
+
+**Data Sources**  
+- Value Entry
+- Purchase Invoice Line
+- Purchase Credit Line
+
+### Item Reliance %
+
+**Formula**  
+The Item Reliance % measure calculates the proportion of transactions for an item based on either the number of unique vendors or number of unique items, from the Purchase Value Entry Table. In a Vendor context, the Item Reliance % measure is calculated as [No. of Distinct Items](#no-of-distinct-items) divided by the total [No. of Distinct Items](#no-of-distinct-items) for all vendors. In an Item context, the Item Reliance % measure is calculated as one divided by the total [No. of Vendors](#no-of-vendors) who have supplied the item.
+
+**Data Sources**  
+- Value Entry
 
 ## Purchase Amount Moving Annual Total
 - [Purchase Amount MAT (Fiscal)](#purchase-amount-mat-fiscal)  
