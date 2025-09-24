@@ -291,8 +291,15 @@ The **No. of Won Opportunities** divided by the sum of the  **No. of Won Opportu
 
 - Opportunity Entries
 
-## Sales Measures
+## Documents Table
 
+- **Sales Credits**
+  - [Credit Adjusted Profit (LCY)](#credit-adjusted-profit-lcy)
+  - [Total Credit (Amount)](#total-credit-amount)
+  - [Total Credit (Qty.)](#total-credit-qty)
+- **Sales Invoices**
+  - [Total Sales (Amount)](#total-sales-amount)
+  - [Total Sales (Qty.)](#total-sales-qty)
 - [Adjusted Cost (LCY)](#adjusted-cost-lcy)
 - [Adjusted Profit (LCY)](#adjusted-profit-lcy)
 - [Adjusted Profit Margin](#adjusted-profit-margin)
@@ -301,28 +308,175 @@ The **No. of Won Opportunities** divided by the sum of the  **No. of Won Opportu
 - [Sales (LCY)](#sales-lcy)
 - [Sales (LCY) (Forecasting)](#sales-lcy-forecasting)
 - [Sales Quantity](#sales-lcy)
-- [Credit Adjusted Profit (LCY)](#credit-adjusted-profit-lcy)
-- [Total Credit (Amount)](#total-credit-amount)
-- [Total Credit (Qty.)](#total-credit-qty)
-- [Total Sales (Amount)](#total-sales-amount)
 - [Sales Quantity](#sales-quantity)
 - [Gross Profit](#gross-profit)
 - [Gross Profit Margin](#gross-profit-margin)
 - [Return Rate](#return-rate)
 - [Sales Amount](#sales-amount)
 
-### Sales Quantity
-
-[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+### Credit Adjusted Profit (LCY)
 
 **Formula**  
 
-The sum of the **Sales Qty. (Base)** column from the **Sales** table.
+*Credit Adjusted Profit (LCY) = [Total Credit (Amount)](#total-credit-amount) + ( [Posted Sales CR/Adj Note Cost Amount](#posted-sales-cradj-note-cost-amount) + [Posted Sales CR/Adj Note Cost Amount Non-Inv](#posted-sales-cradj-note-cost-amount-non-inv) + [Sales Credit Line Cost Amount](#sales-credit-line-cost-amount) )*
 
-**Data Sources**
+**Data Sources**  
 
 - Value Entries
-- Sales Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Total Credit (Amount)
+
+**Formula**  
+
+*Total Credit (Amount) = [Posted Sales CR/Adj Note Amount](#posted-sales-cradj-note-amount) + [Sales Credit Line Amount](#sales-credit-line-amount) + [Sales CR/Adj Total Price](#sales-cradj-total-price)*
+
+**Data Sources**  
+
+- Value Entries
+- Sales Credit Line
+- Project Ledger Entry
+
+### Total Credit (Qty.)
+
+**Formula**  
+
+*Total Credit (Qty.) = [Posted Sales CR/Adj Note Quantity](#posted-sales-cradj-note-quantity) + [Sales Credit Line Quantity](#sales-credit-line-quantity) + [Sales CR/Adj Item Quantity](#sales-cradj-item-quantity)*
+
+**Data Sources**  
+
+- Value Entries
+- Sales Credit Line
+- Project Ledger Entry
+
+### Total Sales (Amount)
+
+**Formula**  
+
+*Total Sales (Amount) = [Posted Sales Invoice Amount](#posted-sales-invoice-amount) + [Sales Invoice Line Amount](#sales-invoice-line-amount) + [Sales Invoice Total Price](#sales-invoice-total-price)*
+
+**Data Sources**  
+
+- Value Entries
+- Sales Invoice Line
+- Project Ledger Entry
+
+### Total Sales (Qty.)
+
+**Formula**  
+
+*Total Sales (Qty.) = [Posted Sales Invoice Quantity](#posted-sales-invoice-quantity) + [Sales Invoice Line Quantity](#sales-invoice-line-quantity) + [Sales Invoice Item Quantity](#sales-invoice-item-quantity)*
+
+**Data Sources**  
+
+- Value Entries
+- Sales Invoice Line
+- Project Ledger Entry
+
+### Adjusted Cost (LCY)
+
+**Formula**  
+
+*Adjusted Cost (LCY) = [Cost Amount Actual](#cost-amount-actual) + [Sales Invoice Line Cost Amount](#sales-invoice-line-cost-amount) + [Sales Credit Line Cost Amount](#sales-credit-line-cost-amount)*
+
+**Data Sources**  
+
+- Value Entries
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Adjusted Profit (LCY)
+
+**Formula**  
+
+*Adjusted Profit (LCY) = [Sales (LCY)](#sales-lcy) + ( [Adjusted Cost (LCY)](#adjusted-cost-lcy) + [Cost Amount Non-Inv](#cost-amount-non-inv) )*
+
+**Data Sources**  
+
+- Value Entries
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Adjusted Profit Margin
+
+**Formula**  
+
+*Adjusted Profit Margin = [Adjusted Profit (LCY)](#adjusted-profit-lcy) / [Sales (LCY)](#sales-lcy)*
+
+**Data Sources**  
+
+- Value Entries
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Return Rate (Amount)
+
+**Formula**  
+
+*Return Rate (Amount) = - [Total Credit (Amount)](#total-credit-amount) / [Total Sales (Amount)](#total-sales-amount)*
+
+**Data Sources**  
+
+- Value Entries
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Return Rate (Qty.)
+
+**Formula**  
+
+*Return Rate (Qty.) = - [Total Credit (Qty.)](#total-credit-qty) / [Total Sales (Qty.)](#total-sales-qty)*
+
+**Data Sources**  
+
+- Value Entries
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Sales (LCY)
+
+**Formula**  
+
+The Sales (LCY) measure calculates the total amount for all invoiced Sales, by calculating the sum of [Sales Amount Actual](#sales-amount-actual), [Total Price](#total-price), [Sales Invoice Line Amount](#sales-invoice-line-amount) and [Sales Credit Line Amount](#sales-credit-line-amount).
+
+**Data Sources**  
+
+- Value Entries
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Sales (LCY) (Forecasting)
+
+**Formula**  
+
+The Sales (LCY) (Forecasting) measure calculates the [Sales (LCY)](#sales-lcy) within the period of dates with sales transactions and inserts zero values for dates without sale entries, for compatibility with forecasting.
+
+**Data Sources**  
+
+- Value Entries
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
+
+### Sales Quantity
+
+**Formula**  
+
+The Sales Quantity measure calculates the total quantity for all invoiced Sales, by calculating the sum of [Invoiced Quantity](#invoiced-quantity), [Project Ledger Item Quantity](#project-ledger-item-quantity), [Sales Invoice Line Quantity](#sales-invoice-line-quantity) and [Sales Credit Line Quantity](#sales-credit-line-quantity).
+
+**Data Sources**  
+
+- Value Entries
+- Sales Invoice Line
+- Sales Credit Line
+- Project Ledger Entry
 
 ### Gross Profit
 
