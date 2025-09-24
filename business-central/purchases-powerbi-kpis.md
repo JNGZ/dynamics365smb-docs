@@ -91,7 +91,7 @@ The Budget Quantity measure sums the Quantity column from the Purchase Budget ta
 
 ## Documents
 
-- [Purchase Amount](#purchase-amount)
+
 - [Purchase Quantity](#purchase-quantity)
 - [Purchase (LCY)](#purchase-lcy)
 - [Purchase (LCY) Forecasting](#purchase-lcy-forecasting)
