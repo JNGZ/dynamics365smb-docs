@@ -34,8 +34,8 @@ The *Purchases by Location* report includes the following KPIs and measures:
 
 - [**Purchase (LCY)**](purchases-powerbi-kpis.md#purchase-lcy)
 - [**Purchase Quantity**](purchases-powerbi-kpis.md#purchase-quantity)
-- [**% GT Purchase (LCY)**](purchases-powerbi-kpis.md#-gt-purchase-lcy)
-- [**% GT Purchase Quantity**](purchases-powerbi-kpis.md#-gt-purchase-quantity)
+- [**% GT Purchase (LCY)**](purchases-powerbi-kpis.md#purchase-lcy)
+- [**% GT Purchase Quantity**](purchases-powerbi-kpis.md#purchase-quantity)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -47,6 +47,7 @@ The report uses data from the following tables in [!INCLUDE[prod_short](includes
 
 - Location
 - Item
+- Vendor
 - Purchase Value Entry
 - Purchase Invoice Lines
 - Purchase Credit Lines
