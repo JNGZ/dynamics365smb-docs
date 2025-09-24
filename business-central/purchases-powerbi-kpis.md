@@ -91,17 +91,16 @@ The Budget Quantity measure sums the Quantity column from the Purchase Budget ta
 
 ## Documents
 
-
-- [Purchase Quantity](#purchase-quantity)
+- [Invoiced Prepayment Amount (LCY)](#invoiced-prepayment-amount-lcy)
 - [Purchase (LCY)](#purchase-lcy)
 - [Purchase (LCY) Forecasting](#purchase-lcy-forecasting)
+- [Purchase Quantity](#purchase-quantity)
 - [Return Rate (Amount)](#return-rate-amount)
 - [Return Rate (Qty.)](#return-rate-qty)
 - [Total Credit (Amount)](#total-credit-amount)
 - [Total Credit (Qty.)](#total-credit-qty)
 - [Total Purchase (Amount)](#total-purchase-amount)
 - [Total Purchase (Qty)](#total-purchase-qty)
-- [Invoiced Prepayment Amount (LCY)](#invoiced-prepayment-amount-lcy)
 
 ### Purchase Amount
 
