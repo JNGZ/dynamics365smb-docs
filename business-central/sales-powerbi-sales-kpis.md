@@ -330,10 +330,6 @@ The **No. of Won Opportunities** divided by the sum of the  **No. of Won Opportu
 - [Sales (LCY) (Forecasting)](#sales-lcy-forecasting)
 - [Sales Quantity](#sales-lcy)
 - [Sales Quantity](#sales-quantity)
-- [Gross Profit](#gross-profit)
-- [Gross Profit Margin](#gross-profit-margin)
-- [Return Rate](#return-rate)
-- [Sales Amount](#sales-amount)
 
 ### Credit Adjusted Profit (LCY)
 
@@ -563,12 +559,6 @@ The sum of the **Sales Amt. (LCY)** column from the **Sales** table.
 - [Pareto Cutoff Cumulative Adjusted Profit (LCY)](#pareto-cutoff-cumulative-adjusted-profit-lcy)
 - [Pareto Cutoff Adjusted Profit %](#pareto-cutoff-adjusted-profit-)
 - [Pareto Total Adjusted Profit (LCY)](#pareto-total-adjusted-profit-lcy)
-- [Pareto Cumulative Gross Profit](#pareto-cumulative-gross-profit)
-- [Pareto Cumulative Gross Profit %](#pareto-cumulative-gross-profit-percent)
-- [Pareto Customer Rank by Gross Profit](#pareto-customer-rank-by-gross-profit)
-- [Pareto Cutoff Cumulative Gross Profit](#pareto-cutoff-cumulative-gross-profit)
-- [Pareto Cutoff Gross Profit %](#pareto-cutoff-gross-profit-percent)
-- [Pareto Total Gross Profit](#pareto-total-gross-profit)
 
 ### Pareto Color Cutoff
 
@@ -993,12 +983,10 @@ The Sales Invoice Line Quantity measure calculates the total sum of the **Quanti
   - [No. of Outstanding Sales Orders](#no-of-outstanding-sales-orders)
   - [No. of Sales Quotes](#no-of-sales-quotes)
   - [No. of Shipped Not Invoiced Sales Orders](#no-of-shipped-not-invoiced-sales-orders)
-  - [No. of Return Orders](#no-of-return-orders)
 - **Outstanding**
   - [Outstanding Invoices (LCY)](#outstanding-invoices-lcy)
   - [Outstanding Orders (LCY)](#outstanding-orders-lcy)
   - [Outstanding Quantity](#outstanding-quantity)
-  - [Outstanding Amount](#outstanding-amount)
 - **Quote**
   - [Sales Quote Adjusted Cost (LCY)](#sales-quote-adjusted-cost-lcy)
   - [Sales Quote Adjusted Profit (LCY)](#sales-quote-adjusted-profit-lcy)
@@ -1017,7 +1005,6 @@ The Sales Invoice Line Quantity measure calculates the total sum of the **Quanti
   - [Return Quantity](#return-quantity)
 - **Shipped Not Invoiced**
   - [Shipped Not Invoiced (LCY)](#shipped-not-invoiced-lcy)
-  - [Shipped Not Invoiced Amount](#shipped-not-invoiced-amount)
   - [Shipped Not Invoiced Quantity](#shipped-not-invoiced-quantity)
 - [Sales Line Cost Amount](#sales-line-cost-amount)
 - [Sales Line Gross Profit](#sales-line-gross-profit)
@@ -1082,19 +1069,6 @@ The No. of Shipped Not Invoiced Sales Orders measure calculates the number of un
 
 - Sales Line
 
-### No. of Return Orders
-
-[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
-
-**Formula**  
-
-Distinct count of the **Document No.** column from the **Sales** table, where the **Document Type** is **Return Order**.
-
-**Data Sources**
-
-- Value Entries
-- Sales Line
-
 ### Outstanding Invoices (LCY)
 
 **Formula**  
@@ -1122,18 +1096,6 @@ The Outstanding Orders (LCY) measure calculates the total sum of the **Outstandi
 The Outstanding Quantity measure calculates the total sum of the **Outstanding Quantity (Base)** column from the **Sales Lines** table where the **Document Type** is **Order**.
 
 **Data Source**  
-
-- Sales Line
-
-### Outstanding Amount
-
-[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
-
-**Formula**  
-
-The sum of the **Sales Amount** column from the **Sales** table where the **Source Type** is **Sales Order Outstanding**.
-
-**Data Source**
 
 - Sales Line
 
@@ -1307,6 +1269,31 @@ The Sales Line Cost Amount measure calculates the total sum of the **Outstanding
 
 - Sales Line
 
+### No. of Return Orders
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+Distinct count of the **Document No.** column from the **Sales** table, where the **Document Type** is **Return Order**.
+
+**Data Sources**
+
+- Value Entries
+- Sales Line
+
+### Outstanding Amount
+
+[!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
+
+**Formula**  
+
+The sum of the **Sales Amount** column from the **Sales** table where the **Source Type** is **Sales Order Outstanding**.
+
+**Data Source**
+
+- Sales Line
+
 ### Shipped Not Invoiced Amount
 
 [!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
@@ -1333,12 +1320,10 @@ The sum of the **Sales Amount** column from the **Sales** table where the **Sour
   - [Posted Sales Invoice Amount](#posted-sales-invoice-amount)
   - [Posted Sales Invoice Quantity](#posted-sales-invoice-quantity)
 - [Cost Amount Actual](#cost-amount-actual)
-- [Cost Amount](#cost-amount)
 - [Cost Amount Non-Inv](#cost-amount-non-inv)
 - [Cost Posted to G/L](#cost-posted-to-gl)
 - [Invoiced Quantity](#invoiced-quantity)
 - [Sales Amount Actual](#sales-amount-actual)
-- [Invoiced Amount](#invoiced-amount)
 
 ### No. of Distinct Items
 
