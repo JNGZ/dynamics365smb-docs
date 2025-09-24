@@ -123,7 +123,7 @@ The Purchase Quantity measure sums the the Purchase Quantity column of the Purch
 ### Purchase (LCY)
 
 **Formula**  
-The Purchase (LCY) measure calculates the purchase amount across all invoiced purchase transactions by calculating the sum of [Purchase Value Entries Amount](#purchase-value-entries-amount), [Purchase Credit Line Amount](#purchase-credit-line-amount) and [Purchase Invoice Line Amount](#purchase-invoice-line-amount)
+The Purchase (LCY) measure calculates the purchase amount across all invoiced purchase transactions by calculating the sum of [Purchase Value Entries Amount](#purchase-value-entries-amount), [Purchase Credit Line Amount](#purchase-credit-line-amount) and [Purchase Invoice Line Amount](#purchase-invoice-line-amount). Reconcile this measure to the Vendor Statistics page.
 
 **Data Sources**  
 - Value Entry
