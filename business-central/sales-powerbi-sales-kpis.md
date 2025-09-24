@@ -1001,13 +1001,43 @@ The Sales Invoice Line Quantity measure calculates the total sum of the **Quanti
 - [Sales Line Cost Amount](#sales-line-cost-amount)
 - [Sales Line Gross Profit](#sales-line-gross-profit)
 
+### No. of Outstanding Cr/Adj Notes
+
+**Formula**  
+
+The No. of Outstanding Cr/Adj Notes measure calculates the number of unique Sales Cr/Adj Notes that are currently outstanding, by counting the distinct values of the **Document No.** column from the **Sales Lines** table where the **Document Type** is **Cr/Adj Note** and **Outstanding Quantity (Base)** is not zero.
+
+**Data Sources**  
+
+- Sales Line
+
+### No. of Outstanding Invoices
+
+**Formula**  
+
+The No. of Outstanding Invoices measure calculates the number of unique Sales Invoices that are currently outstanding, by counting the distinct values of the **Document No.** column from the **Sales Lines** table where the **Document Type** is **Invoice** and **Outstanding Amount (LCY)** is not zero.
+
+**Data Sources**  
+
+- Sales Line
+
+### No. of Outstanding Return Orders
+
+**Formula**  
+
+The No. of Outstanding Return Orders Notes measure calculates the number of unique Sales Return Orders that are currently outstanding, by counting the distinct values of the **Document No.** column from the **Sales Lines** table where the **Document Type** is **Return Order** and **Outstanding Quantity (Base)** is not zero.
+
+**Data Sources**  
+
+- Sales Line
+
 ### No. of Outstanding Sales Orders
 
 **Formula**  
 
-The count of the **Document No.** column from the **Sales** table where the **Document Type** is **Order** and the **Source Type** is **Sales Order Outstanding**.
+The No. of Outstanding Sales Orders measure calculates the number of unique Sales Orders that are currently outstanding, by counting the distinct values of the **Document No.** column from the **Sales Lines** table where the **Document Type** is **Order** and **Outstanding Quantity (Base)** is not zero.
 
-**Data Sources**
+**Data Sources**  
 
 - Sales Line
 
@@ -1015,22 +1045,20 @@ The count of the **Document No.** column from the **Sales** table where the **Do
 
 **Formula**  
 
-Distinct count of the **Document No.** column from the **Sales** table, where the **Document Type** is **Sales Quote**.
+The No. of Sales Quotes measure calculates the number of unique Sales Quotes, by counting the distinct values of the **Document No.** column from the **Sales Lines** table where the **Document Type** is **Quote**.
 
-**Data Sources**
+**Data Sources**  
 
-- Value Entries
 - Sales Line
 
 ### No. of Shipped Not Invoiced Sales Orders
 
 **Formula**  
 
-The count of the **Document No.** column from the **Sales** table where the **Document Type** is **Order** and the **Source Type** is **Sales Order Shipped Not Invoiced**.
+The No. of Shipped Not Invoiced Sales Orders measure calculates the number of unique Sales Orders that are currently shipped, by counting the distinct values of the **Document No.** column from the **Sales Lines** table where the **Document Type** is **Order** and **Shipped not Invoiced** is not zero.
 
-**Data Sources**
+**Data Sources**  
 
-- Value Entries
 - Sales Line
 
 ### No. of Return Orders
@@ -1046,13 +1074,33 @@ Distinct count of the **Document No.** column from the **Sales** table, where th
 - Value Entries
 - Sales Line
 
+### Outstanding Invoices (LCY)
+
+**Formula**  
+
+The Outstanding Invoices (LCY) measure calculates the total sum of the **Outstanding Amount (LCY)** column from the **Sales Lines** table where the **Document Type** is **Invoice**.
+
+**Data Source**  
+
+- Sales Line
+
+### Outstanding Orders (LCY)
+
+**Formula**  
+
+The Outstanding Orders (LCY) measure calculates the total sum of the **Outstanding Amount (LCY)** column from the **Sales Lines** table where the **Document Type** is **Order**.
+
+**Data Source**  
+
+- Sales Line
+
 ### Outstanding Quantity
 
 **Formula**  
 
-The sum of the **Sales Qty. (Base)** column from the **Sales** table where the **Source Type** is **Sales Order Outstanding**.
+The Outstanding Quantity measure calculates the total sum of the **Outstanding Quantity (Base)** column from the **Sales Lines** table where the **Document Type** is **Order**.
 
-**Data Source**
+**Data Source**  
 
 - Sales Line
 
@@ -1068,6 +1116,176 @@ The sum of the **Sales Amount** column from the **Sales** table where the **Sour
 
 - Sales Line
 
+### Sales Quote Adjusted Cost (LCY)
+
+**Formula**  
+
+The Sales Quote Adjusted Cost (LCY) measure calculates the sum of **Outstanding Quantity** multiplied by the **Unit Cost (LCY)** from the **Sales Lines** table, where the **Document Type** is **Quote** and **Type** is not **G/L Account** or **Resource**.
+
+**Data Source**  
+
+- Sales Line
+
+### Sales Quote Adjusted Profit (LCY)
+
+**Formula**  
+
+*Sales Quote Adjusted Profit (LCY) = [Sales Quote Sales (LCY)](#sales-quote-sales-lcy) - [Sales Quote Adjusted Cost (LCY)](#sales-quote-adjusted-cost-lcy)*
+
+**Data Source**  
+
+- Sales Line
+
+### Sales Quote Adjusted Profit Margin
+
+**Formula**  
+
+*Sales Quote Adjusted Profit Margin = [Sales Quote Adjusted Profit (LCY)](#sales-quote-adjusted-profit-lcy) / [Sales Quote Sales (LCY)](#sales-quote-sales-lcy)*
+
+**Data Source**  
+
+- Sales Line
+
+### Sales Quote Quantity
+
+**Formula**  
+
+The Sales Quote Quantity measure calculates the sum of **Outstanding Quantity (Base)** from the **Sales Lines** table, where the **Document Type** is **Quote**.
+
+**Data Source**  
+
+- Sales Line
+
+### Sales Quote Sales (LCY)
+
+**Formula**  
+
+The Sales Quote Sales (LCY) measure calculates the sum of **Outstanding Amount (LCY)** from the **Sales Lines** table, where the **Document Type** is **Quote**.
+
+**Data Source**  
+
+- Sales Line
+
+### Received Not Invd. Amount
+
+**Formula**  
+
+The Received Not Invd. Amount measure calculates the sum of **Return Rcd. Not Invd. (LCY)** from the **Sales Lines** table.
+
+**Data Source**  
+
+- Sales Line
+
+### Received Not Invd. Amount Excl. Tax
+
+**Formula**  
+
+The Received Not Invd. Amount Excl. Tax measure calculates the sum of the **Amount** multiplied by **Return Qty. Rcd. Not Invd.**, divided by the **Quantity (Base )** from the **Sales Line** table.
+
+**Data Source**  
+
+- Sales Line
+
+### Outstanding Return Order (LCY)
+
+**Formula**  
+
+The Outstanding Return Order (LCY) measure calculates the sum of **Outstanding Amount (LCY)** column from the **Sales Lines** table, where the **Document Type** is **Return Order** or **Cr/Adj Note**.
+
+**Data Source**  
+
+- Sales Line
+
+### Return Amount
+
+**Formula**  
+
+The Return Amount measure calculates the sum of **Amount** column from the **Sales Lines** table, where the **Document Type** is **Return Order** or **Cr/Adj Note**.
+
+**Data Source**  
+
+- Sales Line
+
+### Return Qty. Invoiced
+
+**Formula**  
+
+The Return Qty. Invoiced measure calculates the sum of **Quantity Invoiced** column from the **Sales Lines** table, where the **Document Type** is **Return Order** or **Cr/Adj Note**.
+
+**Data Source**  
+
+- Sales Line
+
+### Return Qty. Shipped
+
+**Formula**  
+
+*Return Qty. Shipped = [Return Quantity](#return-quantity) - [Return Qty. to Ship](#return-qty-to-ship)*
+
+**Data Source**  
+
+- Sales Line
+
+### Return Qty. to Ship
+
+**Formula**  
+
+The Return Qty. to Ship measure calculates the sum of the **Outstanding Quantity (Base)** column from the **Sales Lines** table, where the **Document Type** is **Return Order** or **Cr/Adj Note**.
+
+**Data Source**  
+
+- Sales Line
+
+### Return Quantity
+
+**Formula**  
+
+The Return Quantity measure calculates the sum of the **Quantity (Base)** column from the **Sales Lines** table, where the **Document Type** is **Return Order** or **Cr/Adj Note**.
+
+**Data Source**  
+
+- Sales Line
+
+### Shipped Not Invoiced (LCY)
+
+**Formula**  
+
+The Shipped Not Invoiced (LCY) measure calculates the total sum of the **Shipped Not Invoiced** column from the **Sales Lines** table, where the **Document Type** is **Order**.
+
+**Data Source**  
+
+- Sales Line
+
+### Shipped Not Invoiced Quantity
+
+**Formula**  
+
+The Shipped Not Invoiced Quantity measure calculates the total sum of the **Quantity Shipped Not Invoiced (Base)** column from the **Sales Lines** table.
+
+**Data Source**  
+
+- Sales Line
+
+### Sales Line Cost Amount
+
+**Formula**  
+
+The Sales Line Cost Amount measure calculates the total sum of the **Outstanding Quantity** multiplied by the **Unit Cost LCY** from the **Sales Lines** table, where **Document Type** is not **CR/Adj Note**, **Return Order**, **Posted CR/Adj Note**, or **Posted Return Receipt**, and **Type** is not **Resource** or **G/L Account**.
+
+**Data Source**  
+
+- Sales Line
+
+### Sales Line Gross Profit
+
+**Formula**  
+
+*Sales Line Gross Profit = [Outstanding Orders (LCY)](#outstanding-orders-lcy) - [Sales Line Cost Amount](#sales-line-cost-amount)*
+
+**Data Source**  
+
+- Sales Line
+
 ### Shipped Not Invoiced Amount
 
 [!INCLUDE[powerbi_deprecated_measure](includes/deprecated-measures.md)]
@@ -1079,12 +1297,6 @@ The sum of the **Sales Amount** column from the **Sales** table where the **Sour
 **Data Source**
 
 - Sales Line
-
-### Shipped Not Invoiced Quantity
-
-**Formula**  
-
-The sum of the **Sales Qty. (Base)** column from the **Sales** table where the **Source Type** is **Sales Order Shipped Not Invoiced**.
 
 ## Sales Value Entries Table
 
