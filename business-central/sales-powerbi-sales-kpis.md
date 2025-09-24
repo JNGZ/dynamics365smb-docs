@@ -176,7 +176,7 @@ This measure calculates the sales amount where the **Document Type** is **Quote*
 
 **Formula**  
 
-Distinct count of Opportunity No. column from the Opportunity Entries table, where Active = true and the Action Taken = Lost.
+Distinct count of **Opportunity No.** column from the Opportunity Entries table, where **Active** = **true** and the **Action Taken** = **Lost**.
 
 **Data Sources**
 
@@ -761,7 +761,7 @@ The **Total Gross Profit** from the **Sales** table for all sales.
 
 **Formula**  
 
-The Sales CR/Adj Item Quantity measure calculates the [Project Ledger Item Quantity](#project-ledger-item-quantity) from the **Project Ledger Entries** table, where Document Type = Posted Sales CR/Adj Note.
+The Sales CR/Adj Item Quantity measure calculates the [Project Ledger Item Quantity](#project-ledger-item-quantity) from the **Project Ledger Entries** table, where **Document Type** = **Posted Sales CR/Adj Note**.
 
 **Data Source**  
 
@@ -771,7 +771,7 @@ The Sales CR/Adj Item Quantity measure calculates the [Project Ledger Item Quant
 
 **Formula**  
 
-The Sales CR/Adj Total Price measure calculates the [Total Price](#total-price) from the **Project Ledger Entries** table, where Document Tye = Posted Sales CR/Adj Note.
+The Sales CR/Adj Total Price measure calculates the [Total Price](#total-price) from the **Project Ledger Entries** table, where **Document Type** = **Posted Sales CR/Adj Note**.
 
 **Data Source**  
 
@@ -781,7 +781,7 @@ The Sales CR/Adj Total Price measure calculates the [Total Price](#total-price) 
 
 **Formula**  
 
-The Sales CR/Adj Item Quantity measure calculates the [Project Ledger Item Quantity](#project-ledger-item-quantity) from the **Project Ledger Entries** table, where Document Tye = Posted Sales Invoice.
+The Sales CR/Adj Item Quantity measure calculates the [Project Ledger Item Quantity](#project-ledger-item-quantity) from the **Project Ledger Entries** table, where **Document Type** = **Posted Sales Invoice**.
 
 **Data Source**  
 
@@ -791,7 +791,7 @@ The Sales CR/Adj Item Quantity measure calculates the [Project Ledger Item Quant
 
 **Formula**  
 
-The Sales Invoice Total Price measure calculates the [Total Price](#total-price) from the **Project Ledger Entries** table, where Document Tye = Posted Sales Invoice.
+The Sales Invoice Total Price measure calculates the [Total Price](#total-price) from the **Project Ledger Entries** table, where **Document Type** = **Posted Sales Invoice**.
 
 **Data Source**  
 
@@ -927,7 +927,7 @@ The Sales Invoice Line Amount measure calculates the total sum of the **Amount**
 
 **Formula**  
 
-The Sales Invoice Line Cost Amount measure calculates the total sum of the **Unit Cost LCY** multiplied by the **Quantity Base** from the Sales Invoice Line table, where Type = Resource.
+The Sales Invoice Line Cost Amount measure calculates the total sum of the **Unit Cost LCY** multiplied by the **Quantity Base** from the Sales Invoice Line table, where **Type** = **Resource**.
 
 **Data Source**  
 
