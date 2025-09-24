@@ -38,14 +38,14 @@ Purchasing managers can identify where you might be overspending or underspendin
 
 The *Purchases Overview* report includes the following KPIs and measures: 
 
-- [**Purchase Amount**](purchases-powerbi-kpis.md#purchase-amount)
-- [**Outstanding Amount (excluding VAT)**](purchases-powerbi-kpis.md#outstanding-amount-excl-vat)
-- [**Amount Received but Not Invoiced (excluding VAT)**](purchases-powerbi-kpis.md#amt-rcd-not-invd-excl-vat)
-- [**Invoiced Amount**](purchases-powerbi-kpis.md#invoiced-amount)
+- [**Purchase (LCY)**](purchases-powerbi-kpis.md#purchase-lcy)
+- [**Purchase Amount PY (Fiscal)**](purchases-powerbi-kpis.md#purchase-amount-py-fiscal)
+- [**Amt. Rcd. Not Invoiced (LCY)**](purchases-powerbi-kpis.md#amt-rcd-not-invd-lcy)
+- [**Outstanding Orders (LCY)**](purchases-powerbi-kpis.md#outstanding-orders-lcy)
 - [**Purchase Quantity**](purchases-powerbi-kpis.md#purchase-quantity)
+- [**Outstanding Invoices (LCY)**](purchases-powerbi-kpis.md#outstanding-invoices-lcy)
 - [**No. of Outstanding Purchase Orders**](purchases-powerbi-kpis.md#no-of-outstanding-purchase-orders)
-- [**No. of Received Not Invd. Purchase Orders**](purchases-powerbi-kpis.md#no-of-received-not-invd-purchase-orders)
-- [**No. of Purchase Invoices**](purchases-powerbi-kpis.md#no-of-purchase-invoices)
+- [**No. of Outstanding Invoices**](purchases-powerbi-kpis.md#no-of-outstanding-invoices)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -56,8 +56,12 @@ The *Purchases Overview* report includes the following KPIs and measures:
 The report uses data from the following tables in [!INCLUDE[prod_short](includes/prod_short.md)]:
 
 - Item Ledger Entry
-- Value Entry
-- Purchase Lines
+- Purchase Value Entries
+- Purchase Invoice Lines
+- Purchase Credit Lines
+- Location
+- Item Category
+- Vendor
 
 ## Try the report
 
