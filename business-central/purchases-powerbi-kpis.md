@@ -89,7 +89,7 @@ The Budget Quantity measure sums the Quantity column from the Purchase Budget ta
 - Purchase Line
 - Value Entry
 
-## Purchase Measures
+## Documents
 
 - [Purchase Amount](#purchase-amount)
 - [Purchase Quantity](#purchase-quantity)
