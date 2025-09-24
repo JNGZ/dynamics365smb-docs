@@ -1559,7 +1559,10 @@ The **Budget Quantity Variance** minus the **Budget Quantity**.
 - Sales Lines
 - Value Entries
 
-<!-- Restructure heading for Time Intelligence -->
+## Sales Amount Month-to-Date
+
+- [Gross Profit MTD (Fiscal)](#gross-profit-mtd-fiscal)
+- [Sales Amount MTD (Fiscal)](#sales-amount-mtd-fiscal)
 
 ### Gross Profit MTD (Fiscal)
 
@@ -1584,6 +1587,13 @@ This measure calculates the month-to-date sales amount using the fiscal calendar
 - Value Entries
 - Sales Line
 - Date (Fiscal Calendar)
+
+## Sales Amount Moving Annual Totals
+
+- [Sales Amount MAT (Fiscal)](#sales-amount-mat-fiscal)
+- [Sales Amount PYMAT (Fiscal)](#sales-amount-pymat-fiscal)
+- [Sales Amount MATG (Fiscal)](#sales-amount-matg-fiscal)
+- [Sales Amount MATG % (Fiscal)](#sales-amount-matg--fiscal)
 
 ### Sales Amount MAT (Fiscal)
 
@@ -1633,6 +1643,10 @@ This measure calculates the percentage growth in sales by dividing the year-over
 - Sales Line
 - Date (Fiscal Calendar)
 
+## Sales Amount Moving Averages
+
+- [Sales Amount AVG 30D (Fiscal)](#sales-amount-avg-30d-fiscal)
+
 ### Sales Amount AVG 30D (Fiscal)
 
 **Formula**  
@@ -1644,6 +1658,12 @@ This measure calculates the average sales over the last 30 days based on the fis
 - Value Entries
 - Sales Line
 - Date (Fiscal Calendar)
+
+## Sales Amount Period-over-Period Growth
+
+- [Sales Amount PP (Fiscal)](#sales-amount-pp-fiscal)
+- [Sales Amount POP (Fiscal)](#sales-amount-pop-fiscal)
+- [Sales Amount POP % (Fiscal)](#sales-amount-pop--fiscal)
 
 ### Sales Amount PP (Fiscal)
 
