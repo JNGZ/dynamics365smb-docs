@@ -1111,23 +1111,131 @@ The sum of the **Sales Qty. (Base)** column from the **Sales** table where the *
 
 **Formula**  
 
-The count of the **Item No.** column from the **Sales** table.
+The No. of Distinct Items measure calculates a distinct count of the **Item No.** column from the **Sales Value Entries** table.
 
-**Data Sources**
+**Data Sources**  
 
 - Value Entries
-- Sales Line
 
 ### No. of Posted Sales Invoices
 
 **Formula**  
 
-The count of the **Document No.** column from the **Sales** table where the **Document Type** is **Sales Invoice** and the **Source Type** is **Value Entries Invoiced**.
+The No. of Posted Sales Invoices measure calculates a distinct count of the **Document No.** column from the **Sales Value Entries** table, where **Document Type** = **Sales Invoice**.
 
-**Data Sources**
+**Data Sources**  
 
 - Value Entries
-- Sales Line
+
+### Posted Sales CR/Adj Note Amount
+
+**Formula**  
+
+The Posted Sales CR/Adj Note Amount measure calculates the [Sales Amount Actual](#sales-amount-actual), where **Document Type** = **Posted Sales CR/Adj Note**.
+
+**Data Sources**  
+
+- Value Entries
+
+### Posted Sales CR/Adj Note Cost Amount
+
+**Formula**  
+
+The Posted Sales CR/Adj Note Cost Amount measure calculates the [Cost Amount Actual](#cost-amount-actual), where **Document Type** = **Posted Sales CR/Adj Note**.
+
+**Data Sources**  
+
+- Value Entries
+
+### Posted Sales CR/Adj Note Cost Amount Non-Inv
+
+**Formula**  
+
+The Posted Sales CR/Adj Note Cost Amount Non-Inv measure calculates the [Cost Amount Non-Inv](#cost-amount-non-inv), where **Document Type** = **Posted Sales CR/Adj Note**.
+
+**Data Sources**  
+
+- Value Entries
+
+### Posted Sales CR/Adj Note Quantity
+
+**Formula**  
+
+The Posted Sales CR/Adj Note Quantity measure calculates the total sum of the **Invoiced Quantity** column from the **Sales Value Entries** table, where **Document Type** = **Posted Sales CR/Adj Note**.
+
+**Data Sources**  
+
+- Value Entries
+
+### Posted Sales Invoice Amount
+
+**Formula**  
+
+The Posted Sales Invoice Amount measure calculates the [Sales Amount Actual](#sales-amount-actual), where **Document Type** = **Posted Sales Invoice**.
+
+**Data Sources**  
+
+- Value Entries
+
+### Posted Sales Invoice Quantity
+
+**Formula**  
+
+The Posted Sales Invoice Quantity measure calculates the [Invoiced Quantity](#invoiced-quantity), where **Document Type** = **Posted Sales Invoice**.
+
+**Data Sources**  
+
+- Value Entries
+
+### Cost Amount Actual
+
+**Formula**  
+
+The Cost Amount Actual measure calculates the total sum of the **Cost Amount Actual** column from the **Sales Value Entries** table.
+
+**Data Sources**  
+
+- Value Entries
+
+### Cost Amount Non-Inv
+
+**Formula**  
+
+The Cost Amount Non-Inv measure calculates the total sum of the **Cost Amount (Non-Invtbl.)** column from the **Sales Value Entries** table.
+
+**Data Sources**  
+
+- Value Entries
+
+### Cost Posted to G/L
+
+**Formula**  
+
+The Cost Posted to G/L measure calculates the total sum of the **Cost Posted to G/L** column from the **Sales Value Entries** table.
+
+**Data Sources**  
+
+- Value Entries
+
+### Invoiced Quantity
+
+**Formula**  
+
+The Invoiced Quantity measure calculates the total sum of the **Invoiced Quantity** column from the **Sales Value Entries** table.
+
+**Data Source**  
+
+- Value Entries
+
+### Sales Amount Actual
+
+**Formula**  
+
+The Sales Amount Actual measure calculates the total sum of the **Sales Amount Actual** column from the **Sales Value Entries** table.
+
+**Data Sources**  
+
+- Value Entries
 
 ### Invoiced Amount
 
@@ -1136,16 +1244,6 @@ The count of the **Document No.** column from the **Sales** table where the **Do
 **Formula**  
 
 The sum of the **Sales Amount** column from the **Sales** table where the **Source Type** is **Value Entries Invoiced**.
-
-**Data Source**
-
-- Value Entries
-
-### Invoiced Quantity
-
-**Formula**  
-
-The sum of the **Sales Qty. (Base)** column from the **Sales** table where the **Source Type** is **Value Entries Invoiced**.
 
 **Data Source**
 
@@ -1163,16 +1261,6 @@ The sum of the **Cost Amt. (LCY)** column from the **Sales** table.
 
 - Value Entries
 - Sales Line
-
-### Cost Amount Non-Inv
-
-**Formula**  
-
-The sum of the **Cost Amt. Non-Invtbl. (LCY)** column from the **Sales** table.
-
-**Data Source**
-
-- Value Entries
 
 ## Sales Budget Table
 
