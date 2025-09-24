@@ -364,8 +364,6 @@ The Purchase Value Entries Quantity calculates the total quantity that has been 
 - **Outstanding**
   - [Outstanding Invoices (LCY)](#outstanding-invoices-lcy)
   - [Outstanding Orders (LCY)](#outstanding-orders-lcy)
-  - [Outstanding Amount (Excl. VAT)](#outstanding-amount-excl-vat)
-  - [Outstanding Quantity](#outstanding-quantity)
 
 - **Quote**
   - [Purchase Quote Purchase (LCY)](#purchase-quote-purchase-lcy)
@@ -373,8 +371,6 @@ The Purchase Value Entries Quantity calculates the total quantity that has been 
 
 - **Received Not Invoiced**
   - [Amt. Rcd. Not Invoiced (LCY)](#amt-rcd-not-invoiced-lcy)
-  - [Amt. Rcd. Not Invd. (Excl. VAT)](#amt-rcd-not-invd-excl-vat)
-  - [Quantity Rcd. Not Invd.](#amt-rcd-not-invd-excl-vat)
 
 - **Return Order**
   - [Outstanding Return Order (LCY)](#outstanding-return-order-lcy)
@@ -736,8 +732,13 @@ The total [Purchase (LCY)](#purchase-lcy) for all purchases from the **Purchase 
 
 ## Vendor Measures
 
-- [Spend Reliance %](#spend-reliance-)
 - [Item Reliance %](#item-reliance-)
+- [Spend Reliance %](#spend-reliance-)
+
+### Item Reliance %
+
+**Formula**  
+The Item Reliance % measure calculates the proportion of transactions for an item based on either the number of unique vendors or number of unique items, from the Purchase Value Entry Table. In a Vendor context, the Item Reliance % measure is calculated as [No. of Distinct Items](#no-of-distinct-items) divided by the total [No. of Distinct Items](#no-of-distinct-items) for all vendors. In an Item context, the Item Reliance % measure is calculated as one divided by the total [No. of Vendors](#no-of-vendors) who have supplied the item.
 
 ### Spend Reliance %
 
@@ -749,10 +750,6 @@ The Spend Reliance % measure calculates the [Purchase (LCY)](#purchase-lcy) divi
 - Purchase Invoice Line
 - Purchase Credit Line
 
-### Item Reliance %
-
-**Formula**  
-The Item Reliance % measure calculates the proportion of transactions for an item based on either the number of unique vendors or number of unique items, from the Purchase Value Entry Table. In a Vendor context, the Item Reliance % measure is calculated as [No. of Distinct Items](#no-of-distinct-items) divided by the total [No. of Distinct Items](#no-of-distinct-items) for all vendors. In an Item context, the Item Reliance % measure is calculated as one divided by the total [No. of Vendors](#no-of-vendors) who have supplied the item.
 
 **Data Sources**  
 - Value Entry
