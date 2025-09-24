@@ -209,24 +209,21 @@ The Invoiced Prepayment Amount (LCY) measure calculates the sum of the Prepaymen
 - **Counters**
   - [No. of Distinct Items](#no-of-distinct-items)
   - [No. of Posted Purchase Invoices](#no-of-posted-purchase-invoices)
-  - [No. of Purchase Invoices](#no-of-purchase-invoices)
-  - [No. of Vendors](#no-of-vendors)
   - [No. of Single Supplier Items](#no-of-single-supplier-items)
+  - [No. of Vendors](#no-of-vendors)
 
 - **Purchase Invoice**
   - [Posted Purchase Invoice Amount](#posted-purchase-invoice-amount)
   - [Posted Purchase Invoice Quantity](#posted-purchase-invoice-quantity)
-  - [Invoiced Amount](#invoiced-amount)
-  - [Invoiced Quantity](#invoiced-quantity)
 
 - **Purchase CR/Adj Note**
   - [Posted Purchase CR/Adj Note Amount](#posted-purchase-cradj-note-amount)
   - [Posted Purchase CR/Adj Note Quantity](#posted-purchase-cradj-note-quantity)
 
 - [Purchase Value Entries Amount](#purchase-value-entries-amount)
-- [Purchase Value Entries Quantity](#purchase-value-entries-quantity)
-- [Purchase Value Entries Discount Amount](#purchase-value-entries-discount-amount)
 - [Purchase Value Entries Discount %](#purchase-value-entries-discount-)
+- [Purchase Value Entries Discount Amount](#purchase-value-entries-discount-amount)
+- [Purchase Value Entries Quantity](#purchase-value-entries-quantity)
 
 ### No. of Distinct Items
 
