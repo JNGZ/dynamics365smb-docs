@@ -23,7 +23,7 @@ The **Vendor Quality Analysis** report analyzes vendor performance, showcasing v
 
 This report is designed for executives, purchasing managers and purchasers, to highlight effective vendor relationships and minimize supply chain risks.
 
-As a CEO, you want to monitor vendor performance and identify trusted vendors and supplier risks, to inform key business decisions. For example, by reviewing the vendor analysis details, you identify a vendor with the highest [Spend Reliance %](sales-powerbi-sales-kpis.md#spend-reliance-) who consistently performs poorly across returns and discounts. Using these insights, you decide to pursue an alternate supplier to improve supply-chain reliability, product quality and profit metrics.
+As a CEO, you want to monitor vendor performance and identify trusted vendors and supplier risks, to inform key business decisions. For example, by reviewing the vendor analysis details, you identify a vendor with the highest [Spend Reliance %](purchases-powerbi-kpis.md#spend-reliance-) who consistently performs poorly across returns and discounts. Using these insights, you decide to pursue an alternate supplier to improve supply-chain reliability, product quality and profit metrics.
 
 For purchasing managers, you want to track vendor performance and item dependence, to ensure a reliable supply-chain pipeline. Using the vendor reliance analysis, you identify a single-supplier item with the highest purchase amount. In response, you engage with additional vendors to diversify product supply and reduce over-reliance on a specific vendor. 
 
