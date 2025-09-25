@@ -35,10 +35,10 @@ For example, if you notice that a particular customer contributes a significant 
 
 The report includes the following key performance indicators (KPIs) and measures:
 
-- [**Sales Amount**](sales-powerbi-sales-kpis.md#sales-amount)
+- [**Sales (LCY)**](sales-powerbi-sales-kpis.md#sales-lcy)
 - [**Sales Quantity**](sales-powerbi-sales-kpis.md#sales-quantity)
-- [**Gross Profit**](sales-powerbi-sales-kpis.md#gross-profit)
-- [**Gross Profit Margin**](sales-powerbi-sales-kpis.md#gross-profit-margin)
+- [**Adjusted Profit (LCY)**](sales-powerbi-sales-kpis.md#adjusted-profit-lcy)
+- [**Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#adjusted-profit-margin)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -49,10 +49,12 @@ The report includes the following key performance indicators (KPIs) and measures
 The report uses data from the following tables in [!INCLUDE[prod_short](includes/prod_short.md)]:
 
 - Customer
-- Salesperson/Purchaser
+- Salesperson
 - Item
-- Value Entry
-- Sales Line
+- Sales Value Entries
+- Sales Invoice Lines
+- Sales Credit Lines
+- Project Ledger Entries
 
 ## Try the report
 

@@ -38,8 +38,8 @@ Using this insight, you can develop targeted strategies. For example, offering b
 
 The report includes the following key performance indicators (KPIs) and measures:
 
-- **[Sales Amount](sales-powerbi-sales-kpis.md#sales-amount)**  
-- **[Sales Quantity](sales-powerbi-sales-kpis.md#sales-quantity)**
+- [**Sales (LCY)**](sales-powerbi-sales-kpis.md#sales-amount)  
+- [**Sales Quantity**](sales-powerbi-sales-kpis.md#sales-quantity)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -52,9 +52,11 @@ The report uses data from the following tables in [!INCLUDE[prod_short](includes
 - Item
 - Customer
 - Item Category
-- Value Entry
-- Sales Line
-- Salesperson/Purchaser
+- Sales Value Entries
+- Sales Invoice Lines
+- Sales Credit Lines
+- Project Ledger Entries
+- Salesperson
 
 ## Try the report
 
