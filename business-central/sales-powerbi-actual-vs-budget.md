@@ -49,11 +49,13 @@ The **Actual vs Budget** report uses data from the following tables in [!INCLUDE
 
 - Item
 - Item Category
+- Item Budget Entry
 - Sales Value Entries
 - Sales Invoice Lines
-- Sales Credit Liness
+- Sales Credit Lines
 - Project Ledger Entries
-- Salesperson
+- Salesperson/Purchaser
+ 
 ## Try the report
 
 Try the report here: [Actual vs Budget](https://businesscentral.dynamics.com?page=37007)

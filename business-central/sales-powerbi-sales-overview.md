@@ -56,7 +56,7 @@ The report includes the following KPIs and measures:
 - [**Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#adjusted-profit-margin)
 - [**Outstanding Invoices (LCY)**](sales-powerbi-sales-kpis.md#outstanding-invoices-lcy)
 - [**No. of Outstanding Sales Orders**](sales-powerbi-sales-kpis.md#no-of-outstanding-sales-orders)
-- [**No. of Shipped Not Invoiced Orders**](sales-powerbi-sales-kpis.md#no-of-shipped-not-invoiced-sales)
+- [**No. of Shipped Not Invoiced Orders**](sales-powerbi-sales-kpis.md#no-of-shipped-not-invoiced-sales-orders)
 - [**Outstanding Orders (LCY)**](sales-powerbi-sales-kpis.md#outstanding-orders-lcy)
 - [**Shipped Not Invoiced (LCY)**](sales-powerbi-sales-kpis.md#shipped-not-invoiced-lcy)
 - [**No. of Outstanding Invoices**](sales-powerbi-sales-kpis.md#no-of-outstanding-invoices)
@@ -69,6 +69,7 @@ The report includes the following KPIs and measures:
 
 The report uses data from the following tables in [!INCLUDE[prod_short](includes/prod_short.md)]:
 
+- Sales Line
 - Value Entry
 - Sales Invoice Lines
 - Sales Credit Lines

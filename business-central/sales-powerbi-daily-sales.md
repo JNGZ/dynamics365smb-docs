@@ -50,6 +50,8 @@ The report uses data from the following tables in [!INCLUDE[prod_short](includes
 - Sales Credit Lines
 - Project Ledger Entries
 - Item
+- G/L Account 
+- Resource
 
 ## Try the report
 

@@ -38,7 +38,8 @@ The report includes the following key performance indicators (KPIs) and measures
 - [**Cost Amount Non-Inv**](sales-powerbi-sales-kpis.md#cost-amount-non-inv)
 - [**Adjusted Profit (LCY)**](sales-powerbi-sales-kpis.md#adjusted-profit-lcy)
 - [**Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#adjusted-profit-margin)
-- [**Pareto Cumulative Adjusted Profit %**](sales-powerbi-sales-kpis.md#pareto-cumulative-adjusted-profit)
+- [**Pareto Cumulative Adjusted Profit %**](sales-powerbi-sales-kpis.md#pareto-cumulative-adjusted-profit-)
+- [**Pareto Cutoff Adjusted Profit %**](sales-powerbi-sales-kpis.md#pareto-cutoff-adjusted-profit-)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -50,6 +51,8 @@ The report uses data from the following tables in [!INCLUDE[prod_short](includes
 
 - Customer
 - Item
+- G/L Account
+- Resource
 - Sales Value Entries
 - Sales Invoice Lines
 - Sales Credit Lines

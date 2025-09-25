@@ -39,6 +39,7 @@ The report includes the following key performance indicators (KPIs) and measures
 - [**Sales Quantity**](sales-powerbi-sales-kpis.md#sales-quantity)
 - [**Adjusted Profit (LCY)**](sales-powerbi-sales-kpis.md#adjusted-profit-lcy)
 - [**Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#adjusted-profit-margin)
+- [**Estimated Value**](sales-powerbi-sales-kpis.md#estimated-value)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -49,12 +50,15 @@ The report includes the following key performance indicators (KPIs) and measures
 The report uses data from the following tables in [!INCLUDE[prod_short](includes/prod_short.md)]:
 
 - Customer
-- Salesperson
+- Salesperson/Purchaser
 - Item
+- G/L Account
+- Resource
 - Sales Value Entries
 - Sales Invoice Lines
 - Sales Credit Lines
 - Project Ledger Entries
+- Opportunity Entries
 
 ## Try the report
 

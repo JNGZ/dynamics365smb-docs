@@ -38,7 +38,7 @@ The report includes the following key performance indicators (KPIs) and measures
 - [**Total Credit (Amount)**](sales-powerbi-sales-kpis.md#total-credit-amount)
 - [**Return Rate (Qty.)**](sales-powerbi-sales-kpis.md#return-rate-qty)
 - [**Total Credit (Qty.)**](sales-powerbi-sales-kpis.md#total-credit-qty)
-- [**No. of Return Orders**](sales-powerbi-sales-kpis.md#no-of-return-orders)
+- [**No. of Outstanding Return Orders**](sales-powerbi-sales-kpis.md#no-of-outstanding-return-orders)
 - [**Credit Adjusted Profit (LCY)**](sales-powerbi-sales-kpis.md#credit-adjusted-profit-lcy)
 - [**Total Sales (Amount)**](sales-powerbi-sales-kpis.md#total-sales-amount)
 
@@ -56,6 +56,9 @@ The report uses data from the following tables in [!INCLUDE[prod_short](includes
 - Customer
 - Item Category
 - Reason Code
+- Item
+- G/L Account
+- Resource
 
 ## Try the report
 

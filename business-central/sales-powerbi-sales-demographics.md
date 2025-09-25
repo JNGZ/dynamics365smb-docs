@@ -37,7 +37,7 @@ The **Sales Demographics** report includes the following KPIs and measures:
 
 - [**Sales (LCY)**](sales-powerbi-sales-kpis.md#sales-lcy)
 - [**Adjusted Profit (LCY)**](sales-powerbi-sales-kpis.md#adjusted-profit-lcy)
-- [**Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#gross-profit-margin)
+- [**Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#adjusted-profit-margin)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)]
 
@@ -51,6 +51,10 @@ The report uses data from the following tables in [!INCLUDE[prod_short](includes
 - Sales Invoice Lines  
 - Sales Credit Lines  
 - Project Ledger Entries
+- Customer
+- Item
+- Resource
+- G/L Account
 
 ## Try the report
 

@@ -36,6 +36,7 @@ The report includes the following key performance indicators (KPIs) and measures
 - [**Sales Quote Sales (LCY)**](sales-powerbi-sales-kpis.md#sales-quote-sales-lcy)
 - [**Sales Quote Quantity**](sales-powerbi-sales-kpis.md#sales-quote-quantity)
 - [**Sales Quote Adjusted Profit Margin**](sales-powerbi-sales-kpis.md#sales-quote-adjusted-profit-margin)
+- [**Sales Quote Adjusted Profit (LCY))**](sales-powerbi-sales-kpis.md#sales-quote-adjusted-profit-lcy)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -48,7 +49,9 @@ The report uses data from the following tables in [!INCLUDE[prod_short](includes
 - Sales Lines
 - Customer
 - Item
-- Salesperson
+- G/L Account
+- Resource
+- Salesperson/Purchaser
 
 ## Try the report
 
