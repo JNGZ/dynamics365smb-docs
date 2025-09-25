@@ -33,8 +33,10 @@ The *Purchases by Vendor* report includes the following KPIs and measures:
 
 - [**Purchase (LCY)**](purchases-powerbi-kpis.md#purchase-lcy)
 - [**Purchase Quantity**](purchases-powerbi-kpis.md#purchase-quantity)
-- [**% GT Purchase (LCY)**](purchases-powerbi-kpis.md#-gt-purchase-lcy)
-- [**% GT Purchase Amount PY (Fiscal)**](purchases-powerbi-kpis.md#-gt-purchase-amount-py-fiscal)
+- [**% GT Purchase (LCY)**](purchases-powerbi-kpis.md#purchase-lcy)
+- [**% GT Purchase Amount PY (Fiscal)**](purchases-powerbi-kpis.md#purchase-amount-py-fiscal)
+- [**Pareto Cumulative Purchase (LCY) %**](purchases-powerbi-kpis.md#pareto-cumulative-purchase-lcy-)
+- [**% GT Pareto Cumulative Purchase (LCY) %**](purchases-powerbi-kpis.md#pareto-cumulative-purchase-lcy-)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
