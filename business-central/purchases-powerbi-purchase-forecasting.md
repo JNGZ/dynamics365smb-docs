@@ -1,36 +1,43 @@
 ---
-title: Purchases Forecasting (Power BI Report)
-description: The Purchases Forecasting report provides insights into your organization's purchasing trends and future needs.
+title: Purchase Forecasting (Power BI Report)
+description: The Purchase Forecasting report predicts future purchasing trends to anticipate supply chain requirements.
 author: kennieNP
 ms.author: kepontop
 ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.search.keywords: reporting
 ms.search.form: 37112_Primary
-ms.date: 10/31/2024
+ms.date: 10/31/2025
 ms.service: dynamics-365-business-central
 ---
 
-# Purchases Forecasting (Power BI Report)
+# Purchase Forecasting (Power BI Report)
 
-[!INCLUDE[applies-to-2024w2](includes/applies-to-2024w2.md)]
+[!INCLUDE[2025_releasewave2](includes/2025_releasewave2.md)]
 
-The **Purchases Forecasting** report predicts future inventory trends based on historical data. It uses advanced forecasting techniques to project quantity values, helping users anticipate supply chain requirements.
+The **Purchase Forecasting** report predicts future purchasing trends based on historical data. It uses advanced forecasting techniques to project purchase values across vendor, document, item category and purchaser dimensions.
 
-**To do** Add correct link to image
-:::image type="content" source="media/purchases/{purchases-forecasting.png}" alt-text="Screenshot of the Purchases Forecasting Power BI report" lightbox="media/purchases/{purchases-forecasting.png}":::
+The purchase forecast visualization predicts the next three months of purchases based on the previous six months, assuming a monthly seasonality.
+
+> [!NOTE]
+> The default forecasting options can be customized through the Forecast section in the Analytics Pane in Power BI Desktop. This includes modifying the forecast length, seasonality, period and confidence interval.
+
+:::image type="content" source="media/purchases/purchase-forecasting.png" alt-text="Screenshot of the Purchases Forecasting Power BI report" lightbox="media/purchases/purchase-forecasting.png":::
 
 ## Use the report
 
-Add description of who the report is designed for and its use
+Leadership and purchasing managers can use this report to anticipate purchase requirements and upcoming financial impacts on the organization.
+
+CEOs need to track purchasing trends to implement strategic business decisions based on upcoming supply chain requirements. For example, you may identify that purchases are predicted to increase for a particular month. In response, you coordinate hiring additional staff to ensure sufficient workforce for managing increased purchasing operations.
+
+Purchasing managers need to anticipate supply chain trends across key attributes, to inform future purchases. For example, the purchases by item category highlights a decreasing demand for a particular item category. You use this information to plan purchasing schedules accordingly to optimize inventory levels.
 
 ## Key Performance Indicators (KPIs)
 
-The *Purchases Forecasting* report includes the following KPIs and measures:   
-{Need to Confirm}
+The *Purchase Forecasting* report includes the following KPIs and measures:
 
-- [**Purchase (LCY) Forecasting**](purchases-powerbi-kpis.md#purchase-lcy-forecasting)
 - [**Purchase (LCY)**](purchases-powerbi-kpis.md#purchase-lcy)
+- [**Purchase (LCY) Forecasting**](purchases-powerbi-kpis.md#purchase-lcy-forecasting)
 
 [!INCLUDE[click-on-a-kpi-link](includes/click-on-a-kpi-link.md)] 
 
@@ -40,11 +47,12 @@ The *Purchases Forecasting* report includes the following KPIs and measures:
 
 The report uses data from the following tables in [!INCLUDE[prod_short](includes/prod_short.md)]:
 
-- Purchase Value Entry
-- Purchase Invoice Lines
-- Purchase Credit Lines
-- Item Category
+- Value Entry
+- Purchase Credit Line
+- Purchase Invoice Line
 - Vendor
+- Item
+- Salesperson/Purchaser
 
 ## Try the report
 
