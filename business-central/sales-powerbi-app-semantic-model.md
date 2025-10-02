@@ -29,7 +29,7 @@ Fact tables store transactional data and support summarizations such as SUM, AVG
 - [Sales Budget](#sales-budget)
 - [Project Ledger Entries](#project-ledger-entries)
 - [Sales Credit Lines](#sales-credit-lines)
-- [Sales Invoice Lines](#)
+- [Sales Invoice Lines](#sales-invoice-lines)
 - [Sales Lines](#)
 - [Sales Value Entries](#)
 
@@ -60,7 +60,7 @@ The app uses data from the following tables:
 
 | Power BI field name | Business Central field name | Description |
 | ------ | -------------- | ---------- |
-| Description | Description | Specifies the description of the project ledger entry. | 
+| Description | Description | Specifies the description of the project ledger entry. |
 | Project Ledger Entry No. | Entry No. | Specifies the number of the entry, as assigned from the specified number series when the entry was created. |
 | Reason Code | Reason Code | Specifies the reason code, a supplementary source code that enables you to trace the entry. |
 | Unit Cost (LCY) | Unit Cost (LCY) | Specifies the cost, in LCY, of one unit of the item or resource on the line. |
@@ -75,8 +75,45 @@ The app uses data from the following tables:
 
 | Power BI field name | Business Central field name | Description |
 | ------ | -------------- | ---------- |
-| Description | Description | Specifies the name of the item or general ledger account, or some descriptive text. | 
+| Description | Description | Specifies the name of the item or general ledger account, or some descriptive text. |
 | Sales Credit Line No. | Line No. | Specifies the line number of the posted sales credit memo line. |
+
+### Sales Invoice Lines
+
+The app uses data from the following tables:
+
+- Sales Invoice Line
+
+#### Table definition
+
+| Power BI field name | Business Central field name | Description |
+| ------ | -------------- | ---------- |
+| Description | Description | Specifies the name of the item or general ledger account, or some descriptive text. |
+| Sales Invoice Line No. | Line No. | Specifies the line number of the posted sales invoice line. |
+
+### Sales Lines
+
+The app uses data from the following tables:
+
+- Sales Line
+- Sales Header
+
+#### Table definition
+
+| Power BI field name | Business Central field name | Description |
+| ------ | -------------- | ---------- |
+| Campaign No. |Campaign No. | Specifies the campaign number the document is linked to. |
+| Description | Description | Specifies a description of the entry of the product to be sold. |
+| Document Date | Document Date | Specifies the date when the related document was created. |
+| Due Date | Due Date | Specifies when the sales invoice must be paid. |
+| Order Date | Order Date | Specifies the order date on the sales document |
+| Planned Delivery Date | Planned Delivery Date | Specifies the planned delivery date on the sales line. |
+| Planned Shipment Date | Planned Shipment Date | Specifies the planned shipment date on the sales line. |
+| Posting Date | Posting Date | Specifies the date when the posting of the sales document will be recorded. |
+| Promised Delivery Date | Promised Delivery Date | Specifies the promised delivery date on the sales document. |
+| Quote No. | Quote No. | Specifies the number of the sales quote that the sales order was created from. |
+| Requested Delivery Date | Requested Delivery Date | Specifies the date that the customer has asked for the order to be delivered. |
+| Sales Line No. | Line No. | Specifies the line number of the sales line. |
 
 ### Sales
 
