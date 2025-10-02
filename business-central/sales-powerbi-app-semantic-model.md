@@ -175,6 +175,7 @@ The star schema model uses dimension tables and allows you to filter and group.
 - [Close Opportunity Code](#close-opportunity-code)
 - [Contact](#contact)
 - [Customer](#customer)
+- [Documents](#documents)
 - [G/L Accounts](#gl-accounts)
 - [Item](#item)
 - [Item Category](#item-category)
@@ -246,6 +247,24 @@ The app uses data from the following table:
 | Customer Posting Group | Customer Posting Group | Specifies the posting group. |
 | Customer Price Group |  Customer Price Group | Specifies the price group. |
 | Customer Disc. Group |  Customer Disc Group | Specifies the discount group. |
+
+### Documents
+
+The app uses data from the following tables:
+
+- Sales Lines
+- Value Entries
+- Invoice Lines
+- Sales Cr. Memo Lines
+- Project Ledger Entries
+
+#### Table definition
+
+| Power BI field name | Business Central field name | Description |
+| ------ | -------------- | ---------- |
+| Document No. | Document No. | Specifies the document number from the related fact table. |
+| Document Type | Document Type | Specifies the type of document related to the fact. |
+| Source Table | - | Specifies the source table where the document record originated from. |
 
 ### G/L Accounts
 
