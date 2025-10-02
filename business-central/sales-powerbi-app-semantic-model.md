@@ -27,7 +27,7 @@ Fact tables store transactional data and support summarizations such as SUM, AVG
 
 - [Opportunity Entries](#opportunity-entries)
 - [Sales Budget](#sales-budget)
-- [Project Ledger Entries](#)
+- [Project Ledger Entries](#project-ledger-entries)
 - [Sales Credit Lines](#)
 - [Sales Invoice Lines](#)
 - [Sales Lines](#)
@@ -50,7 +50,25 @@ Data from the following table is used:
 | Opportunity Entry No. | Entry No. | Specifies the opportunity entry's number. |
 | Opportunity No. | Opportunity No. | Specifies the opportunity's number. |
 
+### Project Ledger Entries
+
+The app uses data from the following tables:
+
+- Project Ledger Entries
+
+#### Table definition
+
+| Power BI field name | Business Central field name | Description |
+| ------ | -------------- | ---------- |
+| Description | Description | Specifies the description of the project ledger entry. | 
+| Project Ledger Entry No. | Entry No. | Specifies the number of the entry, as assigned from the specified number series when the entry was created. |
+| Reason Code | Reason Code | Specifies the reason code, a supplementary source code that enables you to trace the entry. |
+| Unit Cost (LCY) | Unit Cost (LCY) | Specifies the cost, in LCY, of one unit of the item or resource on the line. |
+
 ### Sales
+
+> [!NOTE]
+> This fact table is deprecated in Business Central 2025 release wave 2 and is no longer available.
 
 The app uses data from the following tables:
 
