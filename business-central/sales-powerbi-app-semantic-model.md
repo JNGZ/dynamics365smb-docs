@@ -28,7 +28,7 @@ Fact tables store transactional data and support summarizations such as SUM, AVG
 - [Opportunity Entries](#opportunity-entries)
 - [Sales Budget](#sales-budget)
 - [Project Ledger Entries](#project-ledger-entries)
-- [Sales Credit Lines](#)
+- [Sales Credit Lines](#sales-credit-lines)
 - [Sales Invoice Lines](#)
 - [Sales Lines](#)
 - [Sales Value Entries](#)
@@ -64,6 +64,19 @@ The app uses data from the following tables:
 | Project Ledger Entry No. | Entry No. | Specifies the number of the entry, as assigned from the specified number series when the entry was created. |
 | Reason Code | Reason Code | Specifies the reason code, a supplementary source code that enables you to trace the entry. |
 | Unit Cost (LCY) | Unit Cost (LCY) | Specifies the cost, in LCY, of one unit of the item or resource on the line. |
+
+### Sales Credit Lines
+
+The app uses data from the following tables:
+
+- Sales Cr. Memo Line
+
+#### Table definition
+
+| Power BI field name | Business Central field name | Description |
+| ------ | -------------- | ---------- |
+| Description | Description | Specifies the name of the item or general ledger account, or some descriptive text. | 
+| Sales Credit Line No. | Line No. | Specifies the line number of the posted sales credit memo line. |
 
 ### Sales
 
