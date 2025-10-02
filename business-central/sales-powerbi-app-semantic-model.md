@@ -30,8 +30,8 @@ Fact tables store transactional data and support summarizations such as SUM, AVG
 - [Project Ledger Entries](#project-ledger-entries)
 - [Sales Credit Lines](#sales-credit-lines)
 - [Sales Invoice Lines](#sales-invoice-lines)
-- [Sales Lines](#)
-- [Sales Value Entries](#)
+- [Sales Lines](#sales-lines)
+- [Sales Value Entries](#sales-value-entries)
 
 ### Opportunity entries
 
@@ -114,6 +114,22 @@ The app uses data from the following tables:
 | Quote No. | Quote No. | Specifies the number of the sales quote that the sales order was created from. |
 | Requested Delivery Date | Requested Delivery Date | Specifies the date that the customer has asked for the order to be delivered. |
 | Sales Line No. | Line No. | Specifies the line number of the sales line. |
+
+### Sales Value Entries
+
+The app uses data from the following tables:
+
+- Value Entries
+- Item Ledger Entries
+
+#### Table definition
+
+| Power BI field name | Business Central field name | Description |
+| ------ | -------------- | ---------- |
+| Entry Type | Entry Type | Specifies the type of value described in this entry. |
+| Item Ledger Entry No. | Entry No. | Specifies the number of the entry, of the related item ledger entry. |
+| Item Ledger Entry Type | Entry Type | From the related Item Ledger Entry, specifies which type of transaction that the entry is created from. |
+| Value Entry No. | Entry No. | Specifies the number of the entry on the value entry table. |
 
 ### Sales
 
