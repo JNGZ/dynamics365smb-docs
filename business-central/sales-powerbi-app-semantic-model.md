@@ -26,8 +26,12 @@ The dimension tables provide more context and attributes to the transactional da
 Fact tables store transactional data and support summarizations such as SUM, AVG, COUNT, and more. There are three fact tables in the Power BI Sales app:
 
 - [Opportunity Entries](#opportunity-entries)
-- [Sales](#sales)
 - [Sales Budget](#sales-budget)
+- [Project Ledger Entries](#)
+- [Sales Credit Lines](#)
+- [Sales Invoice Lines](#)
+- [Sales Lines](#)
+- [Sales Value Entries](#)
 
 ### Opportunity entries
 
