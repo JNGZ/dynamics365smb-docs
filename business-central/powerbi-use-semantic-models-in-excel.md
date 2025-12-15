@@ -106,13 +106,13 @@ The resulting Pivot Table could be used to review activity on a date where a dis
 
 This example uses the [**Inventory Power BI app for Business Central**](https://learn.microsoft.com/en-au/dynamics365/business-central/inventory-powerbi-app) and the [**Sales Power BI app for Business Central**](https://learn.microsoft.com/en-au/dynamics365/business-central/sales-powerbi-app) semantic models to illustrate how to combine Tables from multiple models into one Pivot Table, using the [**Power Pivot for Excel add-in**](https://support.microsoft.com/en-au/office/power-pivot-overview-and-learning-f9001958-7901-4caa-ad80-028a6d2432ed).
 
-Follow the steps from **Example: Create a Table** with the Inventory app model, including the following fields:
+Follow the steps from [**Example: Create a Table**](#example-create-a-table) with the Inventory app model, including the following fields:
 
 * Item table - Item No.
 * Item table - Item Description
 * Item Table - Item Replenishment System
 
-Follow the steps from **Example: Create a Table** with the Sales app model, including the following fields:
+Follow the steps from [**Example: Create a Table**](#example-create-a-table) with the Sales app model, including the following fields:
 
 * Item table - Item No.
 * Salesperson Table - Salesperson Name
