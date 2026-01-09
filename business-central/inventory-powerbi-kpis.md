@@ -199,6 +199,8 @@ Each KPI is described, including how it is calculated and what data was used in 
 - [Quantity](#quantity)
 - [Quantity (Forecasting)](#quantity-forecasting)
 - [Remaining Quantity](#remaining-quantity)
+- [Sales Amount](#sales-amount)
+- [Sales Quantity](#sales-quantity)
 
 ### Expired Inventory
 
@@ -262,6 +264,20 @@ Each KPI is described, including how it is calculated and what data was used in 
 
 **Formula**  
 - This measure calculates the total remaining quantity of items by summing all values in the [Remaining Qty.] column from the Item Ledger Entries table.
+**Data Sources**
+- Item Ledger Entry
+
+### Sales Amount
+
+**Formula**  
+- This measure calculates the total sales amount of items by summing all values in the [Sales Amt. (Actual)] column from the Item Ledger Entries table, where the Entry Type is Sale.
+**Data Sources**
+- Item Ledger Entry
+
+### Sales Quantity
+
+**Formula**  
+- This measure calculates the total sales quantity of items by summing all values in the [Qty.] column from the Item Ledger Entries table, where the Entry Type is Sale.
 **Data Sources**
 - Item Ledger Entry
 
@@ -435,6 +451,48 @@ Each KPI is described, including how it is calculated and what data was used in 
 
 **Data Sources**
 - Transfer Line
+
+## ABC Classification Measures
+
+- [No. of Items in Class](#no-of-items-in-class)
+- [Sales Amount (ABC)](#sales-amount-abc)
+- [Sales Quantity (ABC)](#sales-quantity-abc)
+- [Percent of Sales Amount](#percent-of-sales-amount)
+
+### No. of Items in Class
+
+**Formula**  
+  
+- This measure returns the number of items based on the abc classification. The ABC classification is determined by calculating the cumulated sales amount for an item, divided by the total sales amount for all items, to return the Cumulative Sales Amount Percent. Each item is assigned an ABC Classification based on whether the Cumulative Sales Amount Percent is within the lower and upper ABC class boundaries.
+
+**Data Sources**
+- Item Ledger Entry
+
+### Sales Amount (ABC)
+
+**Formula**  
+
+- This measure returns the [Sales Amount](#sales-amount) for each item based on the ABC classification. The ABC classification is determined by calculating the cumulated sales amount for an item, divided by the total sales amount for all items, to return the Cumulative Sales Amount Percent. Each item is assigned an ABC Classification based on whether the Cumulative Sales Amount Percent is within the lower and upper ABC class boundaries.
+
+**Data Sources**
+- Item Ledger Entry
+
+### Sales Quantity (ABC)
+
+**Formula**  
+
+- This measure returns the [Sales Quantity](#sales-quantity) for each item based on the ABC classification. The ABC classification is determined by calculating the cumulated sales quantity for an item, divided by the total sales quantity for all items, to return the Cumulative Sales Quantity Percent. Each item is assigned an ABC Classification based on whether the Cumulative Sales Quantity Percent is within the lower and upper ABC class boundaries.
+
+**Data Sources**
+- Item Ledger Entry
+
+### Percent of Sales Amount
+
+**Formula**  
+- This measure calculates the [Sales Amount (ABC)](#sales-amount-abc) divided by the total [Sales Amount](#sales-amount) for all items, to determine the Percent of Sales Amount for an item.
+
+**Data Sources**
+- Item Ledger Entry
 
 ## Related information
 
