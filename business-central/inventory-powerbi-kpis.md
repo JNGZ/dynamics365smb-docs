@@ -463,7 +463,7 @@ Each KPI is described, including how it is calculated and what data was used in 
 
 **Formula**  
   
-- This measure returns the number of items based on the abc classification. The ABC classification is determined by calculating the cumulated sales amount for an item, divided by the total sales amount for all items, to return the Cumulative Sales Amount Percent. Each item is assigned an ABC Classification based on whether the Cumulative Sales Amount Percent is within the lower and upper ABC class boundaries.
+- This measure returns the number of items based on the ABC classification. The ABC classification is determined by calculating the cumulated sales amount for an item, divided by the total sales amount for all items, to return the Cumulative Sales Amount Percent. Each item is assigned an ABC Classification based on whether the Cumulative Sales Amount Percent is within the lower and upper ABC class boundaries.
 
 **Data Sources**
 - Item Ledger Entry
