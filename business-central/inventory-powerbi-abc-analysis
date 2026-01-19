@@ -15,7 +15,7 @@ ms.service: dynamics-365-business-central
 
 [!INCLUDE[applies-to-2026w1](includes/applies-to-2026w1.md)]
 
-The **ABC Analysis** report performs an ABC analysis of your sales data, categorizing customers based on their contribution to total sales. Use the report to identify key items to prioritize supply and sales efforts.
+The **ABC Analysis** report performs an ABC analysis of your sales data, categorizing items based on their contribution to total sales. Use the report to identify key items to prioritize supply and sales efforts.
 
 > [!NOTE]
 > The default ABC class boundaries can be customized through the [Power BI ABC Analysis Setup](https://businesscentral.dynamics.com?page=36982). More information regarding this setup is available here [ABC Analysis Setup](across-powerbi-install-business-central-apps.md#abc-analysis-setup).  
