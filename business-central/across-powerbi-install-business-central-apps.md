@@ -210,9 +210,9 @@ For dimension set entries to show up in the [!INCLUDE [powerbi-name](includes/po
 
 ## ABC Analysis Setup
 
-The ABC Analysis reporting categories is driven by the **PowerBI ABC Analysis Setup**. This represents the percentage boundaries for the ABC class categories in the Power BI Inventory reports. With the default configuration, Category A accounts for 50% of the total value, Category B accounts for 30% and Category C accounts for 20%.
+The ABC Analysis reporting categories is driven by the **PowerBI ABC Analysis Setup**. This represents the percentage boundaries for the ABC class categories in the Power BI Inventory reports. With the default configuration, Category A accounts for 50% of the total sales value, Category B accounts for 30% and Category C accounts for 20%.
 
-To customize these ABC Class Category percentage boundaries, navigate to the [PowerBI ABC Analysis Setup](https://businesscentral.dynamics.com?page=36982). Category A typically represents the most valuable items, Category B represents moderately valuable items, and Category C represents the least valuable items. The sum of the percentages for all three categories must equal 100%.
+To customize these ABC Class Category percentage boundaries, navigate to the [PowerBI ABC Analysis Setup](https://businesscentral.dynamics.com?page=36982). Category A typically represents the items with the highest contribution to the total sales amount, Category B represents items moderately contributing to sales, and Category C represents the items contributing the least to sales. The sum of the percentages for all three categories must equal 100%.
 
 ## Want links to show up in Report Explorer?
 
