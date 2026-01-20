@@ -20,11 +20,11 @@ This article describes how to create Pivot Tables and Tables connected to Power 
 ## Prerequisites
 Here are things to keep in mind when you connect to Power BI semantic models in Excel:
 
-* Your organization’s tenant administrator must enable the Users can work with Power BI semantic models in Excel using a live connection tenant setting. Learn more about the [Excel live connection](/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
-* For on-premises semantic models, your organization's tenant administrator also must enable the [Allow XMLA endpoints](/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) and Analyze in Excel with on-premises datasets tenant setting. Learn more about the Allow XMLA endpoints tenant setting in the admin portal documentation.
-* You must have Build permission to the Power BI semantic model or have at least a Contributor role in the Power BI workspace containing your semantic model.
-* When connecting through the XMLA endpoint to a composite Power BI semantic model that relies on other semantic models downstream, you must have Build permission or Contributor rights to all the semantic models. The AIXL endpoint, on the other hand, enforces Build permissions or Contributor rights only on the composite model.
-* You must have a Power BI license to connect Excel to Power BI semantic models. Learn more about [Power BI licenses](/power-bi/fundamentals/service-features-license-type).
+* Your organization’s tenant administrator must enable the **Users can work with Power BI semantic models in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
+* For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints]((/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets)) tenant setting in the admin portal documentation.
+* You must have **Build** permission to the Power BI semantic model or have at least a **Contributor** role in the Power BI workspace containing your semantic model.
+* When connecting through the XMLA endpoint to a composite Power BI semantic model that relies on other semantic models downstream, you must have **Build** permission or **Contributor** rights to all the semantic models. The AIXL endpoint, on the other hand, enforces **Build** permissions or **Contributor** rights only on the composite model.
+* You must have a Power BI license: Fabric (free), Pro, or Premium Per User (PPU). Fabric (free) license users can only work with datasets in My workspace or a Premium capacity or Fabric F64 or greater capacity. Learn more about [Power BI licenses](/power-bi/fundamentals/service-features-license-type).
 * You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
 
 ## Getting Started
@@ -34,7 +34,10 @@ The following table includes links to help you get started with connecting to Po
 | To | See |
 | --- | ----------------|
 | Access Power BI semantic models in Excel | [Connect Excel to Power BI semantic models](/power-bi/collaborate-share/service-connect-power-bi-datasets-excel)| 
-| Create visuals in Excel using Power BI semantic models | [Discover Power BI semantic models in Excel](/power-bi/collaborate-share/service-connect-excel-power-bi-datasets#discover-power-bi-semantic-models-in-excel)| 
+| Create visuals in Excel using Power BI semantic models | [Discover Power BI semantic models in Excel](/power-bi/collaborate-share/service-connect-excel-power-bi-datasets#discover-power-bi-semantic-models-in-excel) | 
+|Design refreshable reports in Excel with Power BI data | [Design refreshable reports in Excel with Power BI data](/power-bi/collaborate-share/service-analyze-power-bi-datasets-excel) |
+
+## 
 
 ## Example: Create a Table
 
@@ -44,7 +47,7 @@ On the **Data** tab in Excel Desktop, select **Get Data** > **Power Platform** >
 
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-connection.png" alt-text="Screenshot of Excel showing steps to connect to Power BI." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-connection.png":::
 
-After you select **From Power BI** using either of these options, a pane opens on the right of the screen that shows Power BI semantic models you have access to. Select **Insert Table** for the [Inventory app](./inventory-powerbi-app.md) semantic model.
+After you select **From Power BI**, a pane opens on the right of the screen that shows Power BI semantic models you have access to. Select **Insert Table** for the [Inventory app](./inventory-powerbi-app.md) semantic model.
 
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-new-table.png" alt-text="Screenshot of Excel showing Power BI semantic models pane highlighting Create Table option." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-new-table.png":::
 
@@ -80,7 +83,7 @@ On the **Data** tab in Excel Desktop, select **Get Data** > **Power Platform** >
 
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-connection.png" alt-text="Screenshot of Excel showing steps to connect to Power BI." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-connection.png":::
 
-After you select From Power BI using either of these options, a pane opens on the right of the screen that shows Power BI semantic models you have access to. Select **Insert Pivot Table** for the [Inventory Valuation app](./inventory-valuation-powerbi-app.md) semantic model.
+After you select **From Power BI**, a pane opens on the right of the screen that shows Power BI semantic models you have access to. Select **Insert Pivot Table** for the [Inventory Valuation app](./inventory-valuation-powerbi-app.md) semantic model.
 
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-new-pivot-table.png" alt-text="Screenshot of Excel showing Power BI semantic models pane highlighting Create Pivot Table option." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-new-pivot-table.png":::
 
