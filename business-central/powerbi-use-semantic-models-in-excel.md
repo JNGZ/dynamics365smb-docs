@@ -17,6 +17,16 @@ In Excel Desktop or Excel for the web, you can connect your Power BI semantic mo
 
 This article describes how to create Pivot Tables and Tables connected to Power BI Semantic Models from the Power BI apps for Dynamics 365 Business Central.
 
+## Prerequisites
+Here are things to keep in mind when you connect to Power BI semantic models in Excel:
+
+* Your organization’s tenant administrator must enable the Users can work with Power BI semantic models in Excel using a live connection tenant setting. Learn more about the [Excel live connection](/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
+* For on-premises semantic models, your organization's tenant administrator also must enable the [Allow XMLA endpoints](/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) and Analyze in Excel with on-premises datasets tenant setting. Learn more about the Allow XMLA endpoints tenant setting in the admin portal documentation.
+* You must have Build permission to the Power BI semantic model or have at least a Contributor role in the Power BI workspace containing your semantic model.
+* When connecting through the XMLA endpoint to a composite Power BI semantic model that relies on other semantic models downstream, you must have Build permission or Contributor rights to all the semantic models. The AIXL endpoint, on the other hand, enforces Build permissions or Contributor rights only on the composite model.
+* You must have a Power BI license to connect Excel to Power BI semantic models. Learn more about [Power BI licenses](/power-bi/fundamentals/service-features-license-type).
+* You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
+
 ## Getting Started
 
 The following table includes links to help you get started with connecting to Power BI semantic models and use the data.
