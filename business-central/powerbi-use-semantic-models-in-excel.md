@@ -37,7 +37,6 @@ The following table includes links to help you get started with connecting to Po
 | Create visuals in Excel using Power BI semantic models | [Discover Power BI semantic models in Excel](/power-bi/collaborate-share/service-connect-excel-power-bi-datasets#discover-power-bi-semantic-models-in-excel) | 
 |Design refreshable reports in Excel with Power BI data | [Design refreshable reports in Excel with Power BI data](/power-bi/collaborate-share/service-analyze-power-bi-datasets-excel) |
 
-## 
 
 ## Example: Create a Table
 
@@ -47,9 +46,14 @@ On the **Data** tab in Excel Desktop, select **Get Data** > **Power Platform** >
 
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-connection.png" alt-text="Screenshot of Excel showing steps to connect to Power BI." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-connection.png":::
 
-After you select **From Power BI**, a pane opens on the right of the screen that shows Power BI semantic models you have access to. Select **Insert Table** for the [Inventory app](./inventory-powerbi-app.md) semantic model.
+After you select **From Power BI**, a **Power BI Datasets** pane opens on the right of the screen that shows Power BI semantic models you have access to. Select **Insert Table** for the [Inventory app](./inventory-powerbi-app.md) semantic model.
 
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-new-table.png" alt-text="Screenshot of Excel showing Power BI semantic models pane highlighting Create Table option." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-new-table.png":::
+
+Alternatively, on the **Insert** tab in Excel, select **PivotTable** > **From Power BI**, then select **Insert Table** for the [Inventory app](./inventory-powerbi-app.md) semantic model within the **Power BI Datasets** pane.
+
+:::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-insert-pivot-table.png" alt-text="Screenshot of Excel showing steps create Pivot Table using Power BI connection." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-insert-pivot-table.png":::
+
 
 When you select **Insert Table**, the **Create Table** dialog opens, where you can use the **Data**, **Build**, and **Filters** panes to design the table you'd like. The predefined relationships in the semantic model allow fields from different tables to be combined into one table.
 
@@ -83,11 +87,11 @@ On the **Data** tab in Excel Desktop, select **Get Data** > **Power Platform** >
 
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-connection.png" alt-text="Screenshot of Excel showing steps to connect to Power BI." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-connection.png":::
 
-After you select **From Power BI**, a pane opens on the right of the screen that shows Power BI semantic models you have access to. Select **Insert Pivot Table** for the [Inventory Valuation app](./inventory-valuation-powerbi-app.md) semantic model.
+After you select **From Power BI**, a **Power BI Datasets** pane opens on the right of the screen that shows Power BI semantic models you have access to. Select **Insert Pivot Table** for the [Inventory Valuation app](./inventory-valuation-powerbi-app.md) semantic model.
 
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-new-pivot-table.png" alt-text="Screenshot of Excel showing Power BI semantic models pane highlighting Create Pivot Table option." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-new-pivot-table.png":::
 
-Alternatively, on the **Insert** tab in Excel, select **PivotTable** > **From Power BI**.
+Alternatively, on the **Insert** tab in Excel, select **PivotTable** > **From Power BI**, then select **Insert Pivot Table** for the [Inventory Valuation app](./inventory-valuation-powerbi-app.md) semantic model within the **Power BI Datasets** pane.
 
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-insert-pivot-table.png" alt-text="Screenshot of Excel showing steps create Pivot Table using Power BI connection." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-insert-pivot-table.png":::
 
@@ -156,6 +160,38 @@ For this example counting Item Sales for a Salesperson by Item Replenishment Sys
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-combined-model-pivot-table-example.png" alt-text="Screenshot of Excel showing Pivot Table created from Power Pivot." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-combined-model-pivot-table-example.png":::
 
 The resulting Pivot Table shows how we can connect Power BI semantic models within Excel to perform cross-functional reporting.
+
+## Refresh the data
+Whether you have an Excel PivotTable or table connected to a Power BI semantic model, you can update data in your Excel workbook by manually refreshing a specific object (PivotTable, Pivot Chart, or table), manually refreshing all objects connected to a specific Power BI semantic model, or configuring automatic refreshing.
+
+### Manually refresh a single object
+To refresh a specific object in Excel, right-click the object and select **Refresh** in the menu.
+:::image type="content" source="media\powerbi\excel\excel-power-bi-refresh-single-object.png" alt-text="Screenshot of Excel showing steps to refresh a single object with an external connection to Power BI." lightbox="media\powerbi\excel\excel-power-bi-refresh-single-object.png":::
+
+### Manually refresh multiple or all objects
+To refresh all objects connected to a Power BI semantic model, use either of these options:
+
+* Select the **Data** tab in Excel, select **Refresh All** > **Refresh All**.
+    :::image type="content" source="media\powerbi\excel\excel-power-bi-refresh-all-connections.png" alt-text="Screenshot of Excel showing steps to refresh all objects wih an external connection." lightbox="excel-power-bi-refresh-all-connections.png":::
+
+    > [!NOTE] 
+>If you have other connections in your Excel workbook, **Refresh All** updates all the data in your workbook, including Power BI data. **Refresh** will only get the latest data connected to the active cell of the workbook.
+
+* Select the **Data** tab in Excel > **Queries & Connections**. In the **Queries & Connections** pane, select **Refresh** for one or more connections.
+    :::image type="content" source="media\powerbi\excel\excel-power-bi-refresh-queries-and-connections.png" alt-text="Screenshot of Excel showing steps to refresh queries and connections." lightbox="excel-power-bi-refresh-queries-and-connections.png":::
+
+### Configure automatic refreshing
+
+* Select the **Data** tab in Excel > **Queries & Connections** > **Refresh All** > **Connection Properties**
+    :::image type="content" source="media\powerbi\excel\excel-power-bi-open-connection-properties.png" alt-text="Screenshot of Excel showing steps to open Connection Properties." lightbox="excel-power-bi-open-connection-properties.png":::
+* Navigate to the **Usage** tab of the **Connection Properties** > **Refresh Control**, and optionally configure the following settings:
+    * **Enable Background Refresh**: If your workbook is connected to a large data source, refreshing it might take a little longer than you expect. Consider running a background refresh with this setting. This returns control of Excel to you instead of making you wait several minutes or more for the refresh to finish.
+    * **Refresh Every**: To automatically refresh at regular intervals, enable this setting and enter the number of minutes between each refresh operation.
+    * **Refresh data when opening the file**: You can refresh an external data range automatically when you open the workbook.
+    * **Remove data from the external data range before saving the workbook**: You can save the workbook without saving the external data to shrink the size of the file.
+    * **Refresh this connection on Refresh All**: Enabling this setting will mean this connection will refresh when the **Refresh All** action is used.
+    :::image type="content" source="media\powerbi\excel\excel-power-bi-view-connection-refresh-control-properties.png" alt-text="Screenshot of Excel showing steps to refresh queries and connections." lightbox="excel-power-bi-view-connection-refresh-control-properties.png":::
+
 
 ## Related information
 
