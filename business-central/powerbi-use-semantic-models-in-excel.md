@@ -74,6 +74,9 @@ To add the table to the Excel sheet, use the **Insert Table** action in the dial
 
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-create-table-wizard.png" alt-text="Screenshot of Excel showing Power BI semantic model Create Table wizard." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-create-table-wizard.png":::
 
+> [!TIP]
+> After creating a table, name the table in the **Table Design** tab of Excel to help distinguish tables.
+
 The resulting table can be interacted with, for example, to filter for a specific customer to determine which lots recently shipped.
 
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-inventory-table-example.png" alt-text="Screenshot of Excel showing table created from Power BI semantic model connection." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-inventory-table-example.png":::
@@ -143,7 +146,6 @@ Define a relationship between the Sales & Inventory tables created in previous s
 > [!NOTE]
 >Relationships defined within Excel will only exist in your Excel file.
 
-
 To open the Power Pivot model, choose to **Data** > **Data Tools** > **Data Model** > **Manage Data Model**.
 
 :::image type="content" source="media\powerbi\excel\excel-manage-data-model.png" alt-text="Screenshot of Excel showing steps to Manage Data Model in Power Pivot. " lightbox="media\powerbi\excel\excel-manage-data-model.png":::
@@ -195,12 +197,13 @@ To refresh all objects connected to a Power BI semantic model, use either of the
     * **Refresh this connection on Refresh All**: Enabling this setting will mean this connection will refresh when the **Refresh All** action is used.
     :::image type="content" source="media\powerbi\excel\excel-power-bi-view-connection-refresh-control-properties.png" alt-text="Screenshot of Excel showing steps to refresh queries and connections." lightbox="excel-power-bi-view-connection-refresh-control-properties.png":::
 
-## Performance Considerations
+## Performance considerations
 The complexity of the modelling setup in your excel, the number of connections to external sources, and the volume of data loaded from the Power BI semantic models will be factors that could potentially degrade performance within Excel.
 
-Consider limiting:
-* Fields selected in connections to Power BI semantic models to avoid loading data that is not necessary to the reporting requirements.
-* Refreshing data connections.
+Consider limiting the fields selected in connections to Power BI semantic models, to avoid loading data that is not necessary to the reporting requirements, and be mindful of refreshing data from large datasets or more frequently than required.
+
+> [!TIP]
+> For new Tables and PivotTables, test with a subset of data first by using filters to limit the volume of data loaded and remove filters after validating the result. 
 
 ## Related information
 
