@@ -24,7 +24,7 @@ Here are things to keep in mind when you connect to Power BI semantic models in 
 * For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints]((/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets)) tenant setting in the admin portal documentation.
 * You must have **Build** permission to the Power BI semantic model or have at least a **Contributor** role in the Power BI workspace containing your semantic model.
 * When connecting through the XMLA endpoint to a composite Power BI semantic model that relies on other semantic models downstream, you must have **Build** permission or **Contributor** rights to all the semantic models. The AIXL endpoint, on the other hand, enforces **Build** permissions or **Contributor** rights only on the composite model.
-* You must have a Power BI license: Fabric (free), Pro, or Premium Per User (PPU). Fabric (free) license users can only work with datasets in My workspace or a Premium capacity or Fabric F64 or greater capacity. Learn more about [Power BI licenses](/power-bi/fundamentals/service-features-license-type).
+* You must have a Power BI license: Fabric (free), Pro, or Premium Per User (PPU). Fabric (free) license users can only work with semantic models in My workspace or a Premium capacity or Fabric F64 or greater capacity. Learn more about [Power BI licenses](/power-bi/fundamentals/service-features-license-type).
 * You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
 
 ## Getting Started
@@ -36,7 +36,6 @@ The following table includes links to help you get started with connecting to Po
 | Create visuals in Excel using Power BI semantic models | [Discover Power BI semantic models in Excel](/power-bi/collaborate-share/service-connect-excel-power-bi-datasets#discover-power-bi-semantic-models-in-excel) | 
 |Design refreshable reports in Excel with Power BI data | [Design refreshable reports in Excel with Power BI data](/power-bi/collaborate-share/service-analyze-power-bi-datasets-excel) |
 
-
 ## Example: Create a Table
 
 This example uses the [Inventory Power BI app for Business Central](./inventory-powerbi-app.md) semantic model to illustrate a Table that could be built to report on outbound Lots.
@@ -47,12 +46,14 @@ On the **Data** tab in Excel Desktop, select **Get Data** > **Power Platform** >
 
 After you select **From Power BI**, a **Power BI Datasets** pane opens on the right of the screen that shows Power BI semantic models you have access to. Select **Insert Table** for the [Inventory app](./inventory-powerbi-app.md) semantic model.
 
+> [!NOTE]
+> Excel and parts of the Power BI UI may still reference **Power BI datasets**, while Power BI Service uses **semantic models**. Both terms refer to the same concept in this context.
+
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-new-table.png" alt-text="Screenshot of Excel showing Power BI semantic models pane highlighting Create Table option." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-new-table.png":::
 
 Alternatively, on the **Insert** tab in Excel, select **PivotTable** > **From Power BI**, then select **Insert Table** for the [Inventory app](./inventory-powerbi-app.md) semantic model within the **Power BI Datasets** pane.
 
 :::image type="content" source="media\powerbi\excel\excel-power-bi-semantic-model-insert-pivot-table.png" alt-text="Screenshot of Excel showing steps create Pivot Table using Power BI connection." lightbox="media\powerbi\excel\excel-power-bi-semantic-model-insert-pivot-table.png":::
-
 
 When you select **Insert Table**, the **Create Table** dialog opens, where you can use the **Data**, **Build**, and **Filters** panes to design the table you'd like. The predefined relationships in the semantic model allow fields from different tables to be combined into one table.
 
