@@ -17,6 +17,9 @@ ms.service: dynamics-365-business-central
 
 The **Customer Retention Overview** report analyzes customer sales behaviors and retention trends, showcasing sales metrics and customer volume. By visualizing customer retention over time, retention by location demographics and loyalty sales metrics for key customers, this report provides a high-level understanding of customer trends to continuously improve customer relations, identify developing markets and anticipate sales risks.
 
+> [!NOTE]
+> By default, the Customer Retention Overview reflects customer statistics for the current relative fiscal year. To report Customer Retention by a different date period, you can edit the Sales App Customer Retention Overview page filters to modify or remove this Fiscal Relative Year filter.
+
 :::image type="content" source="media/powerbi/sales/sales-customer-retention-overview.png" alt-text="Screenshot of the Customer Retention Overview report" lightbox="media/powerbi/sales/sales-customer-retention-overview.png":::
 
 ## Use the report
