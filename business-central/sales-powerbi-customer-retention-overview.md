@@ -52,7 +52,7 @@ The **Customer Retention Overview** report includes the following KPIs and measu
 The report uses data from the following tables:
 
 - Sales Value Entries
-- Sales Invoice Lines 
+- Sales Invoice Lines
 - Project Ledger Entries
 - Customer
 
