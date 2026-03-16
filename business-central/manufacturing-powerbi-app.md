@@ -68,6 +68,13 @@ To improve production efficiency, you track the allocated hours for each work ce
 
 [!INCLUDE [power-bi-manufacturing-app](includes/power-bi-manufacturing-app.md)]
 
+## Managing Subcontractors in the Manufacturing Reports
+
+The Manufacturing Power BI App includes subcontracted costs and subcontractor work centres by default. To exclude subcontracted costs from manufacturing reporting, a Subcontracting filter is available on each report page. This Subcontracting page filter can be used to exclude, include or only show manufacturing insights for Work Centres assigned a Subcontractor.
+
+> [!NOTE]
+> The Subcontracting filter is based on the Work Centre configuration, rather than historical subcontractor status. If the subcontractor assignment is changed on a Work Centre, the historical capacity ledger entry insights may be inaccurate.
+
 ## Related information
 
 [Installing Power BI apps for Business Central](across-powerbi-install-business-central-apps.md)   
